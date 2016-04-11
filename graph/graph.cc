@@ -12,5 +12,4 @@ int main(int argc, char *argv[]) {
     ss = argv[1];
   }
   cout << "The expression is : " << ss << endl;
-  ;
 }
