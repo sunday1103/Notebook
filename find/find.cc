@@ -18,53 +18,28 @@ void print(const std::vector<int> &v, string s)
 }
 
 
-void binary_search(std::vector<int> &data, const int target)
+int binary_search(std::vector<int> &data, const int target)
 {
-    for(int i = start + 1; i < end; i++)
+    int left = 0;
+    int right = data.size()-1;
+    int mid = right;
+    while(left < right)
     {
-        int temp = data[i];
-
-        //find the position from [start,i-1] subject to data[pos] <= temp <= data[pos+1]
-        int left = start;
-        int right = i-1;
-        int mid = right;
-        while(left < right)
+        mid = (left + right) / 2;
+        if (temp < data[mid])
         {
-            mid = (left + right) / 2;
-            if (temp < data[mid])
-            {
-                right = mid - 1;
-            }
-            else
-            {
-                left = mid + 1;
-            }
+            right = mid - 1;
         }
-
-        for (int m = i; m > left+1; m--)
+        else
         {
-            data[m] = data[m-1];
+            left = mid + 1;
         }
-
-        data[left+1] = temp;
     }
 }
 
 void select_sort(std::vector<int> &data, const int start, const int end)
 {
 
-}
-
-bool verify(std::vector<int> & data)
-{
-    for (int i = 1; i < data.size(); ++i)
-    {
-        if (data[i] < data[i-1])
-        {
-            return 0;
-        }
-    }
-    return 1;
 }
 
 int main()
