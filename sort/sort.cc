@@ -86,6 +86,47 @@ void select_sort(std::vector<int> &data, const int start, const int end)
     }
 }
 
+void shell_sort_1(std::vector<int> &data, const int start, const int end)
+{
+    //1 2 3 4 5 6 7 8 9 10
+    for (int gap = data.size() / 2; gap > 0; gap /= 2)
+    {
+        for (int i = gap; i < data.size(); i++)
+        {
+            int temp = data[i];
+            int j = i;
+            for (; j >= gap && temp < data[j - gap]; j -= gap)
+            {
+                data[j] = data[j - gap];
+            }
+            data[j] = temp;
+        }
+    }
+}
+
+void shell_sort_2(std::vector<int> &a, const int start, const int end)
+{
+    //1 2 3 4 5 6 7 8 9 10
+    int N = a.size();
+    int h = 1;
+    while (h < N / 3)
+        h = 3 * h + 1;
+    while (h >= 1)
+    {
+        for (int i = h; i < N; i++)
+        {
+            int temp = a[i];
+            int j = i;
+            for (; j >= h && a[j] < a[j - h]; j -= h)
+            {
+                a[j] = a[j - h];
+            }
+            a[j] = temp;
+        }
+        h = h / 3;
+    }
+}
+
 bool verify(std::vector<int> &data)
 {
     for (int i = 1; i < data.size(); ++i)
@@ -100,6 +141,8 @@ bool verify(std::vector<int> &data)
 
 int main()
 {
+    clock_t start_time;
+    clock_t end_time;
     std::vector<int> data;
     cout << "input vector ended with a non-number:\n";
     int a;
@@ -107,14 +150,14 @@ int main()
         data.push_back(a);
     string s("input data is: ");
     //print(data,s);
-
+    /*
     //1. insert_sort
     std::vector<int> data1;
     data1 = data;
-    clock_t start_time = clock();
+     start_time = clock();
     //cout << "start_time is " << start_time << endl;
     insert_sort(data1, 0, data1.size());
-    clock_t end_time = clock();
+     end_time = clock();
     if (!verify(data1))
     {
         cout << "wrong sort\n";
@@ -150,12 +193,43 @@ int main()
     start_time = clock();
     select_sort(data3, 0, data3.size());
     end_time = clock();
-    if (!verify(data2))
+    if (!verify(data3))
     {
         cout << "wrong sort\n";
         abort();
     }
     cout << "select_sort: " << endl;
+    cout << "total time " << ((float)(end_time - start_time)) / CLOCKS_PER_SEC << "  sec " << endl;
+    cout << "--------" << endl;
+*/
+
+    //2. shell_sort
+    std::vector<int> data4;
+    data4 = data;
+    start_time = clock();
+    shell_sort_1(data4, 0, data4.size());
+    end_time = clock();
+    if (!verify(data4))
+    {
+        cout << "wrong sort\n";
+        abort();
+    }
+    cout << "shell_sort_1: " << endl;
+    cout << "total time " << ((float)(end_time - start_time)) / CLOCKS_PER_SEC << "  sec " << endl;
+    cout << "--------" << endl;
+
+    //2. shell_sort
+    std::vector<int> data5;
+    data5 = data;
+    start_time = clock();
+    shell_sort_2(data5, 0, data5.size());
+    end_time = clock();
+    if (!verify(data5))
+    {
+        cout << "wrong sort\n";
+        abort();
+    }
+    cout << "shell_sort_2: " << endl;
     cout << "total time " << ((float)(end_time - start_time)) / CLOCKS_PER_SEC << "  sec " << endl;
     cout << "--------" << endl;
 }
