@@ -17,6 +17,15 @@ void print(const std::vector<int> &v, string s)
     cout << endl;
 }
 
+ostream &operator<<(ostream &o, std::vector<int> v)
+{
+    for (size_t i = 0; i < v.size(); i++)
+    {
+        o << v[i] << "\t";
+    }
+    return o;
+}
+
 void insert_sort(std::vector<int> &data, const int start, const int end)
 {
     //int n = data.size();
@@ -127,6 +136,44 @@ void shell_sort_2(std::vector<int> &a, const int start, const int end)
     }
 }
 
+//merge
+void merge(std::vector<int> &a, int lo, int mid, int hi)
+{
+    int i = lo;
+    int j = mid + 1;
+    std::vector<int> aux;
+    aux.resize(a.size());
+    for (size_t k = lo; k <= hi; k++)
+    {
+        aux[k] = a[k];
+    }
+    //cout << aux << endl;
+    for (size_t k = lo; k <= hi; k++)
+    {
+        if (i > mid)
+            a[k] = aux[j++];
+        else if (j > hi)
+            a[k] = aux[i++];
+        else if (aux[i] < aux[j])
+            a[k] = aux[i++];
+        else
+            a[k] = aux[j++];
+    }
+}
+
+void merge_sort(std::vector<int> &a, int lo, int hi)
+{
+    if (hi <= lo)
+    {
+        return;
+    }
+    int mid = (lo + hi) / 2;
+    merge_sort(a, lo, mid);
+    merge_sort(a, mid + 1, hi);
+    merge(a, lo, mid, hi);
+    //cout << a << endl;
+}
+
 bool verify(std::vector<int> &data)
 {
     for (int i = 1; i < data.size(); ++i)
@@ -203,6 +250,7 @@ int main()
     cout << "--------" << endl;
 */
 
+    /*
     //2. shell_sort
     std::vector<int> data4;
     data4 = data;
@@ -232,4 +280,13 @@ int main()
     cout << "shell_sort_2: " << endl;
     cout << "total time " << ((float)(end_time - start_time)) / CLOCKS_PER_SEC << "  sec " << endl;
     cout << "--------" << endl;
+    */
+    int aa[] = {1, 3, 4, 5, 8, 2, 5}; //, 6, 10, 12};
+    std::vector<int> data1(aa, aa + 7);
+    cout << data1 << endl;
+    merge(data1, 0, 4, 6);
+    cout << data1 << endl;
+    cout << data << endl;
+    merge_sort(data, 0, data.size() - 1);
+    cout << data << endl;
 }
