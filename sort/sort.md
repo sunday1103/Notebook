@@ -1,5 +1,6 @@
 # Insert sort
-
+插入排序是将未排序的数插入到已经排好序的序列中。
+版本三相对于版本1,2优点在于,对于每个未排序的数，该数仅仅需要移动到最终位置，而不需要挨个移动。
 ## Version 1
 ```cpp
 void insert_sort(std::vector<int> &data, const int start, const int end)
@@ -88,8 +89,10 @@ total 9300000  clock
 total time 9.3  sec
 ```
 
-Binary_insert_sort
----------
+# Binary_insert_sort
+二分插入排序在于，从上面版本三可以看到，如果找到已经排序的数中小于目标数的位置，那么只需要将该位置以及该位置以后的数
+向后移动一个，然后将目标数放到该位置就好了。而找到该位置之前是一个一个比较的，现在通过二分查找的方法可以减少查找次数。
+
 ```c++
 void binary_insert_sort(std::vector<int> &data, const int start, const int end)
 {
@@ -123,3 +126,9 @@ void binary_insert_sort(std::vector<int> &data, const int start, const int end)
     }
 }
 ```
+# 选择排序
+选择排序是指在待排序序列中选择最小的数放于已排序序列最后，重复这个过程。
+
+# 希尔排序
+希尔排序将序列间隔一定值分为多个子序列，对每个子序列排序。
+然后减小间隔值，继续该过程，直到间隔为1.
