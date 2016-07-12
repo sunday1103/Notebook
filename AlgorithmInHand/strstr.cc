@@ -1,6 +1,7 @@
 #include <cstring>
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 char *strstr_1(char *str, const char *str1)
@@ -34,8 +35,12 @@ int strStr_2(string haystack, string needle)
 
     int M = needle.length();
     int R = 256;
-    int dfa[M][R];
-    dfa[needle[0]][0] = 1;
+    //int dfa[M][R];
+    vector<vector<int> > dfa;
+    dfa.resize(M);
+    for (int i = 0; i < M; i++)
+        dfa[i].resize(R);
+    dfa[0][needle[0]] = 1;
     for (int X = 0, j = 1; j < M; j++)
     {
         for (int c = 0; c < R; c++)
@@ -58,12 +63,12 @@ int strStr_2(string haystack, string needle)
 
 int main(int argc, char **argv)
 {
-    string h("adssdsqwe");
-    string n("ds");
+    string h("mississippi");
+    string n("sipp");
     cout << strStr_2(h, n) << endl;
 
-    char s[100] = {"qwertyuiop"};
-    cout << s << endl;
-    cout << argv[1] << endl;
-    cout << strstr_1(s, argv[1]) << endl;
+    //char s[100] = { "qwertyuiop" };
+    //cout << s << endl;
+    // cout << argv[1] << endl;
+    // cout << strstr_1(s, argv[1]) << endl;
 }
