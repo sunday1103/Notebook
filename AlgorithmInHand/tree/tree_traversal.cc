@@ -29,9 +29,9 @@ class BSTtree
     void pre_t();
     void in_t();
     void post_t();
-	void pre_t_1();
-	void in_t_1();
-	void post_t_1();
+    void pre_t_1();
+    void in_t_1();
+    void post_t_1();
     int delete_node(node *n);
     void do_something(node *n);
     BSTtree(vector<int> &v);
@@ -97,7 +97,7 @@ void BSTtree::pre_t()
 
 void BSTtree::pre_t_1()
 {
-	pre_t_1(root);
+    pre_t_1(root);
 }
 
 void BSTtree::in_t()
@@ -112,12 +112,12 @@ void BSTtree::post_t()
 
 void BSTtree::in_t_1()
 {
-	in_t_1(root);
+    in_t_1(root);
 }
 
 void BSTtree::post_t_1()
 {
-	post_t_1(root);
+    post_t_1(root);
 }
 
 void BSTtree::pre_t(node *n)
@@ -145,104 +145,137 @@ void BSTtree::post_t(node *n)
     if (n == NULL)
         return;
 
-    in_t(n->left);
-    in_t(n->right);
+    post_t(n->left);
+    post_t(n->right);
     do_something(n);
 }
 
 void BSTtree::pre_t_1(node *n)
 {
-	/* 构建栈来遍历
+    /* 构建栈来遍历
     if (n == NULL)
         return;
-	stack<node *> st;
-	st.push(n);
-	while (!st.empty())
-	{
-		node *n1 = st.top();
-		do_something(n1);
-		st.pop();
-		if (n1->right != NULL) st.push(n1->right);
-		if (n1->left != NULL) st.push(n1->left);
-	}
-	*/
+    stack<node *> st;
+    st.push(n);
+    while (!st.empty())
+    {
+        node *n1 = st.top();
+        do_something(n1);
+        st.pop();
+        if (n1->right != NULL) st.push(n1->right);
+        if (n1->left != NULL) st.push(n1->left);
+    }
+    */
 
-	/*不用构建栈*/
-	if (n == NULL)
-		return; 
-	node *n1 = n->left;
-	node *nn = n;
-	while (nn != NULL)
-	{
-		do_something(n);
-		while (nn->left != NULL)
-		{
-			do_something(nn->left);
-			node *nr = nn->right;
-			node *nrp = nn;
-			while (nr != NULL)
-			{
-				nrp = nr;
-				nr = nr->right;
-			}
-			nrp->right = nn;
-			nn = nn->left;
-		}
-		nn = nn->right;
-	}
+    /*不用构建栈*/
+    if (n == NULL)
+        return;
+    node *n1 = n->left;
+    node *nn = n;
+    while (nn != NULL)
+    {
+        do_something(n);
+        while (nn->left != NULL)
+        {
+            do_something(nn->left);
+            node *nr = nn->right;
+            node *nrp = nn;
+            while (nr != NULL)
+            {
+                nrp = nr;
+                nr = nr->right;
+            }
+            nrp->right = nn;
+            nn = nn->left;
+        }
+        nn = nn->right;
+    }
 }
 
 void BSTtree::in_t_1(node *n)
 {
     if (n == NULL)
         return;
-	stack<node *> st;
-	node * nn = n;
-	while (nn!=NULL || !st.empty())
-	{
-		while (nn != NULL)
-		{
-			st.push(nn);
-			nn = nn->left;
-		}
-		nn = st.top();
-		st.pop();
-		do_something(nn);
-		nn = nn->right;
-	}
+    stack<node *> st;
+    node *nn = n;
+    while (nn != NULL || !st.empty())
+    {
+        while (nn != NULL)
+        {
+            st.push(nn);
+            nn = nn->left;
+        }
+        nn = st.top();
+        st.pop();
+        do_something(nn);
+        nn = nn->right;
+    }
 }
 
 void BSTtree::post_t_1(node *n)
 {
     if (n == NULL)
         return;
-	node *nn = n;
-	stack<node *> st;
-	node *nnext = NULL;
-	while (!st.empty() || nn != NULL);
-	{
-		while (nn != NULL)
-		{
-			st.push(nn);
-		//	if (nn->right != NULL)
-	//			st.push(nn->right);
-			if (nn->left == NULL) break;
-			nnext = nn->right;
-			nn = nn->left;
-		}
-		//nn = st.top();
-		if (nn->right != NULL)
-		{
-			nn = nn->right;
-		}
-		else
-		{
-			do_something(nn);
-			st.pop();
-			nn = nnext;
-		}
-	}
+    node *nn = n;
+    stack<node *> st;
+    node *npre = NULL;
+    st.push(nn);
+    while (!st.empty())
+    {
+        //
+        while (nn->left != NULL && npre == NULL)
+        {
+            st.push(nn->left);
+            nn = nn->left;
+        }
+        nn = st.top();
+        // cout<<"in stack  --  "<<nn->key<<endl;
+        if (nn->right == NULL || nn->right == npre)
+        {
+            do_something(nn);
+            npre = nn;
+            st.pop();
+        }
+        else
+        {
+            nn = nn->right;
+            st.push(nn);
+            npre = NULL;
+        }
+    }
 }
+/*
+void postOrderTraversalIterative(BinaryTree *root)
+{
+    if (!root)
+        return;
+    stack<BinaryTree *> s;
+    s.push(root);
+    BinaryTree *prev = NULL;
+    while (!s.empty())
+    {
+        BinaryTree *curr = s.top();
+        if (!prev || prev->left == curr || prev->right == curr)
+        {
+            if (curr->left)
+                s.push(curr->left);
+            else if (curr->right)
+                s.push(curr->right);
+        }
+        else if (curr->left == prev)
+        {
+            if (curr->right)
+                s.push(curr->right);
+        }
+        else
+        {
+            cout << curr->data << " ";
+            s.pop();
+        }
+        prev = curr;
+    }
+}
+*/
 
 int main()
 {
@@ -253,15 +286,15 @@ int main()
     BSTtree BST(v);
     cout << "pre-----------" << endl;
     BST.pre_t();
-	//cout << "pre_1----------" << endl;
-	//BST.pre_t_1();
+    //cout << "pre_1----------" << endl;
+    //BST.pre_t_1();
     cout << "in=======" << endl;
     BST.in_t();
-	cout << "in_1=======" << endl;
-	BST.in_t_1();
+    cout << "in_1=======" << endl;
+    BST.in_t_1();
     cout << "post+++++++++++++++" << endl;
     BST.post_t();
-	cout << "post_1++++++++++++++" << endl;
-	BST.post_t_1();
-	//system("pause");
+    cout << "post_1++++++++++++++" << endl;
+    BST.post_t_1();
+    //system("pause");
 }
