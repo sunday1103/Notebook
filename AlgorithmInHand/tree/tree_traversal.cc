@@ -1,6 +1,6 @@
 #include <iostream>
-#include <vector>
 #include <stack>
+#include <vector>
 
 using namespace std;
 
@@ -152,7 +152,7 @@ void BSTtree::post_t(node *n)
 
 void BSTtree::pre_t_1(node *n)
 {
-    /* ¹¹½¨Õ»À´±éÀú
+    /* ï¿½ï¿½ï¿½ï¿½Õ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     if (n == NULL)
         return;
     stack<node *> st;
@@ -167,7 +167,7 @@ void BSTtree::pre_t_1(node *n)
     }
     */
 
-    /*²»ÓÃ¹¹½¨Õ»*/
+    /*ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½Õ»*/
     if (n == NULL)
         return;
     node *n1 = n->left;
@@ -198,17 +198,20 @@ void BSTtree::in_t_1(node *n)
         return;
     stack<node *> st;
     node *nn = n;
-    while (nn != NULL || !st.empty())
+    st.push(nn);
+    while (!st.empty())
     {
-        while (nn != NULL)
+        while (nn != NULL && nn->left != NULL)
         {
-            st.push(nn);
+            st.push(nn->left);
             nn = nn->left;
         }
         nn = st.top();
         st.pop();
         do_something(nn);
         nn = nn->right;
+        if (nn != NULL)
+            st.push(nn);
     }
 }
 
