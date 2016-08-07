@@ -1,3 +1,6 @@
+
+*.json
+
 # Compiled Object files
 *.slo
 *.lo
@@ -44,3 +47,4 @@ sync_hook.script
 # txt result
 *.txt
 >>>>>>> 341854a1fb7becf9ca979d6ee9c8a4204d08554f
+
