@@ -94,7 +94,11 @@ ostream &operator<<(ostream &o, bigInt &b)
             flag = 1;
         if (flag == 1)
         {
+<<<<<<< HEAD
             o << b.data[i] / 1000 << (b.data[i] % 1000) / 100 << (b.data[i] % 100) / 10 << (b.data[i] % 10) / 1;
+=======
+            o << b.data[i];
+>>>>>>> 91349356403eb4487ab1ffd4e757b87dd06e74b3
         }
     }
 	if(flag == 0)
@@ -107,12 +111,19 @@ int main()
     string a, b;
     cin >> a >> b;
     bigInt x(a), y(b);
+<<<<<<< HEAD
     cout <<"x------------"<< x << endl;
     cout<<"+"<<endl;
     cout <<"y------------"<< y << endl;
     cout<<"="<<endl;
     bigInt z = x + y;
     cout <<"z------------" <<z << endl;
+=======
+    cout << x << endl;
+    cout << y << endl;
+    bigInt z = x + y;
+    cout << z << endl;
+>>>>>>> 91349356403eb4487ab1ffd4e757b87dd06e74b3
 	bigInt d;
 	cout<<d<<endl;
 	
