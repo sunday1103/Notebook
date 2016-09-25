@@ -12,12 +12,20 @@ void sig_usr(int s)
     cout << "SIGUSR2 is " << SIGUSR2 << endl;
 }
 
+void sig_int(int s)
+{
+    cout << "sigint is rsved " << endl;
+}
+
 int main()
 {
     if (signal(SIGUSR1, sig_usr) == SIG_ERR)
         cout << "error" << endl;
     if (signal(SIGUSR2, sig_usr) == SIG_ERR)
         cout << "error" << endl;
+    if (signal(SIGINT, sig_int) == SIG_ERR)
+        cout << "error" << endl;
+
     for (;;)
         pause();
 }
