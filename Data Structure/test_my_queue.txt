@@ -1,0 +1,50 @@
+capacity
+ti 1
+ti 2
+ti 3
+ti 4
+ti 5
+ti 6
+ti 7
+hi 8
+hi 9
+hi 10
+hi 11
+hi 12
+hi 13
+ls
+size
+capacity
+clear
+reserve 4
+capacity
+ti 1
+ti 2
+ti 3
+ti 4
+ls
+to
+ho
+popt
+poph
+poph
+poph
+ls
+to
+clear
+capacity
+reserve 10
+capacity
+clear
+ti 1
+ti 2
+ti 3
+ti 4
+ti 5
+ls
+resize 10 0
+capacity
+resize 3 0
+s 100
+s 3
+q
