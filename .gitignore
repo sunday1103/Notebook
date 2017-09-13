@@ -30,7 +30,6 @@
 *.out
 *.app
 
-<<<<<<< HEAD
 .sync/*
 
 .me_configs.data
@@ -42,9 +41,5 @@ sync_changes.log
 sync_hook.script
 
 **/.Archive
-=======
 
-# txt result
-*.txt
->>>>>>> 341854a1fb7becf9ca979d6ee9c8a4204d08554f
 
