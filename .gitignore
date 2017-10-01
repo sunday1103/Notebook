@@ -42,4 +42,5 @@ sync_hook.script
 
 **/.Archive
 
-
+*/.idea
+*/.ipynb_checkpoints
