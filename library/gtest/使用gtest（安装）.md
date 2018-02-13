@@ -8,7 +8,7 @@ cd googletest
 mkdir build
 cmake ..
 make
-sudu make install
+sudo make install
 ```
 
 以上命令会将gtest编译好，并将动态链接库放在`/usr/local/lib` 目录下：
@@ -20,6 +20,14 @@ libgmock_main.a  libgtest_main.a  python2.7
 ```
 
 如上所示，四个.a文件是gtest的动态链接库，在编写gtest的时候只需要链接这些文件就可以使用gtest。
+
+将头文件放在`/usr/local/include`目录下：
+
+```shell
+huangyang@huangyang-desktop:~/Notebook$ cd /usr/local/include/
+huangyang@huangyang-desktop:/usr/local/include$ ls
+gmock  gtest
+```
 
 ### 使用gtest
 
