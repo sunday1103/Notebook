@@ -80,6 +80,8 @@ https://github.com/google/googletest/blob/master/googletest/docs/Primer.md#test-
 
 # 例子
 
+https://github.com/sunday1103/Notebook/tree/master/library/gtest/proj
+
 ```C++
 #include <gtest/gtest.h>
 #include <iostream>
@@ -125,4 +127,54 @@ TEST_F(addTest, test2)
     EXPECT_EQ(add(2, 22), 24);
 }
 
+```
+
+运行结果：
+```shell
+huangyang@huangyang-desktop:~/Notebook$ cd library/gtest/proj/
+huangyang@huangyang-desktop:~/Notebook/library/gtest/proj$ make
+g++ *.cc -lgtest -lpthread
+huangyang@huangyang-desktop:~/Notebook/library/gtest/proj$ ./a.out
+[==========] Running 6 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from testCase
+[ RUN      ] testCase.test0
+[       OK ] testCase.test0 (0 ms)
+[ RUN      ] testCase.test1
+[       OK ] testCase.test1 (0 ms)
+[----------] 2 tests from testCase (0 ms total)
+
+[----------] 1 test from testCaseAnother
+[ RUN      ] testCaseAnother.test1
+[       OK ] testCaseAnother.test1 (0 ms)
+[----------] 1 test from testCaseAnother (0 ms total)
+
+[----------] 3 tests from addTest
+[ RUN      ] addTest.test0
+enter SetUp
+a is: 11
+enter TearDown
+a is: 11
+
+[       OK ] addTest.test0 (0 ms)
+[ RUN      ] addTest.test1
+enter SetUp
+a is: 11
+enter TearDown
+a is: 11
+
+[       OK ] addTest.test1 (0 ms)
+[ RUN      ] addTest.test2
+enter SetUp
+a is: 11
+enter TearDown
+a is: 11
+
+[       OK ] addTest.test2 (0 ms)
+[----------] 3 tests from addTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 3 test cases ran. (0 ms total)
+[  PASSED  ] 6 tests.
+huangyang@huangyang-desktop:~/Notebook/library/gtest/proj$
 ```
