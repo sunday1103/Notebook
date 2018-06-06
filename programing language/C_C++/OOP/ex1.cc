@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 class A
@@ -62,5 +63,8 @@ int main()
     cout << c.A::doGetData() << endl;
     cout << c.B::doGetData() << endl;
     cout << c.C::doGetData() << endl;
+
+    vector<int> a={1,2};
+
     return 0;
 }
