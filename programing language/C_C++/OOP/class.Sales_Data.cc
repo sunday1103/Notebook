@@ -19,10 +19,16 @@ public:
     2. 构造函数初始值列表；
     */
     Sales_data() = default;
+
+    /*接收单参数的构造函数定义了转换构造函数*/
     Sales_data(const string &s): bookNo(s) {}
     Sales_data(const string &s, unsigned int n, double p):
                bookNo(s), units_sold(n), revenue(p*n) {}
-    Sales_data(istream &);
+    /*转换构造函数如果需要抑制隐式转换，加explicit关键字：
+    1. 抑制隐式转换；
+    2. 不能通过拷贝初始化，即只能够直接初始化。
+    */
+    explicit Sales_data(istream &);
 
     /*
     1. bookNo相当于this->bookNo，函数在调用的时候会隐式传入当前调用对象的指针到this；
