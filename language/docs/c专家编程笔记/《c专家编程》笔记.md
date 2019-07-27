@@ -70,3 +70,30 @@ cdecl实用程序
 
 ## 第四章 数组和指针
 
+请分析下列程序的问题
+
+```c
+array.c
+int p[10] = {1,2,3,4,5,6,7,8,9,10};
+
+main.c
+#include <stdio.h>
+
+extern int *p;
+
+int main()
+{
+    for (size_t i = 0; i < 10; i++) {
+       printf("%d, ", p[i]);
+    }
+    return 0;
+}
+```
+
+运行结果为：
+
+```shell
+huangyang@DESKTOP-4ORHO77:~/code/c$ ./a.out 
+Segmentation fault (core dumped)
+```
+
