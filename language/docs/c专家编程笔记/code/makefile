@@ -1,0 +1,2 @@
+array:
+	gcc -g *.c
