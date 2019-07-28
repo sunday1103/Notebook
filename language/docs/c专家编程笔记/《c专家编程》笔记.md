@@ -198,3 +198,81 @@ a[3] = *(a+sizeof(a[0]))
 
 #### 动态库创建和使用
 
+https://www.cprogramming.com/tutorial/shared-libraries-linux-gcc.html
+
+```makefile
+makefile:
+so:
+	gcc -c -fpic -o add.o add.c
+	gcc -shared -o libadd.so add.o
+main: main.c
+	gcc -o main main.c -L./ -I./inc -Wl,-rpath=./ -ladd -Wl,-M=main.map
+clean:
+	rm lib* main
+```
+
+- 使用-fpic产生位置无关的lib
+- 使用 -shared选项将.o文件生成共享库
+- -L选项告诉gcc，共享库需要在增加这个位置进行查找
+- -I选项告诉gcc，源代码的头文件需要增加这个位置进行查找
+- -Wl,-rpath=./ 其中-Wl告诉gcc要将后面的参数传入链接器，后面的-rpath告诉链接器程序的工作目录包括什么，在对应目录下找到动态库
+- **-M=main.map选项让链接器生成map文件**
+
+见：Notebook\language\c-c++\code\compile_link
+
+
+
+#### 链接时候的命令行顺序
+
+如上一节所述，如果将：
+
+```
+gcc -o main main.c -L./ -I./inc -Wl,-rpath=./ -ladd
+```
+
+改为：
+
+```
+gcc -o -ladd main main.c -L./ -I./inc -Wl,-rpath=./ 
+```
+
+就会出现下列错误：
+
+```
+huangyang@DESKTOP-4ORHO77:~/code/compile_link$ make main
+gcc -o main -ladd main.c -L./ -I./inc -Wl,-rpath=./ 
+/tmp/ccvoD9sN.o: In function `main':
+main.c:(.text+0x21): undefined reference to `add'
+collect2: error: ld returned 1 exit status
+makefile:5: recipe for target 'main' failed
+make: *** [main] Error 1
+```
+
+这是因为参数解析是从前往后解析的。
+
+
+
+另外一个例子：(来自书上 100页)
+
+```makefile
+cc -lm main.c
+```
+
+出现有符号未找到的情况，这是因为静态链接库 libm.a，先是在main.c中查找需要链接的符号，再在libm中查找。
+
+
+
+##### 综上所述
+
+-l总是放在命令的最右边
+
+#### ldd查看程序依赖的动态库
+
+```
+huangyang@DESKTOP-4ORHO77:~/code/compile_link$ ldd ./main
+linux-vdso.so.1 (0x00007fffd5115000)
+libadd.so => ./libadd.so (0x00007f889a870000)
+libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f889a470000)
+/lib64/ld-linux-x86-64.so.2 (0x00007f889ae00000)
+```
+
