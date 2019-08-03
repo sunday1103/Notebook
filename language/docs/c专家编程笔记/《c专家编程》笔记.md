@@ -264,7 +264,7 @@ cc -lm main.c
 
 ##### 综上所述
 
--l总是放在命令的最右边
+-l 总是放在命令的最右边
 
 #### ldd查看程序依赖的动态库
 
@@ -275,4 +275,42 @@ libadd.so => ./libadd.so (0x00007f889a870000)
 libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f889a470000)
 /lib64/ld-linux-x86-64.so.2 (0x00007f889ae00000)
 ```
+
+## 第六章 运行时数据结构
+
+### 可执行文件的段布局
+
+https://en.wikipedia.org/wiki/Data_segment
+
+- Text
+
+  可执行文件的指令。
+
+- DATA
+
+  已初始化的全局和静态变量。
+
+- BSS
+
+  未初始化的全局和静态变量。
+
+  > 由于BSS段只保存没有值得变量，所以事实上并不需要保存这些变量的映像。运行时所需要的BSS段的大小记录在目标文件中，但BSS段并不占用目标文件的任何空间。
+
+### 可执行文件在内存中的空间布局
+
+![1564802211897](assets/1564802211897.png)
+
+### 堆栈和过程活动记录
+
+### setjmp longjmp
+
+### C语言工具
+
+https://linuxtools-rst.readthedocs.io/zh_CN/latest/index.html
+
+## 第七章 对内存的思考
+
+虚拟内存和存储的体系结构
+
+参考操作系统相关书籍
 
