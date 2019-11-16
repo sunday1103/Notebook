@@ -19,7 +19,7 @@ libgmock.a       libgtest.a       pkgconfig  python3.5
 libgmock_main.a  libgtest_main.a  python2.7
 ```
 
-如上所示，四个.a文件是gtest的动态链接库，在编写gtest的时候只需要链接这些文件就可以使用gtest。
+如上所示，四个.a文件是gtest的链接库，在编写gtest的时候只需要链接这些文件就可以使用gtest。
 
 将头文件放在`/usr/local/include`目录下：
 

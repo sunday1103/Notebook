@@ -1,5 +1,5 @@
 all:
-	g++ *.cc -lgtest -lpthread
+	g++ *.cc -lgtest -lgmock -lpthread
 
 clean:
 	rm *.out

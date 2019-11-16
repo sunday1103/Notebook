@@ -1,20 +1,24 @@
 #include <gtest/gtest.h>
+#include <gmock/gmock.h>
 
-extern int add(int a, int b);
+#include "calc.h"
 
 TEST(testCase, test0)
 {
-    EXPECT_EQ(add(2, 3), 5);
+    Calc calc0(1);
+    EXPECT_EQ(calc0.add(2, 3), 5);
 }
 
 TEST(testCase, test1)
 {
-    EXPECT_EQ(add(2, 2), 4);
+    Calc calc0(1);
+    EXPECT_EQ(calc0.add(2, 2), 4);
 }
 
 TEST(testCaseAnother, test1)
 {
-    EXPECT_EQ(add(-2, 2), 0);
+    Calc calc0(1);
+    EXPECT_EQ(calc0.add(-2, 2), 0);
 }
 
 int main(int argc, char **argv)
