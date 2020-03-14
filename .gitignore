@@ -44,3 +44,5 @@ sync_hook.script
 
 */.idea
 */.ipynb_checkpoints
+
+*/cmake-*

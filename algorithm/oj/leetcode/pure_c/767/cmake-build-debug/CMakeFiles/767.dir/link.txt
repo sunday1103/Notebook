@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/767.dir/main.c.o  -o 767 
