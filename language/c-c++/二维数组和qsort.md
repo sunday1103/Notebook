@@ -40,7 +40,7 @@ void array_2(int (*a)[2], int size)
 
 TEST(testcase, arrayArg2d)
 {
-    int array[3][2] = {{1,2} ,{2,4} ,{3,1}};
+    int array[3][2] = { {1,2} ,{2,4} ,{3,1} };
     printf("2D array addr %p\n", array);
     array_2(array, 3);
 }
@@ -179,7 +179,7 @@ void structSort(Node *array, int size)
 
 TEST(testCase, structSort0)
 {
-    Node array[3] = {{3,2}, {1,4}, {2,2}};
+    Node array[3] = { {3,2}, {1,4}, {2,2} };
     structSort(array, sizeof(array) / sizeof(Node));
 
     EXPECT_EQ(array[0].x, 2);
@@ -214,7 +214,7 @@ void mySort(int (*array)[N], int size)
 
 TEST(testCase, test0)
 {
-    int array[M][N] = {{1, 4}, {3, 2}, {3, 3}};
+    int array[M][N] = { {1, 4}, {3, 2}, {3, 3} };
 
     mySort(array, M);
 
