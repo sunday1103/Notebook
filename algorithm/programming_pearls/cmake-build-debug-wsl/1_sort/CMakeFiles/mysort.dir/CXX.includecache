@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/e/Notebook/algorithm/programming_pearls/1_sort/sort.cpp
+iostream
+-
+fstream
+-
+vector
+-
+string
+-
+sstream
+-
+algorithm
+-
+set
+-
+bitset
+-
+cstdlib
+-
+

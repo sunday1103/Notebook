@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/tmp/tmp.Ygb689oDOM/main.cpp
+stdio.h
+-
+stdlib.h
+-
+gtest/gtest.h
+-
+
+/tmp/tmp.Ygb689oDOM/test.cpp
+
