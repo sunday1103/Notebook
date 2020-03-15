@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/mnt/e/Notebook/algorithm/oj/leetcode/pure_c/124-Binary Tree Maximum Path Sum"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/e/Notebook/algorithm/oj/leetcode/pure_c/124-Binary Tree Maximum Path Sum/cmake-build-debug-wsl
