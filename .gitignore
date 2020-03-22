@@ -42,7 +42,7 @@ sync_hook.script
 
 **/.Archive
 
-*/.idea
+.idea
 */.ipynb_checkpoints
 
 cmake-build-debug/
