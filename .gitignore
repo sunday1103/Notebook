@@ -47,3 +47,4 @@ sync_hook.script
 
 cmake-build-debug/
 cmake-build-debug-wsl/
+build/

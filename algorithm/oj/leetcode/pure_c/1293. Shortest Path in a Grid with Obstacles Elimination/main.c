@@ -1,79 +1,69 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
- * 输入：
-grid =
-[[0,0,0],
- [1,1,0],
- [0,0,0],
- [0,1,1],
- [0,0,0]],
-k = 1
-输出：6
- */
-
-void Find(int** grid, int m, int n, int x, int y, int dis, int k, int ***visited, int *distance)
+void bfs(char** grid, int m, int n, int x, int y, int **visited)
 {
     if (x < 0 || x >= m || y < 0 || y >= n) {
         return;
     }
+    if (visited[x][y]) {
+        return;;
+    }
 
-    if (dis >= *distance) {
+    if (grid[x][y] == '0') {
         return;
     }
 
-    if (x == m - 1 && y == n - 1) {
-        *distance = dis;
-        return;
-    }
-
-    if (grid[x][y] == 1) {
-        if (k == 0) return;
-        k = k - 1;
-    }
-
-    if (visited[x][y][k] == 1) {
-        return;
-    }
-
-    visited[x][y][k] = 1;
-
-    Find(grid, m, n, x, y + 1, dis + 1, k, visited, distance);
-    Find(grid, m, n, x + 1, y, dis + 1, k, visited, distance);
-    Find(grid, m, n, x, y - 1, dis + 1, k, visited, distance);
-    Find(grid, m, n, x - 1, y, dis + 1, k, visited, distance);
+    visited[x][y] = 1;
+    bfs(grid, m, n, x + 1, y, visited);
+    bfs(grid, m, n, x - 1, y, visited);
+    bfs(grid, m, n, x, y + 1, visited);
+    bfs(grid, m, n, x, y - 1, visited);
 }
 
-int shortestPath(int** grid, int gridSize, int* gridColSize, int k){
-    int distance = 0x0FFFFFFF;
-    if (gridSize + gridColSize[0] - 2 < k) {
-        k = gridSize + gridColSize[0] - 2;
-    }
-    int ***visited= (int***)malloc(sizeof(int**) * gridSize);
+/*
+ * 输入:
+11000
+11000
+00100
+00011
+输出: 3
+ * */
+int numIslands(char** grid, int gridSize, int* gridColSize){
+    int **visited = (int**)malloc(sizeof(int*) * gridSize);
     for (int i = 0; i < gridSize; ++i) {
-        visited[i] = (int**)malloc(gridColSize[0] * sizeof(int*));
+        visited[i] = (int*)malloc(sizeof(int) * gridColSize[0]);
+    }
+    for (int i = 0; i < gridSize; ++i) {
         for (int j = 0; j < gridColSize[0]; ++j) {
-            visited[i][j] = (int*)malloc(sizeof(int) * (k + 1));
+            visited[i][j] = 0;
         }
     }
+
+    int num = 0;
     for (int i = 0; i < gridSize; ++i) {
         for (int j = 0; j < gridColSize[0]; ++j) {
-            for (int l = 0; l < k + 1; ++l) {
-                visited[i][j][l] = 0;
+            if (visited[i][j] != 0) {
+                continue;
             }
+
+            if (grid[i][j] == '0') {
+                continue;
+            }
+
+            bfs(grid, gridSize, gridColSize[0], i, j, visited);
+            num++;
         }
     }
-    Find(grid, gridSize, gridColSize[0], 0, 0, 0, k, visited, &distance);
+
     for (int i = 0; i < gridSize; ++i) {
-        for (int j = 0; j < gridColSize[0]; ++j) {
-            free(visited[i][j]);
-        }
         free(visited[i]);
     }
     free(visited);
-    return distance == 0x0FFFFFFF ? -1 : distance;
+
+    return num;
 }
+
 
 int main() {
 #define M 9
@@ -100,6 +90,6 @@ int main() {
     }
     int gridSize = M;
     int gridColSize[M] = {N};
-    shortestPath(grid, gridSize, gridColSize, 283);
+    numIslands(grid, gridSize, gridColSize);
     return 0;
 }
