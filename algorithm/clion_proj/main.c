@@ -5,6 +5,11 @@
 
 #define MAX_ELE_NUM 10000
 
+enum {
+    N1,
+    N2,
+};
+
 typedef struct Pattern {
     char p[5];
 }Pattern;
@@ -98,5 +103,7 @@ int openLock(char ** deadends, int deadendsSize, char * target){
 int main() {
     char *arr[] = {"8887","8889","8878","8898","8788","8988","7888","9888"};
     openLock(arr, sizeof(arr) / sizeof(arr[0]), "8888");
+    int a=1/0;
+    printf("%d",a);
     return 0;
 }
