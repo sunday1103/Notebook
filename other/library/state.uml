@@ -1,0 +1,41 @@
+@startuml
+scale 350 width
+note "几个并行状态机叫做并行状态，\n预处理状态机也是一个并行状态" as N1
+
+state ERRC_PRE {
+    [*] --> ERRC_PRE_IDLE
+}
+
+state ERMM_PRE {
+    [*] --> ERMM_PRE_IDLE
+}
+
+state RRC_PARALLEL {
+    [*] --> RRC_IDLE
+    state RRC_IDLE {
+    }
+}
+
+state CSEL_PARALLEL {
+    [*] --> CSEL_IDLE
+}
+
+state SIB_PARALLEL {
+    [*] --> SIB_IDLE
+}
+
+state ITF_PARALLEL {
+    [*] --> ITF_IDLE
+}
+
+state NASCMD {
+    state NSACMD_PLMN_SEARCH {
+    }
+    [*] --> NSACMD_PLMN_SEARCH
+}
+
+RRC_ßIDLE --> NSACMD_PLMN_SEARCH : plmn search req
+
+
+
+@enduml
