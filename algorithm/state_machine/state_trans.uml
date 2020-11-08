@@ -1,0 +1,14 @@
+@startuml
+scale 350 width
+state MEAS_CTRL {
+    [*] --> 等待释放RLC: 如果需要释放
+    等待释放RLC --> 配置SSB: 高频
+    配置SSB --> 释放测量: 高低频场景
+    释放测量 --> B1_start: 高频
+    B1_start --> 配置底层
+    [*] --> 配置底层
+    等待释放RLC --> 配置底层
+    配置SSB --> 配置底层
+}
+
+@enduml
