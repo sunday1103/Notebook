@@ -7,6 +7,7 @@ return [0, 1].
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 int compare(void *a, void *b)
 {

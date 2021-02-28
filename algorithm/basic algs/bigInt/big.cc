@@ -1,46 +1,46 @@
 #include <stdio.h>
 #include <string.h>
 
-/* Ò»¸öÊı×éÔªËØ±íÊ¾4¸öÊ®½øÖÆÎ»£¬¼´Êı×éÊÇÍò½øÖÆµÄ */
+/* ä¸€ä¸ªæ•°ç»„å…ƒç´ è¡¨ç¤º4ä¸ªåè¿›åˆ¶ä½ï¼Œå³æ•°ç»„æ˜¯ä¸‡è¿›åˆ¶çš„ */
 #define BIGINT_RADIX 10000
 #define RADIX_LEN 4
-#define MAX_LEN (200 / RADIX_LEN + 1) /* ÕûÊıµÄ×î´óÎ»Êı */
+#define MAX_LEN (200 / RADIX_LEN + 1) /* æ•´æ•°çš„æœ€å¤§ä½æ•° */
 
 char a[MAX_LEN * RADIX_LEN], b[MAX_LEN * RADIX_LEN];
 int x[MAX_LEN], y[MAX_LEN], z[MAX_LEN + 1];
 
 /**
- * @brief ´òÓ¡´óÕûÊı.
- * @param[in] x ´óÕûÊı£¬ÓÃÊı×é±íÊ¾£¬µÍÎ»ÔÚµÍµØÖ·
- * @param[in] n Êı×éxµÄ³¤¶È
- * @return ÎŞ
+ * @brief æ‰“å°å¤§æ•´æ•°.
+ * @param[in] x å¤§æ•´æ•°ï¼Œç”¨æ•°ç»„è¡¨ç¤ºï¼Œä½ä½åœ¨ä½åœ°å€
+ * @param[in] n æ•°ç»„xçš„é•¿åº¦
+ * @return æ— 
  */
 void bigint_print(const int x[], const int n)
 {
     int i;
-    int start_output = 0; /* ÓÃÓÚÌø¹ıÇ°µ¼0 */
+    int start_output = 0; /* ç”¨äºè·³è¿‡å‰å¯¼0 */
     for (i = n - 1; i >= 0; --i)
     {
         if (start_output)
-        { /* Èç¹û¶àÓàµÄ0ÒÑ¾­¶¼Ìø¹ı£¬ÔòÊä³ö */
+        { /* å¦‚æœå¤šä½™çš„0å·²ç»éƒ½è·³è¿‡ï¼Œåˆ™è¾“å‡º */
             printf("%04d", x[i]);
         }
         else if (x[i] > 0)
         {
             printf("%d", x[i]);
-            start_output = 1; /* Åöµ½µÚÒ»¸ö·Ç0µÄÖµ£¬¾ÍËµÃ÷¶àÓàµÄ0ÒÑ¾­¶¼Ìø¹ı */
+            start_output = 1; /* ç¢°åˆ°ç¬¬ä¸€ä¸ªé0çš„å€¼ï¼Œå°±è¯´æ˜å¤šä½™çš„0å·²ç»éƒ½è·³è¿‡ */
         }
     }
 
     if (!start_output)
-        printf("0"); /* µ±xÈ«Îª0Ê± */
+        printf("0"); /* å½“xå…¨ä¸º0æ—¶ */
 }
 
 /**
- * @brief ½«ÊäÈëµÄ×Ö·û´®×ª»¯Îª´óÕûÊı.
- * @param[in] s ÊäÈëµÄ×Ö·û´®
- * @param[out] x ´óÕûÊı£¬ÓÃÊı×é±íÊ¾£¬µÍÎ»ÔÚµÍµØÖ·
- * @return ÎŞ
+ * @brief å°†è¾“å…¥çš„å­—ç¬¦ä¸²è½¬åŒ–ä¸ºå¤§æ•´æ•°.
+ * @param[in] s è¾“å…¥çš„å­—ç¬¦ä¸²
+ * @param[out] x å¤§æ•´æ•°ï¼Œç”¨æ•°ç»„è¡¨ç¤ºï¼Œä½ä½åœ¨ä½åœ°å€
+ * @return æ— 
  */
 void bigint_input(const char s[], int x[])
 {
@@ -65,11 +65,11 @@ void bigint_input(const char s[], int x[])
 }
 
 /**
- * @brief ´óÕûÊı¼Ó·¨
+ * @brief å¤§æ•´æ•°åŠ æ³•
  * @param[in] x x
  * @param[in] y y
  * @param[out] z z=x+y
- * @return ÎŞ
+ * @return æ— 
  */
 void bigint_add(const int x[], const int y[], int z[])
 {
@@ -78,12 +78,12 @@ void bigint_add(const int x[], const int y[], int z[])
         z[i] = 0;
 
     for (i = 0; i < MAX_LEN; i++)
-    { /* ÖğÎ»Ïà¼Ó */
+    { /* é€ä½ç›¸åŠ  */
         z[i] += x[i] + y[i];
         if (z[i] >= BIGINT_RADIX)
-        { /* ¿´ÊÇ·ñÒª½øÎ» */
+        { /* çœ‹æ˜¯å¦è¦è¿›ä½ */
             z[i] -= BIGINT_RADIX;
-            z[i + 1]++; /* ½øÎ» */
+            z[i + 1]++; /* è¿›ä½ */
         }
     }
 }

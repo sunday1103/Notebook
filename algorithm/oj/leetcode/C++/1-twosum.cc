@@ -1,50 +1,43 @@
-
-
-class Solution
-{
-  public:
-    vector<int> twoSum(vector<int> &nums, int target)
-    {
-        vector<int> n_return;
-        int target1 = 0;
-        int size = nums.size();
-        for (int i = 0; i < size; i++)
-        {
-            target1 = target - nums[i];
-            for (int j = i + 1; j < size; j++)
-            {
-                if (nums[j] == target1)
-                {
-                    n_return.push_back(i);
-                    n_return.push_back(j);
-                    return n_return;
+class Solution1 {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        vector<int> returnNum;
+        for (int i = 0; i < nums.size(); i++) {
+            int target1 = target - nums[i];
+            for (int j = i + 1; j < nums.size(); j++) {
+                if (nums[j] == target1) {
+                    returnNum.push_back(i);
+                    returnNum.push_back(j);
+                    return returnNum;
                 }
             }
         }
+
+        return returnNum;
     }
 };
 
-class Solution
-{
-  public:
-    vector<int> twoSum(vector<int> &nums, int target)
-    {
-        unordered_map<int, int> mapping;
-        vector<int> result;
-        for (int i = 0; i < nums.size(); i++)
-        {
-            mapping[nums[i]] = i;
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        vector<int> returnNum;
+        unordered_map<int, int> m;
+        
+        for (int i = 0; i < nums.size(); i++) {
+            m[nums[i]] = i;
         }
-        for (int i = 0; i < nums.size(); i++)
-        {
-            const int gap = target - nums[i];
-            if (mapping.find(gap) != mapping.end() && mapping[gap] > i)
+
+        for (int i = 0; i < nums.size(); i++) {
+            int gap = target - nums[i];
+            if (m.count(gap) != 0 && m[gap] != i)
             {
-                result.push_back(i + 1);
-                result.push_back(mapping[gap] + 1);
+                returnNum.push_back(i);
+                returnNum.push_back(m[gap]);
                 break;
             }
+            
         }
-        return result;
+
+        return returnNum;
     }
 };
