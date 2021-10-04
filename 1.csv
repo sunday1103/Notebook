@@ -1,0 +1,3029 @@
+commit 93b7da8a5d9eed0f16470d029b80a9d499389854
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun Jul 25 21:16:18 2021 +0800
+
+    add-leetcode75
+
+ algorithm/oj/leetcode/C++/75-color.cc | 52 +++++++++++++++++++++++++++++++++++
+ 1 file changed, 52 insertions(+)
+
+commit 10f8cda70beeb4ae0623c8f84a4225d5152dc8da
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun Feb 28 21:32:03 2021 +0800
+
+    update
+
+ .clang-format                             | 7 -------
+ language/c-c++/code/big-little-endian.md~ | 0
+ 2 files changed, 7 deletions(-)
+
+commit 82ce989d14de944ce6189c5a25f387642a929c3a
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun Feb 28 21:31:52 2021 +0800
+
+    update
+
+ language/c-c++/code/STL/algs.cc | 74 +++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 74 insertions(+)
+
+commit 9d75e9c34ba920d3d646a676a36c80d388d6368f
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun Feb 28 17:17:34 2021 +0800
+
+    update
+
+ algorithm/basic algs/bigInt/big.cc         |  38 ++++++++--------
+ algorithm/basic algs/bigInt/bigIntclass.cc |  11 -----
+ algorithm/oj/leetcode/C++/1-twosum.cc      |  69 +++++++++++++----------------
+ algorithm/oj/leetcode/pure_c/1-twoSum      | Bin 0 -> 13480 bytes
+ algorithm/oj/leetcode/pure_c/1-twoSum.c    |   1 +
+ 5 files changed, 51 insertions(+), 68 deletions(-)
+
+commit d061883b8ebe3802e26be14cbf7cea8fd44d6b4d
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun Nov 8 23:33:29 2020 +0800
+
+    update
+
+ algorithm/state_machine/state.c                    | 46 ++++++++++++++++++++++
+ .../library => algorithm/state_machine}/state.uml  |  0
+ algorithm/state_machine/state_trans.uml            | 14 +++++++
+ 3 files changed, 60 insertions(+)
+
+commit 63f87da6f9150ea4ea09c861f025aebfa8845802
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun Nov 8 00:08:55 2020 +0800
+
+    state
+
+ other/library/state.uml | 41 +++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 41 insertions(+)
+
+commit 9d18da36f69dc7a4cdae0a4bd9bd6c6d3ce2b737
+Author: huangyang <huangyang@outlook.com>
+Date:   Sat Oct 17 22:44:13 2020 +0800
+
+    update
+
+ .gitignore                                         |  2 +-
+ .../c-c++/code/array_pointer/array_func_para.c     | 23 ++++++++++++++++++++++
+ 2 files changed, 24 insertions(+), 1 deletion(-)
+
+commit 75dbff94ebd8fae34fedff9152523a4e956ce16c
+Author: huangyang <huangyang@outlook.com>
+Date:   Wed Sep 16 23:50:24 2020 +0800
+
+    update
+
+ .gitignore                                         |   2 +-
+ .../oj/leetcode/pure_c/133-Clone Graph/code.c      |  62 ++++++++
+ algorithm/oj/leetcode/pure_c/494-Target Sum/code.c |  35 +++++
+ .../leetcode/pure_c/743-Network Delay Time/code.c  | 169 +++++++++++++++++++++
+ .../pure_c/94-Binary Tree Inorder Traversal/code.c |  42 +++++
+ algorithm/oj/libFunc/sort.c                        |  75 +++++++++
+ 6 files changed, 384 insertions(+), 1 deletion(-)
+
+commit ae8e11d3edb836961c13a6149101881447238ff1
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun Sep 13 21:07:48 2020 +0800
+
+    update
+
+ .gitignore                                         |  4 +-
+ .../150-Evaluate Reverse Polish Notation/code.c    | 64 ++++++++++++++++++++++
+ .../leetcode/pure_c/739-daily temperature/code.c   | 64 ++++++++++++++++++++++
+ 3 files changed, 131 insertions(+), 1 deletion(-)
+
+commit 5c4d706ebeff5756b964cddba3b54f9acb6469f3
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun Sep 6 21:09:05 2020 +0800
+
+    add 可变参数宏示例
+
+ algorithm/clion_proj/main.c          |  7 +++++++
+ language/c-c++/code/basic/LogPrint.c | 14 ++++++++++++++
+ 2 files changed, 21 insertions(+)
+
+commit ccd8b1db3b91203384d64e547fa6df22c1f4047d
+Author: YangHuang <huangyang@outlook.com>
+Date:   Mon Apr 6 12:26:33 2020 +0800
+
+    update
+
+ .gitignore                                         |   3 +-
+ algorithm/Data Structure/leetcode/queue.c          | 116 +++++++++++++++++++++
+ algorithm/clion_proj/CMakeLists.txt                |   7 ++
+ algorithm/clion_proj/main.c                        | 102 ++++++++++++++++++
+ .../main.c                                         |  86 +++++++--------
+ 5 files changed, 265 insertions(+), 49 deletions(-)
+
+commit b14e67cc306f07fc51c96956803eb1b558720067
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Mar 22 22:56:44 2020 +0800
+
+    update
+
+ .gitignore                                         |   2 +-
+ algorithm/Data Structure/README.md                 |   2 +
+ algorithm/Data Structure/graph/c/CMakeLists.txt    |   6 ++
+ algorithm/Data Structure/graph/c/shortPath.c       |  89 +++++++++++++++++
+ algorithm/Data Structure/graph/graph.dot           |   4 +
+ algorithm/Data Structure/graph/graph.md            |  12 +++
+ algorithm/Data Structure/graph/image/graph.drawio  |   1 +
+ algorithm/README.md                                |   4 +-
+ .../CMakeLists.txt                                 |   7 ++
+ .../main.c                                         |  73 ++++++++++++++
+ .../CMakeLists.txt                                 |   7 ++
+ .../main.c                                         | 105 +++++++++++++++++++++
+ ...210\206\346\236\220\345\267\245\345\205\267.md" |  12 +++
+ 13 files changed, 322 insertions(+), 2 deletions(-)
+
+commit bf89bd96aa1e26209f3d7901d64666ffade6d298
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Mar 15 22:19:55 2020 +0800
+
+    update
+
+ .gitignore                                         |   3 +-
+ algorithm/README.md                                |   4 +-
+ ...242\230\347\232\204\346\200\273\347\273\223.md" |   6 +
+ .../.idea/.gitignore                               |   0
+ .../124-Binary Tree Maximum Path Sum/.idea/.name   |   1 +
+ .../.idea/124-Binary Tree Maximum Path Sum.iml}    |   0
+ .../.idea/deployment.xml                           |  21 +
+ .../.idea/misc.xml                                 |   0
+ .../.idea/modules.xml                              |   8 +
+ .../.idea/vcs.xml                                  |   0
+ .../CMakeLists.txt                                 |   6 +
+ .../124_Binary_Tree_Maximum_Path_Sum.cbp           |  88 +++
+ .../cmake-build-debug-wsl/CMakeCache.txt           | 308 +++++++++++
+ .../DependInfo.cmake                               |  20 +
+ .../build.make                                     | 113 ++++
+ .../cmake_clean.cmake                              |  10 +
+ .../depend.make                                    |   2 +
+ .../flags.make                                     |   0
+ .../124_Binary_Tree_Maximum_Path_Sum.dir/link.txt  |   1 +
+ .../progress.make                                  |   0
+ .../CMakeFiles/3.10.2/CMakeCCompiler.cmake         |   0
+ .../3.10.2/CMakeDetermineCompilerABI_C.bin         | Bin 0 -> 8248 bytes
+ .../CMakeFiles/3.10.2/CMakeSystem.cmake            |  15 +
+ .../3.10.2/CompilerIdC/CMakeCCompilerId.c          |   0
+ .../CMakeFiles/CMakeDirectoryInformation.cmake     |  16 +
+ .../CMakeFiles/CMakeOutput.log                     | 204 +++++++
+ .../CMakeFiles/Makefile.cmake                      |  45 ++
+ .../cmake-build-debug-wsl/CMakeFiles/Makefile2     | 108 ++++
+ .../CMakeFiles/TargetDirectories.txt               |   3 +
+ .../CMakeFiles/clion-environment.txt               |   4 +
+ .../cmake-build-debug-wsl/CMakeFiles/clion-log.txt |   4 +
+ .../CMakeFiles/cmake.check_cache                   |   0
+ .../CMakeFiles/feature_tests.bin                   | Bin 0 -> 8208 bytes
+ .../CMakeFiles/feature_tests.c                     |   0
+ .../CMakeFiles/progress.marks                      |   0
+ .../cmake-build-debug-wsl/Makefile                 | 178 ++++++
+ .../cmake-build-debug-wsl/cmake_install.cmake      |  49 ++
+ .../cmake-build-debug/CMakeFiles/clion-log.txt     |   1 +
+ .../pure_c/124-Binary Tree Maximum Path Sum/main.c |  46 ++
+ .../pure_c/767-Reorganize String/.idea/.gitignore  |   2 +
+ .../pure_c/767-Reorganize String/.idea/767.iml     |   2 +
+ .../.idea/deployment.xml                           |   0
+ .../pure_c/767-Reorganize String/.idea/misc.xml    |   7 +
+ .../.idea/modules.xml                              |   0
+ .../{767 => 767-Reorganize String}/.idea/other.xml |   0
+ .../pure_c/767-Reorganize String/.idea/vcs.xml     |   6 +
+ .../{767 => 767-Reorganize String}/CMakeLists.txt  |   0
+ .../cmake-build-debug/767.cbp                      |   0
+ .../cmake-build-debug/CMakeCache.txt               |   0
+ .../CMakeFiles/3.10.2/CMakeCCompiler.cmake         |  73 +++
+ .../3.10.2/CMakeDetermineCompilerABI_C.bin         | Bin
+ .../CMakeFiles/3.10.2/CMakeSystem.cmake            |   0
+ .../3.10.2/CompilerIdC/CMakeCCompilerId.c          | 598 +++++++++++++++++++++
+ .../CMakeFiles/767.dir/DependInfo.cmake            |   0
+ .../CMakeFiles/767.dir/build.make                  |   0
+ .../CMakeFiles/767.dir/cmake_clean.cmake           |   0
+ .../CMakeFiles/767.dir/depend.make                 |   0
+ .../CMakeFiles/767.dir/flags.make                  |  10 +
+ .../cmake-build-debug/CMakeFiles/767.dir/link.txt  |   0
+ .../CMakeFiles/767.dir/progress.make               |   3 +
+ .../CMakeFiles/CMakeDirectoryInformation.cmake     |   0
+ .../cmake-build-debug/CMakeFiles/CMakeOutput.log   |   0
+ .../cmake-build-debug/CMakeFiles/Makefile.cmake    |   0
+ .../cmake-build-debug/CMakeFiles/Makefile2         |   0
+ .../CMakeFiles/TargetDirectories.txt               |   0
+ .../CMakeFiles/clion-environment.txt               |   0
+ .../cmake-build-debug/CMakeFiles/clion-log.txt     |   4 +
+ .../cmake-build-debug/CMakeFiles/cmake.check_cache |   1 +
+ .../cmake-build-debug/CMakeFiles/feature_tests.bin | Bin
+ .../cmake-build-debug/CMakeFiles/feature_tests.c   |  34 ++
+ .../cmake-build-debug/CMakeFiles/progress.marks    |   1 +
+ .../cmake-build-debug/Makefile                     |   0
+ .../cmake-build-debug/cmake_install.cmake          |   0
+ .../pure_c/{767 => 767-Reorganize String}/main.c   |   0
+ .../767/cmake-build-debug/CMakeFiles/clion-log.txt |  11 -
+ 75 files changed, 2003 insertions(+), 13 deletions(-)
+
+commit 88327b001e78300218bde55649effe74cf861d04
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Mar 14 23:26:08 2020 +0800
+
+    update
+
+ .gitignore                                         |   2 +
+ algorithm/oj/leetcode/pure_c/767/.idea/.gitignore  |   2 +
+ algorithm/oj/leetcode/pure_c/767/.idea/767.iml     |   2 +
+ .../oj/leetcode/pure_c/767/.idea/deployment.xml    |  24 +
+ algorithm/oj/leetcode/pure_c/767/.idea/misc.xml    |   7 +
+ algorithm/oj/leetcode/pure_c/767/.idea/modules.xml |   8 +
+ algorithm/oj/leetcode/pure_c/767/.idea/other.xml   |  10 +
+ algorithm/oj/leetcode/pure_c/767/.idea/vcs.xml     |   6 +
+ algorithm/oj/leetcode/pure_c/767/CMakeLists.txt    |   6 +
+ .../leetcode/pure_c/767/cmake-build-debug/767.cbp  |  88 +++
+ .../pure_c/767/cmake-build-debug/CMakeCache.txt    | 308 +++++++++++
+ .../CMakeFiles/3.10.2/CMakeCCompiler.cmake         |  73 +++
+ .../3.10.2/CMakeDetermineCompilerABI_C.bin         | Bin 0 -> 8248 bytes
+ .../CMakeFiles/3.10.2/CMakeSystem.cmake            |  15 +
+ .../3.10.2/CompilerIdC/CMakeCCompilerId.c          | 598 +++++++++++++++++++++
+ .../CMakeFiles/767.dir/DependInfo.cmake            |  20 +
+ .../CMakeFiles/767.dir/build.make                  | 113 ++++
+ .../CMakeFiles/767.dir/cmake_clean.cmake           |  10 +
+ .../CMakeFiles/767.dir/depend.make                 |   2 +
+ .../CMakeFiles/767.dir/flags.make                  |  10 +
+ .../cmake-build-debug/CMakeFiles/767.dir/link.txt  |   1 +
+ .../CMakeFiles/767.dir/progress.make               |   3 +
+ .../CMakeFiles/CMakeDirectoryInformation.cmake     |  16 +
+ .../cmake-build-debug/CMakeFiles/CMakeOutput.log   | 203 +++++++
+ .../cmake-build-debug/CMakeFiles/Makefile.cmake    |  99 ++++
+ .../767/cmake-build-debug/CMakeFiles/Makefile2     | 108 ++++
+ .../CMakeFiles/TargetDirectories.txt               |   3 +
+ .../CMakeFiles/clion-environment.txt               |   3 +
+ .../767/cmake-build-debug/CMakeFiles/clion-log.txt |  11 +
+ .../cmake-build-debug/CMakeFiles/cmake.check_cache |   1 +
+ .../cmake-build-debug/CMakeFiles/feature_tests.bin | Bin 0 -> 8208 bytes
+ .../cmake-build-debug/CMakeFiles/feature_tests.c   |  34 ++
+ .../cmake-build-debug/CMakeFiles/progress.marks    |   1 +
+ .../leetcode/pure_c/767/cmake-build-debug/Makefile | 178 ++++++
+ .../767/cmake-build-debug/cmake_install.cmake      |  49 ++
+ algorithm/oj/leetcode/pure_c/767/main.c            |  85 +++
+ ...64\346\225\260\347\273\204\345\222\214qsort.md" |   2 +-
+ 37 files changed, 2100 insertions(+), 1 deletion(-)
+
+commit df47d8df60eb756b21ce980c5c6c276337992948
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Mar 14 20:46:16 2020 +0800
+
+    Set theme jekyll-theme-slate
+
+ _config.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 91be8e78b8d018974bcef53eb9cfd685da8780a3
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Mar 14 20:40:58 2020 +0800
+
+    Set theme jekyll-theme-leap-day
+
+ _config.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 0930b57aebbe9dd7d9b166a7ee3e58b9e355c443
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Mar 14 20:37:26 2020 +0800
+
+    update
+
+ ...272\214\347\273\264\346\225\260\347\273\204\345\222\214qsort.md" | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 868a620f3e432bd90fed9b8c6c4785cd5e6e0428
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Mar 14 20:33:51 2020 +0800
+
+    update
+
+ language/c-c++/image/image-20200314180405957.png   | Bin 0 -> 10980 bytes
+ ...64\346\225\260\347\273\204\345\222\214qsort.md" | 237 ++++++++++++++++++++-
+ other/cmake/use_gtest/main.cpp                     | 126 ++++++++++-
+ 3 files changed, 354 insertions(+), 9 deletions(-)
+
+commit 6b0b4d1df3c940f273a55550ea804bd4b5875e68
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Mar 14 16:22:08 2020 +0800
+
+    update
+
+ README.md                                          |   7 +-
+ algorithm/README.md                                |   1 +
+ algorithm/programming_pearls/.idea/.gitignore      |   2 +
+ algorithm/programming_pearls/.idea/.name           |   1 +
+ algorithm/programming_pearls/.idea/deployment.xml  |  21 +
+ algorithm/programming_pearls/.idea/misc.xml        |   7 +
+ algorithm/programming_pearls/.idea/modules.xml     |   8 +
+ .../.idea/programming_pearls.iml                   |   2 +
+ algorithm/programming_pearls/.idea/vcs.xml         |   6 +
+ .../CMakeFiles/CMakeDirectoryInformation.cmake     |  16 +
+ .../CMakeFiles/initArray.dir/CXX.includecache      |  12 +
+ .../CMakeFiles/initArray.dir/DependInfo.cmake      |  20 +
+ .../1_sort/CMakeFiles/initArray.dir/build.make     | 113 ++++
+ .../CMakeFiles/initArray.dir/cmake_clean.cmake     |  10 +
+ .../CMakeFiles/initArray.dir/depend.internal       |   5 +
+ .../1_sort/CMakeFiles/initArray.dir/depend.make    |   5 +
+ .../1_sort/CMakeFiles/initArray.dir/flags.make     |  10 +
+ .../1_sort/CMakeFiles/initArray.dir/link.txt       |   1 +
+ .../1_sort/CMakeFiles/initArray.dir/progress.make  |   3 +
+ .../1_sort/CMakeFiles/mysort.dir/CXX.includecache  |  28 +
+ .../1_sort/CMakeFiles/mysort.dir/DependInfo.cmake  |  20 +
+ .../1_sort/CMakeFiles/mysort.dir/build.make        | 113 ++++
+ .../1_sort/CMakeFiles/mysort.dir/cmake_clean.cmake |  10 +
+ .../1_sort/CMakeFiles/mysort.dir/depend.internal   |   5 +
+ .../1_sort/CMakeFiles/mysort.dir/depend.make       |   5 +
+ .../1_sort/CMakeFiles/mysort.dir/flags.make        |  10 +
+ .../1_sort/CMakeFiles/mysort.dir/link.txt          |   1 +
+ .../1_sort/CMakeFiles/mysort.dir/progress.make     |   3 +
+ .../1_sort/CMakeFiles/progress.marks               |   1 +
+ .../cmake-build-debug-wsl/1_sort/Makefile          | 226 ++++++++
+ .../1_sort/cmake_install.cmake                     |  39 ++
+ .../cmake-build-debug-wsl/1_sort/initArray         | Bin 0 -> 35072 bytes
+ .../cmake-build-debug-wsl/1_sort/mysort            | Bin 0 -> 199944 bytes
+ .../cmake-build-debug-wsl/CMakeCache.txt           | 355 ++++++++++++
+ .../CMakeFiles/3.10.2/CMakeCCompiler.cmake         |  73 +++
+ .../CMakeFiles/3.10.2/CMakeCXXCompiler.cmake       |  75 +++
+ .../3.10.2/CMakeDetermineCompilerABI_C.bin         | Bin 0 -> 8248 bytes
+ .../3.10.2/CMakeDetermineCompilerABI_CXX.bin       | Bin 0 -> 8264 bytes
+ .../CMakeFiles/3.10.2/CMakeSystem.cmake            |  15 +
+ .../3.10.2/CompilerIdC/CMakeCCompilerId.c          | 598 +++++++++++++++++++
+ .../3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp    | 576 +++++++++++++++++++
+ .../CMakeFiles/CMakeDirectoryInformation.cmake     |  16 +
+ .../CMakeFiles/CMakeOutput.log                     | 633 +++++++++++++++++++++
+ .../CMakeFiles/Makefile.cmake                      |  52 ++
+ .../cmake-build-debug-wsl/CMakeFiles/Makefile2     | 165 ++++++
+ .../CMakeFiles/TargetDirectories.txt               |   6 +
+ .../CMakeFiles/clion-environment.txt               |   4 +
+ .../cmake-build-debug-wsl/CMakeFiles/clion-log.txt |   5 +
+ .../CMakeFiles/cmake.check_cache                   |   1 +
+ .../CMakeFiles/feature_tests.bin                   | Bin 0 -> 12312 bytes
+ .../CMakeFiles/feature_tests.c                     |  34 ++
+ .../CMakeFiles/feature_tests.cxx                   | 405 +++++++++++++
+ .../CMakeFiles/progress.marks                      |   1 +
+ .../cmake-build-debug-wsl/Makefile                 | 162 ++++++
+ .../cmake-build-debug-wsl/cmake_install.cmake      |  55 ++
+ .../cmake-build-debug-wsl/programming.cbp          | 146 +++++
+ ...64\346\225\260\347\273\204\345\222\214qsort.md" |  45 ++
+ language/python/basic/.idea/.gitignore             |   2 +
+ language/python/basic/.idea/basic.iml              |   8 +
+ .../.idea/inspectionProfiles/profiles_settings.xml |   6 +
+ language/python/basic/.idea/misc.xml               |   4 +
+ language/python/basic/.idea/modules.xml            |   8 +
+ language/python/basic/.idea/vcs.xml                |   6 +
+ language/python/cookbook/.idea/.gitignore          |   2 +
+ language/python/cookbook/.idea/cookbook.iml        |   8 +
+ .../.idea/inspectionProfiles/profiles_settings.xml |   6 +
+ language/python/cookbook/.idea/misc.xml            |   7 +
+ language/python/cookbook/.idea/modules.xml         |   8 +
+ language/python/cookbook/.idea/vcs.xml             |   6 +
+ language/python/data_process/.idea/.gitignore      |   2 +
+ .../python/data_process/.idea/data_process.iml     |   8 +
+ .../.idea/inspectionProfiles/profiles_settings.xml |   6 +
+ language/python/data_process/.idea/misc.xml        |   4 +
+ language/python/data_process/.idea/modules.xml     |   8 +
+ language/python/data_process/.idea/vcs.xml         |   6 +
+ other/cmake/use_gtest/.idea/.gitignore             |   2 +
+ other/cmake/use_gtest/.idea/deployment.xml         |  24 +
+ other/cmake/use_gtest/.idea/encodings.xml          |   7 +
+ other/cmake/use_gtest/.idea/misc.xml               |   7 +
+ other/cmake/use_gtest/.idea/modules.xml            |   8 +
+ other/cmake/use_gtest/.idea/other.xml              |  10 +
+ other/cmake/use_gtest/.idea/use_gtest.iml          |   2 +
+ other/cmake/use_gtest/.idea/vcs.xml                |   6 +
+ other/cmake/use_gtest/CMakeLists.txt               |   8 +
+ .../use_gtest/cmake-build-debug/CMakeCache.txt     | 355 ++++++++++++
+ .../CMakeFiles/3.10.2/CMakeCCompiler.cmake         |  73 +++
+ .../CMakeFiles/3.10.2/CMakeCXXCompiler.cmake       |  75 +++
+ .../3.10.2/CMakeDetermineCompilerABI_C.bin         | Bin 0 -> 8248 bytes
+ .../3.10.2/CMakeDetermineCompilerABI_CXX.bin       | Bin 0 -> 8264 bytes
+ .../CMakeFiles/3.10.2/CMakeSystem.cmake            |  15 +
+ .../3.10.2/CompilerIdC/CMakeCCompilerId.c          | 598 +++++++++++++++++++
+ .../3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp    | 576 +++++++++++++++++++
+ .../CMakeFiles/CMakeDirectoryInformation.cmake     |  16 +
+ .../cmake-build-debug/CMakeFiles/CMakeOutput.log   | 633 +++++++++++++++++++++
+ .../cmake-build-debug/CMakeFiles/Makefile.cmake    |  49 ++
+ .../cmake-build-debug/CMakeFiles/Makefile2         | 108 ++++
+ .../cmake-build-debug/CMakeFiles/Progress/1        |   1 +
+ .../cmake-build-debug/CMakeFiles/Progress/2        |   1 +
+ .../CMakeFiles/Progress/count.txt                  |   1 +
+ .../CMakeFiles/TargetDirectories.txt               |   3 +
+ .../CMakeFiles/clion-environment.txt               |   3 +
+ .../cmake-build-debug/CMakeFiles/clion-log.txt     |   4 +
+ .../cmake-build-debug/CMakeFiles/cmake.check_cache |   1 +
+ .../cmake-build-debug/CMakeFiles/feature_tests.bin | Bin 0 -> 12312 bytes
+ .../cmake-build-debug/CMakeFiles/feature_tests.c   |  34 ++
+ .../cmake-build-debug/CMakeFiles/feature_tests.cxx | 405 +++++++++++++
+ .../cmake-build-debug/CMakeFiles/progress.marks    |   1 +
+ .../CMakeFiles/use_gtest.dir/CXX.includecache      |  18 +
+ .../CMakeFiles/use_gtest.dir/DependInfo.cmake      |  20 +
+ .../CMakeFiles/use_gtest.dir/build.make            | 113 ++++
+ .../CMakeFiles/use_gtest.dir/cmake_clean.cmake     |  10 +
+ .../CMakeFiles/use_gtest.dir/depend.internal       |   7 +
+ .../CMakeFiles/use_gtest.dir/depend.make           |   7 +
+ .../CMakeFiles/use_gtest.dir/flags.make            |  10 +
+ .../CMakeFiles/use_gtest.dir/link.txt              |   1 +
+ .../CMakeFiles/use_gtest.dir/progress.make         |   3 +
+ other/cmake/use_gtest/cmake-build-debug/Makefile   | 178 ++++++
+ .../cmake-build-debug/cmake_install.cmake          |  49 ++
+ other/cmake/use_gtest/cmake-build-debug/use_gtest  | Bin 0 -> 1084000 bytes
+ .../use_gtest/cmake-build-debug/use_gtest.cbp      |  94 +++
+ other/cmake/use_gtest/main.cpp                     |  35 ++
+ other/library/gtest/index.md                       |   4 +
+ 122 files changed, 7809 insertions(+), 4 deletions(-)
+
+commit 36bb6cc0b0cb5bd9a0d95cfe16fd8e255f13a4fb
+Merge: c682fe7 a09201f
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Mar 14 13:48:07 2020 +0800
+
+    Merge branch 'master' of https://github.com/sunday1103/Notebook
+
+commit c682fe7535861a785878e340918c541b5dbf815f
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Mar 14 13:46:28 2020 +0800
+
+    update
+
+ "language/docs/\350\260\203\350\257\225/gdb.md" | 3 ---
+ 1 file changed, 3 deletions(-)
+
+commit a09201f5fd57d33d10809c52d348a7923b5bc33f
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Mar 14 13:42:06 2020 +0800
+
+    Set theme jekyll-theme-minimal
+
+ _config.yml | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 0bdd9b302019d92d300955fd534f36285feb0ad0
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Feb 23 12:11:40 2020 +0800
+
+    update
+
+ language/python/basic/class_basic_2.py             | 37 ++++++++++++
+ .../python/basic/{class_basic.py => class_oop.py}  |  0
+ language/python/basic/thread.py                    | 21 +++++++
+ language/python/cookbook/cookbook.ipynb            | 65 ++++++++++++++++++++--
+ language/python/cookbook/heapq_case.py             | 34 +++++++++++
+ language/python/data_process/cdf1.py               | 25 +++++++++
+ language/python/data_process/numpyExample.py       |  4 ++
+ language/python/data_process/pandasExample.py      |  3 +
+ 8 files changed, 184 insertions(+), 5 deletions(-)
+
+commit cf05c3596ed6e39e910af86202499ed0af221de0
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Feb 1 18:14:04 2020 +0800
+
+    update
+
+ algorithm/programming_pearls/1_sort/CMakeLists.txt |   5 +
+ algorithm/programming_pearls/1_sort/initArray.cpp  |  76 ++++++++
+ algorithm/programming_pearls/1_sort/int.txt        |  14 ++
+ algorithm/programming_pearls/1_sort/sort.cpp       | 150 ++++++++++++++
+ algorithm/programming_pearls/CMakeLists.txt        |   5 +
+ algorithm/programming_pearls/note.md               |  50 +++++
+ language/python/cookbook/cookbook.ipynb            | 216 +++++++++++++++++++++
+ language/python/cookbook/txt.txt                   | 117 +++++++++++
+ 8 files changed, 633 insertions(+)
+
+commit 671540caae65d81e242a853dc9fe5bc985268e72
+Author: YangHuang <huangyang@outlook.com>
+Date:   Wed Jan 29 20:12:26 2020 +0800
+
+    update
+
+ .../basic/Python\345\207\275\346\225\260.ipynb"    |    0
+ language/python/basic/basic.py                     |   63 +
+ language/python/basic/class_basic.py               |   33 +
+ ...224\256\345\200\274\350\275\254\346\215\242.py" |    0
+ language/python/{ => basic}/heap.py                |    0
+ ...\220\345\222\214\350\277\255\344\273\243.ipynb" |    0
+ .../python/basic/\347\261\273.ipynb"               |    0
+ ...ython\345\207\275\346\225\260-checkpoint.ipynb" |  646 -----
+ language/python/code/open jupyter notebook.bat     |    1 -
+ language/python/code/project/2048/.idea/2048.iml   |    8 -
+ language/python/code/project/2048/.idea/misc.xml   |   14 -
+ .../python/code/project/2048/.idea/modules.xml     |    8 -
+ .../python/code/project/2048/.idea/workspace.xml   |   42 -
+ language/python/code/project/2048/game.py          |  208 --
+ .../code/project/ascii_pic/.idea/ascii_pic.iml     |   13 -
+ .../python/code/project/ascii_pic/.idea/misc.xml   |   14 -
+ .../code/project/ascii_pic/.idea/modules.xml       |   10 -
+ .../code/project/ascii_pic/.idea/workspace.xml     |  496 ----
+ language/python/code/project/ascii_pic/1.jpg       |  Bin 196753 -> 0 bytes
+ language/python/code/project/ascii_pic/ascii.py    |   52 -
+ .../python/code/project/ascii_pic/ascii_dora.png   |  Bin 25283 -> 0 bytes
+ .../python/code/project/tickets/.idea/misc.xml     |   14 -
+ .../python/code/project/tickets/.idea/modules.xml  |    9 -
+ .../python/code/project/tickets/.idea/tickets.iml  |    9 -
+ .../code/project/tickets/.idea/workspace.xml       |  543 -----
+ .../tickets/__pycache__/stations.cpython-35.pyc    |  Bin 58497 -> 0 bytes
+ .../python/code/project/tickets/parse_station.py   |   11 -
+ language/python/code/project/tickets/stations.py   | 2529 --------------------
+ language/python/code/project/tickets/tickets.py    |  111 -
+ language/python/{ => library}/gui/.idea/gui.iml    |    0
+ .../.idea/inspectionProfiles/profiles_settings.xml |    0
+ language/python/{ => library}/gui/.idea/misc.xml   |    0
+ .../python/{ => library}/gui/.idea/modules.xml     |    0
+ .../python/{ => library}/gui/.idea/workspace.xml   |    0
+ language/python/{ => library}/gui/first.py         |    0
+ language/python/{ => library}/gui/wxhelloWorld.py  |    0
+ .../.ipynb_checkpoints/basic_plot-checkpoint.ipynb |    0
+ .../.ipynb_checkpoints/numpy-checkpoint.ipynb      |    0
+ .../{code => library}/matplotlib/basic_plot.ipynb  |    0
+ .../{code => library}/matplotlib/plot_sincos.py    |    0
+ .../{code => library}/matplotlib/populations.txt   |    0
+ .../python/{code => library/numpy}/numpy.ipynb     |    0
+ ...45\350\207\252scipy-lectures\357\274\211.ipynb" |    0
+ .../python/library/re/file.txt                     |    0
+ .../task.py" => language/python/library/re/task.py |    0
+ .../person => library/shelve}/.idea/misc.xml       |    0
+ .../person => library/shelve}/.idea/modules.xml    |    0
+ .../person => library/shelve}/.idea/person.iml     |    0
+ .../person => library/shelve}/.idea/workspace.xml  |    0
+ .../shelve}/__pycache__/person.cpython-35.pyc      |  Bin
+ .../person => library/shelve}/makedb.py            |    0
+ .../person => library/shelve}/person.py            |    0
+ .../person => library/shelve}/persondb.bak         |    0
+ .../person => library/shelve}/persondb.dat         |  Bin
+ .../person => library/shelve}/persondb.dir         |    0
+ language/python/problem1.py                        |    9 -
+ language/python/problem2.py                        |   24 -
+ 57 files changed, 96 insertions(+), 4771 deletions(-)
+
+commit 454b27ab894ae6e79df0931d12e26b4c742243dd
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Nov 16 21:36:52 2019 +0800
+
+    GMOCK
+
+ other/library/gtest/proj/add.cc                    | 11 --------
+ other/library/gtest/proj/calc.cc                   | 33 ++++++++++++++++++++++
+ other/library/gtest/proj/calc.h                    | 11 ++++++++
+ other/library/gtest/proj/makefile                  |  2 +-
+ other/library/gtest/proj/testAdd.cc                | 12 +++++---
+ other/library/gtest/proj/testAdd_F.cc              | 17 ++++-------
+ other/library/gtest/proj/testAdd_mock.cc           | 29 +++++++++++++++++++
+ .../gtest/\345\256\211\350\243\205gtest.md"        |  2 +-
+ 8 files changed, 89 insertions(+), 28 deletions(-)
+
+commit 646bfe1b2aa82581138e9afc6f1ed2ea5f573a43
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Nov 9 23:33:56 2019 +0800
+
+    update
+
+ .vscode/build.bat                                  |   2 +
+ algorithm/Data Structure/tree/bstree/Makefile      |   2 +-
+ algorithm/Data Structure/tree/bstree/bstree.c      | 147 ++++++++++++-----
+ algorithm/Data Structure/tree/bstree/bstree.h      |  20 +++
+ algorithm/Data Structure/tree/bstree/bstree_test.c |  24 +++
+ .../Data Structure/tree/tree_traverse/Makefile     |   2 +
+ .../Data Structure/tree/tree_traverse/bstree.c     | 142 +++++++++++++++++
+ .../Data Structure/tree/tree_traverse/bstree.h     |  20 +++
+ .../tree/tree_traverse/pretty_print.c              | 174 +++++++++++++++++++++
+ ...270\270\350\247\201\345\221\275\344\273\244.md" |  12 ++
+ ...255\246\344\271\240\345\210\227\350\241\250.md" |   5 +
+ 11 files changed, 510 insertions(+), 40 deletions(-)
+
+commit a29467beebe8abfc01ae5da7d0322c30bd6d5b8a
+Author: YangHuang <huangyang@outlook.com>
+Date:   Tue Sep 17 00:04:55 2019 +0800
+
+    update
+
+ algorithm/Data Structure/tree/BSTree.h             | 478 ---------------------
+ algorithm/Data Structure/tree/BSTreeTest.cc        |  54 ---
+ algorithm/Data Structure/tree/bstree/Makefile      |   2 +
+ algorithm/Data Structure/tree/bstree/bstree.c      |  73 ++++
+ algorithm/Data Structure/tree/bstree/ref/bstree.c  | 330 ++++++++++++++
+ algorithm/Data Structure/tree/bstree/ref/bstree.h  |  48 +++
+ .../Data Structure/tree/bstree/ref/btree_test.c    |  51 +++
+ algorithm/Data Structure/tree/myTree.h             | 157 -------
+ language/c-c++/code/array_pointer/2dimArrary.c     |   8 +
+ 9 files changed, 512 insertions(+), 689 deletions(-)
+
+commit ca91f3ebe64c61426234aa9d241f19c8a24f050e
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Aug 25 23:07:16 2019 +0800
+
+    scanf []
+
+ language/c-c++/code/Input_Output/input.txt         |  18 +++
+ language/c-c++/code/Input_Output/poly_input.txt    |   9 ++
+ language/c-c++/code/Input_Output/scanf_skip.c      | 173 +++++++++++++++++++++
+ language/c-c++/code/Input_Output/scanf_skip_poly.c |  47 ++++++
+ 4 files changed, 247 insertions(+)
+
+commit 4ba15fb190d19648d12f5d09a052d9125e9606e9
+Author: YangHuang <huangyang@outlook.com>
+Date:   Mon Aug 19 00:28:42 2019 +0800
+
+    array malloc
+
+ .../c_implement/malloc-array.c                     |  66 ++++++++++++++++++++
+ language/docs/assets/1566145268851.png             | Bin 0 -> 17667 bytes
+ language/docs/assets/1566145358298.png             | Bin 0 -> 18424 bytes
+ ...273\204\345\222\214\346\214\207\351\222\210.md" |  67 +++++++++++++++++++++
+ "language/docs/\350\260\203\350\257\225/gdb.md"    |   8 +--
+ 5 files changed, 137 insertions(+), 4 deletions(-)
+
+commit 92258e02bf17ce786654b7bbc91d89d222ec040c
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Aug 18 20:47:18 2019 +0800
+
+    hash.md
+
+ algorithm/Data Structure/README.md    |   0
+ algorithm/Data Structure/hash/hash.md | 167 ++++++++++++++++++++++++++++++++++
+ 2 files changed, 167 insertions(+)
+
+commit ddf4481b34735c8ca702c3369aea6a891ca129af
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Aug 18 00:51:45 2019 +0800
+
+    mod name
+
+ .../oj/AlgorithmInHand/Stack_Queue/hanoi.cc        |  0
+ .../oj/AlgorithmInHand/cstring/cstring.md          |  0
+ .../oj/AlgorithmInHand/cstring/strcpy.cc           |  0
+ .../oj/AlgorithmInHand/cstring/strlen.cc           |  0
+ .../oj/AlgorithmInHand/cstring/strstr.cc           |  0
+ .../oj/AlgorithmInHand/string_lib/kmp.md           |  0
+ .../oj/AlgorithmInHand/string_lib/strcpy.cc        |  0
+ .../oj/AlgorithmInHand/string_lib/strlen.cc        |  0
+ .../oj/AlgorithmInHand/string_lib/strstr.cc        |  0
+ .../oj/AlgorithmInHand/tree/disjoint_set.cc        |  0
+ .../oj/AlgorithmInHand/tree/disjoint_set_1.cc      |  0
+ .../oj/AlgorithmInHand/tree/heap.cc                |  0
+ .../oj/AlgorithmInHand/tree/tree_traversal.cc      |  0
+ .../huawei/1.cc" => algorithm/oj/huawei/1.cc       |  0
+ .../huawei/2.cc" => algorithm/oj/huawei/2.cc       |  0
+ .../huawei/3.cc" => algorithm/oj/huawei/3.cc       |  0
+ .../huawei/4.cc" => algorithm/oj/huawei/4.cc       |  0
+ .../huawei/5.cc" => algorithm/oj/huawei/5.cc       |  0
+ .../.idea/inspectionProfiles/profiles_settings.xml |  0
+ .../oj/leetcode/.idea/leetcode.iml                 |  0
+ .../oj/leetcode/.idea/misc.xml                     |  0
+ .../oj/leetcode/.idea/modules.xml                  |  0
+ .../oj/leetcode/.idea/vcs.xml                      |  0
+ .../oj/leetcode/.idea/workspace.xml                |  0
+ .../.ipynb_checkpoints/LeetCode-checkpoint.ipynb   |  0
+ .../oj/leetcode/1-twosum.md                        |  0
+ .../oj/leetcode/C++/1-twosum.cc                    |  0
+ .../oj/leetcode/C++/2-add_two_num.cc               |  0
+ .../oj/leetcode/LeetCode.ipynb                     |  0
+ algorithm/oj/leetcode/pure_c/1-twoSum.c            | 82 ++++++++++++++++++++++
+ .../oj/leetcode/python/1-twoSum.py                 |  0
+ .../oj/leetcode/python/14-longestCommonPrefix.py   |  0
+ .../oj/leetcode/python/15-3sum.py                  |  0
+ .../oj/leetcode/python/2-addTwoNum.py              |  0
+ .../leetcode/python/3-lengthOfLongestSubstring.py  |  0
+ .../oj/leetcode/python/4-findMedianSortedArrays.py |  0
+ .../oj/leetcode/python/5-longestPalindrome.py      |  0
+ .../oj/leetcode/python/6-ZigZag.py                 |  0
+ .../oj/leetcode/python/7-ReverseInteger.py         |  0
+ .../oj/leetcode/python/8-PalindromeNumber.py       |  0
+ .../oj/leetcode/python/MaxSubArray.py              |  0
+ .../\345\211\221\346\214\207offer/combination.cc"  |  0
+ .../oj/\345\211\221\346\214\207offer/my_include.h" |  0
+ .../\345\211\221\346\214\207offer/permutation.cc"  |  0
+ .../permutation_seq.cc"                            |  0
+ .../oj/\345\211\221\346\214\207offer/problem10.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem11.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem12.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem13.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem14.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem15.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem16.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem17.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem18.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem19.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem20.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem21.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem22.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem23.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem24.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem25.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem26.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem27.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem28.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem29.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem3.cc"  |  0
+ .../oj/\345\211\221\346\214\207offer/problem30.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem31.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem32.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem33.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem34.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem35.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem36.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem37.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem38.cc" |  0
+ .../\345\211\221\346\214\207offer/problem39-1.cc"  |  0
+ .../oj/\345\211\221\346\214\207offer/problem39.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem4.cc"  |  0
+ .../oj/\345\211\221\346\214\207offer/problem40.cc" |  0
+ .../\345\211\221\346\214\207offer/problem41-1.cc"  |  0
+ .../oj/\345\211\221\346\214\207offer/problem41.cc" |  0
+ .../\345\211\221\346\214\207offer/problem42-1.cc"  |  0
+ .../oj/\345\211\221\346\214\207offer/problem42.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem44.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem45.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/problem5.cc"  |  0
+ .../oj/\345\211\221\346\214\207offer/problem6.cc"  |  0
+ .../oj/\345\211\221\346\214\207offer/problem7.cc"  |  0
+ .../oj/\345\211\221\346\214\207offer/problem8.cc"  |  0
+ .../oj/\345\211\221\346\214\207offer/problem9.cc"  |  0
+ .../singleNumber2.cc"                              |  0
+ .../oj/\345\211\221\346\214\207offer/singleton.cc" |  0
+ .../oj/\345\211\221\346\214\207offer/str.c"        |  0
+ .../oj/\345\211\221\346\214\207offer/youdao1.cc"   |  0
+ .../oj/\345\211\221\346\214\207offer/youdao2.cc"   |  0
+ .../oj/\345\211\221\346\214\207offer/youdao3.cc"   |  0
+ 96 files changed, 82 insertions(+)
+
+commit 7c640cdd7857abb65e3df63dd0302c95b82781ed
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Aug 18 00:10:06 2019 +0800
+
+    add gdb display doc
+
+ .../array-stack-queue-list/c_implement/Makefile    |   2 +-
+ .../array-stack-queue-list/c_implement/array       | Bin 0 -> 16496 bytes
+ .../array-stack-queue-list/c_implement/array.c     | 113 ++++++++++++
+ .../assets/1566056084786.png"                      | Bin 0 -> 6980 bytes
+ .../assets/1566056213047.png"                      | Bin 0 -> 8907 bytes
+ "language/docs/\350\260\203\350\257\225/gdb.md"    | 194 +++++++++++++++++++++
+ 6 files changed, 308 insertions(+), 1 deletion(-)
+
+commit 57e9ce9cdc3c8e159153323a7850c257f44a7f0b
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Aug 17 00:26:36 2019 +0800
+
+    update
+
+ .vscode/ipch/3c3fe841ac40ee6b/mmap_address.bin     | Bin 8 -> 0 bytes
+ .../array-stack-queue-list/README.md               |   0
+ .../array-stack-queue-list/c_implement/Makefile    |   6 ++
+ .../array-stack-queue-list/c_implement/queue       | Bin 0 -> 12008 bytes
+ .../array-stack-queue-list/c_implement/queue.c     |  81 +++++++++++++++++++++
+ .../array-stack-queue-list/c_implement/stack       | Bin 0 -> 11928 bytes
+ .../array-stack-queue-list/c_implement/stack.c     |  73 +++++++++++++++++++
+ .../array-stack-queue-list/other/myList.cc         |   0
+ .../array-stack-queue-list/other/priority_queue.md |   0
+ .../array-stack-queue-list/other/queue.cc          |   0
+ .../array-stack-queue-list/other/test_my_queue.txt |   0
+ 11 files changed, 160 insertions(+)
+
+commit f463902b903158c9b4969079c62edc25aafe90e7
+Author: YangHuang <huangyang@outlook.com>
+Date:   Fri Aug 16 22:45:56 2019 +0800
+
+    dirs change
+
+ .../myList.cc"                                     |   0
+ .../priority_queue.md"                             |   0
+ .../queue.cc"                                      |   0
+ .../test_my_queue.txt"                             |   0
+ algorithm/{ => Data Structure}/graph/Digraph.cc    |   0
+ algorithm/{ => Data Structure}/graph/bfs.cc        |   0
+ algorithm/{ => Data Structure}/graph/graph.cc      |   0
+ algorithm/{ => Data Structure}/graph/shortpath.py  |   0
+ algorithm/{ => Data Structure}/hash/hash_char.cc   |   0
+ .../{ => Data Structure}/string/string_int.cc      |   0
+ algorithm/{ => Data Structure}/tree/BSTree.h       |   0
+ algorithm/{ => Data Structure}/tree/BSTreeTest.cc  |   0
+ algorithm/{ => Data Structure}/tree/myTree.h       |   0
+ .../{ => basic algs}/DP/Dynamic Programming.ipynb  |   0
+ .../DP/LeetCode/findNumberOfLIS.py                 |   0
+ algorithm/{ => basic algs}/DP/coin.cpp             |   0
+ algorithm/{ => basic algs}/DP/exchange.cc          |   0
+ algorithm/{ => basic algs}/DP/lengthOfLTS.cc       |   0
+ algorithm/{ => basic algs}/DP/rob.cpp              |   0
+ algorithm/{ => basic algs}/DP/rob2.cpp             |   0
+ algorithm/{ => basic algs}/bigInt/big.cc           |   0
+ algorithm/{ => basic algs}/bigInt/bigIntclass.cc   |   0
+ .../{ => basic algs}/bitwise/find_odd_number.md    |   0
+ .../{ => basic algs}/bitwise/find_odd_number3.cc   |   0
+ .../{ => basic algs}/bitwise/odd_times_number.cc   |   0
+ algorithm/{ => basic algs}/find/BinarySearch.cc    |   0
+ algorithm/{ => basic algs}/find/FirstRepeat.cc     |   0
+ algorithm/{ => basic algs}/find/find.cc            |   0
+ algorithm/{docs => basic algs/find}/find.md        |   0
+ algorithm/{ => basic algs}/find/hash_poj_2503.cc   |   0
+ algorithm/{ => basic algs}/sort/application.cc     |   0
+ algorithm/{ => basic algs}/sort/input.txt          |   0
+ algorithm/{ => basic algs}/sort/makefile           |   0
+ algorithm/{ => basic algs}/sort/rand_num.cc        |   0
+ algorithm/{ => basic algs}/sort/sort.cc            |   0
+ algorithm/{docs => basic algs/sort}/sort.md        |   0
+ algorithm/{ => basic algs}/sort/sort_in_hand.cc    |   0
+ algorithm/bigInt/bigIntclass.cc~                   | 125 ---------------------
+ algorithm/graph/shortPath.py                       |  39 -------
+ algorithm/{ => other}/FSM/fsm.cc                   |   0
+ algorithm/{Data Structure => other}/LRU.cc         |   0
+ 41 files changed, 164 deletions(-)
+
+commit 1e28f0c09259a1de57d4b9a87f679d2e97928b6d
+Author: YangHuang <huangyang@outlook.com>
+Date:   Fri Aug 16 22:37:52 2019 +0800
+
+    update
+
+ ...250\213\343\200\213\347\254\224\350\256\260.md" | 66 ++++++++++++++++++++++
+ 1 file changed, 66 insertions(+)
+
+commit c5a7d780bab116d689e4e0c397553334fe61e0b4
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Aug 3 16:45:44 2019 +0800
+
+    update
+
+ .../assets/1564802211897.png"                      | Bin 0 -> 286234 bytes
+ ...250\213\343\200\213\347\254\224\350\256\260.md" |  40 ++++++++++++++++++++-
+ 2 files changed, 39 insertions(+), 1 deletion(-)
+
+commit a4b14f171be8e7e659fb54ea768804b84c0cc636
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Jul 28 23:07:12 2019 +0800
+
+    add 链接
+
+ language/c-c++/code/compile_link/add.c             |   7 +
+ language/c-c++/code/compile_link/inc/add.h         |   1 +
+ language/c-c++/code/compile_link/main              | Bin 0 -> 8328 bytes
+ language/c-c++/code/compile_link/main.c            |  10 +
+ language/c-c++/code/compile_link/main.map          | 463 +++++++++++++++++++++
+ language/c-c++/code/compile_link/makefile          |   7 +
+ ...250\213\343\200\213\347\254\224\350\256\260.md" |  78 ++++
+ 7 files changed, 566 insertions(+)
+
+commit 82ff915c8146745d0fcd00d8fb11b570993ab165
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Jul 27 22:36:13 2019 +0800
+
+    数组和指针
+
+ language/docs/README.md                            |   2 +-
+ .../code/array.c"                                  |   1 +
+ .../code/main.c"                                   |  10 ++
+ .../code/makefile"                                 |   2 +
+ ...250\213\343\200\213\347\254\224\350\256\260.md" | 111 ++++++++++++++++++++-
+ 5 files changed, 120 insertions(+), 6 deletions(-)
+
+commit 41c6fcf444def86684cc26e3bf435d017f8488b4
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Jul 27 22:08:49 2019 +0800
+
+    add dir
+
+ ...250\213\343\200\213\347\254\224\350\256\260.md" | 27 ++++++++++++++++++++++
+ 1 file changed, 27 insertions(+)
+
+commit 93aaaad5d4bed06a2f98284d6c578e998ed1118c
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Jul 21 23:23:24 2019 +0800
+
+    Update README.md
+
+ language/docs/README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b55cb32ba0d11090ff7cd5a8b1f1ada1c8f7c34d
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Jul 21 23:20:02 2019 +0800
+
+    add readme 目录
+
+ language/docs/README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2ec6d461f40c1af4daefba7c2a722f27cc940cb9
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Jul 21 23:15:49 2019 +0800
+
+    add readme 目录
+
+ README.md               | 9 +++++++--
+ language/docs/README.md | 4 ++++
+ 2 files changed, 11 insertions(+), 2 deletions(-)
+
+commit 2b4fcd8300ba68714c3e56fb786fab877427a318
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Jul 21 23:09:06 2019 +0800
+
+    rename
+
+ ...56\266\347\274\226\347\250\213\343\200\213\347\254\224\350\256\260.md" | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 9ce7f8b56acb7ac1d92c515aa5760c3a158ec2e6
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Jul 21 23:07:04 2019 +0800
+
+    调整目录顺序
+
+ algorithm/Data Structure/priority_queue.md~        |  0
+ algorithm/{find => docs}/find.md                   |  0
+ .../{Data Structure => docs}/priority_queue.md     |  0
+ algorithm/{sort => docs}/sort.md                   |  0
+ ...274\226\347\250\213\347\254\224\350\256\260.md" | 72 ++++++++++++++++++++++
+ ...234\272\345\255\227\350\212\202\345\272\217.md" |  0
+ ...236\204\351\200\240\345\207\275\346\225\260.md" |  0
+ 7 files changed, 72 insertions(+)
+
+commit cb08e7896eec9e049b6a0d00c703bca6f41af25b
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Jul 21 21:09:58 2019 +0800
+
+    调整目录顺序
+
+ language/c-c++/{ => code}/Input_Output/getline_cin.cc                     | 0
+ language/c-c++/{ => code}/Input_Output/stoi_etc.cc                        | 0
+ language/c-c++/{ => code}/InsideC++/data.cc                               | 0
+ language/c-c++/{ => code}/Memory_Alignment/bit_filed.cc                   | 0
+ language/c-c++/{ => code}/Memory_Alignment/size_of_struct.c               | 0
+ language/c-c++/{ => code}/Memory_Alignment/size_of_struct2.c              | 0
+ language/c-c++/{ => code}/Memory_Alignment/structure_packing.md           | 0
+ language/c-c++/{ => code}/OOP/class.Sales_Data.cc                         | 0
+ language/c-c++/{ => code}/OOP/class.Screen.cc                             | 0
+ language/c-c++/{ => code}/OOP/class.aggregate.cc                          | 0
+ language/c-c++/{ => code}/OOP/ex1.cc                                      | 0
+ language/c-c++/{ => code}/OOP/ex2.cc                                      | 0
+ language/c-c++/{ => code}/OOP/ex3.cc                                      | 0
+ language/c-c++/{ => code}/OOP/oop.cc                                      | 0
+ language/c-c++/{ => code}/OOP/private_derived_derived.cc                  | 0
+ language/c-c++/{ => code}/STL/STLmap.cc                                   | 0
+ language/c-c++/{ => code}/STL/use-sort.cc                                 | 0
+ language/c-c++/{ => code}/Valgrind/delete_test.cc                         | 0
+ language/c-c++/{ => code}/Valgrind/test.cc                                | 0
+ language/c-c++/{ => code}/Valgrind/use.md                                 | 0
+ language/c-c++/{ => code}/about_pointer.cc                                | 0
+ language/c-c++/{ => code}/array_pointer/Readme.md                         | 0
+ language/c-c++/{ => code}/array_pointer/main.c                            | 0
+ language/c-c++/{ => code}/basic/char_array.c                              | 0
+ language/c-c++/{ => code}/basic/construct_call.cc                         | 0
+ language/c-c++/{ => code}/big-little-endian.md                            | 0
+ language/c-c++/{ => code}/big-little-endian.md~                           | 0
+ language/c-c++/{ => code}/class_string.cc                                 | 0
+ language/c-c++/{ => code}/class_string_improve.cc                         | 0
+ language/c-c++/{ => code}/const_function.cc                               | 0
+ language/c-c++/{ => code}/construct.md                                    | 0
+ language/c-c++/{ => code}/cpp_scope.cc                                    | 0
+ language/c-c++/{ => code}/delete_test.cc                                  | 0
+ language/c-c++/{ => code}/effective_item27.cc                             | 0
+ language/c-c++/{ => code}/effective_item28.cc                             | 0
+ language/c-c++/{ => code}/function_pointor/example.cc                     | 0
+ language/c-c++/{ => code}/operator.cc                                     | 0
+ language/c-c++/{ => code}/use_array.cc                                    | 0
+ language/c-c++/{ => code}/use_map.cc                                      | 0
+ language/c-c++/{ => code}/use_string.cc                                   | 0
+ language/c-c++/{ => code}/virtual_in_f.cc                                 | 0
+ .../docs/\344\270\273\346\234\272\345\255\227\350\212\202\345\272\217.md" | 0
+ .../c-c++/docs/\346\236\204\351\200\240\345\207\275\346\225\260.md"       | 0
+ 43 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 35d05c81ed47ca92b8b5babe3ea1189eac2e6f45
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Jul 14 22:13:40 2019 +0800
+
+    整理文件夹
+
+ language/c-c++/Input_Output/getline_cin.cc         |   16 +
+ language/c-c++/Input_Output/stoi_etc.cc            |   14 +
+ language/c-c++/InsideC++/data.cc                   |   18 +
+ language/c-c++/Memory_Alignment/bit_filed.cc       |   18 +
+ language/c-c++/Memory_Alignment/size_of_struct.c   |  190 ++
+ language/c-c++/Memory_Alignment/size_of_struct2.c  |  254 ++
+ .../c-c++/Memory_Alignment/structure_packing.md    |  424 ++++
+ language/c-c++/OOP/class.Sales_Data.cc             |  116 +
+ language/c-c++/OOP/class.Screen.cc                 |   73 +
+ language/c-c++/OOP/class.aggregate.cc              |   27 +
+ language/c-c++/OOP/ex1.cc                          |   70 +
+ language/c-c++/OOP/ex2.cc                          |   36 +
+ language/c-c++/OOP/ex3.cc                          |   34 +
+ language/c-c++/OOP/oop.cc                          |  107 +
+ language/c-c++/OOP/private_derived_derived.cc      |   91 +
+ language/c-c++/STL/STLmap.cc                       |   43 +
+ language/c-c++/STL/use-sort.cc                     |   33 +
+ language/c-c++/Valgrind/delete_test.cc             |   11 +
+ language/c-c++/Valgrind/test.cc                    |   12 +
+ language/c-c++/Valgrind/use.md                     |    1 +
+ language/c-c++/about_pointer.cc                    |   77 +
+ language/c-c++/array_pointer/Readme.md             |   11 +
+ language/c-c++/array_pointer/main.c                |   14 +
+ language/c-c++/basic/char_array.c                  |   22 +
+ language/c-c++/basic/construct_call.cc             |   61 +
+ language/c-c++/big-little-endian.md                |   55 +
+ language/c-c++/big-little-endian.md~               |    0
+ language/c-c++/class_string.cc                     |  106 +
+ language/c-c++/class_string_improve.cc             |   94 +
+ language/c-c++/const_function.cc                   |   21 +
+ language/c-c++/construct.md                        |   32 +
+ language/c-c++/cpp_scope.cc                        |   93 +
+ language/c-c++/delete_test.cc                      |   11 +
+ language/c-c++/effective_item27.cc                 |   34 +
+ language/c-c++/effective_item28.cc                 |   23 +
+ language/c-c++/function_pointor/example.cc         |   25 +
+ language/c-c++/operator.cc                         |   13 +
+ language/c-c++/use_array.cc                        |   13 +
+ language/c-c++/use_map.cc                          |   27 +
+ language/c-c++/use_string.cc                       |   25 +
+ language/c-c++/virtual_in_f.cc                     |   63 +
+ ...234\272\345\255\227\350\212\202\345\272\217.md" |   55 +
+ ...236\204\351\200\240\345\207\275\346\225\260.md" |   32 +
+ ...ython\345\207\275\346\225\260-checkpoint.ipynb" |  646 +++++
+ .../code/Python\345\207\275\346\225\260.ipynb"     |  649 +++++
+ .../code/learning_python/person/.idea/misc.xml     |   14 +
+ .../code/learning_python/person/.idea/modules.xml  |    8 +
+ .../code/learning_python/person/.idea/person.iml   |   12 +
+ .../learning_python/person/.idea/workspace.xml     |  424 ++++
+ .../person/__pycache__/person.cpython-35.pyc       |  Bin 0 -> 1729 bytes
+ .../python/code/learning_python/person/makedb.py   |   10 +
+ .../python/code/learning_python/person/person.py   |   36 +
+ .../code/learning_python/person/persondb.bak       |    3 +
+ .../code/learning_python/person/persondb.dat       |  Bin 0 -> 1115 bytes
+ .../code/learning_python/person/persondb.dir       |    3 +
+ .../.ipynb_checkpoints/basic_plot-checkpoint.ipynb |   87 +
+ .../.ipynb_checkpoints/numpy-checkpoint.ipynb      |  712 ++++++
+ language/python/code/matplotlib/basic_plot.ipynb   |   87 +
+ language/python/code/matplotlib/plot_sincos.py     |   34 +
+ language/python/code/matplotlib/populations.txt    |   22 +
+ language/python/code/numpy.ipynb                   |  706 ++++++
+ ...45\350\207\252scipy-lectures\357\274\211.ipynb" |   68 +
+ language/python/code/open jupyter notebook.bat     |    1 +
+ language/python/code/project/2048/.idea/2048.iml   |    8 +
+ language/python/code/project/2048/.idea/misc.xml   |   14 +
+ .../python/code/project/2048/.idea/modules.xml     |    8 +
+ .../python/code/project/2048/.idea/workspace.xml   |   42 +
+ language/python/code/project/2048/game.py          |  208 ++
+ .../code/project/ascii_pic/.idea/ascii_pic.iml     |   13 +
+ .../python/code/project/ascii_pic/.idea/misc.xml   |   14 +
+ .../code/project/ascii_pic/.idea/modules.xml       |   10 +
+ .../code/project/ascii_pic/.idea/workspace.xml     |  496 ++++
+ language/python/code/project/ascii_pic/1.jpg       |  Bin 0 -> 196753 bytes
+ language/python/code/project/ascii_pic/ascii.py    |   52 +
+ .../python/code/project/ascii_pic/ascii_dora.png   |  Bin 0 -> 25283 bytes
+ .../python/code/project/tickets/.idea/misc.xml     |   14 +
+ .../python/code/project/tickets/.idea/modules.xml  |    9 +
+ .../python/code/project/tickets/.idea/tickets.iml  |    9 +
+ .../code/project/tickets/.idea/workspace.xml       |  543 +++++
+ .../tickets/__pycache__/stations.cpython-35.pyc    |  Bin 0 -> 58497 bytes
+ .../python/code/project/tickets/parse_station.py   |   11 +
+ language/python/code/project/tickets/stations.py   | 2529 ++++++++++++++++++++
+ language/python/code/project/tickets/tickets.py    |  111 +
+ ...\220\345\222\214\350\277\255\344\273\243.ipynb" |  208 ++
+ "language/python/code/\347\261\273.ipynb"          |  134 ++
+ ...224\256\345\200\274\350\275\254\346\215\242.py" |   19 +
+ language/python/gui/.idea/gui.iml                  |   12 +
+ .../.idea/inspectionProfiles/profiles_settings.xml |    7 +
+ language/python/gui/.idea/misc.xml                 |    4 +
+ language/python/gui/.idea/modules.xml              |    8 +
+ language/python/gui/.idea/workspace.xml            |  396 +++
+ language/python/gui/first.py                       |   87 +
+ language/python/gui/wxhelloWorld.py                |   99 +
+ language/python/heap.py                            |   10 +
+ language/python/problem1.py                        |    9 +
+ language/python/problem2.py                        |   24 +
+ .../file.txt"                                      |  110 +
+ .../task.py"                                       |   19 +
+ other/computer architecture/Cache1.c               |   26 +
+ other/library/boost/asio_basic.md                  |   91 +
+ other/library/boost/asio_endpoint.md               |   36 +
+ ...237\272\346\234\254\344\275\277\347\224\250.md" |  180 ++
+ other/library/gtest/proj/add.cc                    |   11 +
+ other/library/gtest/proj/makefile                  |    5 +
+ other/library/gtest/proj/testAdd.cc                |   24 +
+ other/library/gtest/proj/testAdd_F.cc              |   46 +
+ .../gtest/\345\256\211\350\243\205gtest.md"        |  125 +
+ other/linux/condition.c                            |  118 +
+ other/linux/mutex.c                                |  153 ++
+ other/linux/process/C_start_exit.cc                |   32 +
+ other/linux/process/fork_ex.c                      |   23 +
+ other/linux/process/map1.c                         |   38 +
+ other/linux/process/map2.c                         |   27 +
+ other/linux/process/mesg.c                         |   94 +
+ other/linux/process/pipe.cc                        |   30 +
+ other/linux/process/signal_ex.cc                   |   31 +
+ other/linux/pthread/condvar.c                      |  117 +
+ other/linux/pthread/dotprod_mutex.c                |  153 ++
+ other/linux/pthread/pthread_create_exit.c          |   54 +
+ other/linux/thread.c                               |   32 +
+ other/parallel computing/MPI_basc_comm.c           |   27 +
+ other/parallel computing/MPIhello.c                |   18 +
+ other/shell/sh1.sh                                 |    3 +
+ other/shell/sh2.sh                                 |  108 +
+ .../perf/perf.data"                                |  Bin 0 -> 77000 bytes
+ .../perf/test.c"                                   |   27 +
+ 126 files changed, 12883 insertions(+)
+
+commit f1e21737f1da1d9c6798e86baac898c540fb65d1
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Jul 14 11:37:18 2019 +0800
+
+    整理文件夹
+
+ computer science/computer architecture/Cache1.c    |   26 -
+ computer science/linux/condition.c                 |  118 -
+ computer science/linux/mutex.c                     |  153 --
+ computer science/linux/process/C_start_exit.cc     |   32 -
+ computer science/linux/process/fork_ex.c           |   23 -
+ computer science/linux/process/map1.c              |   38 -
+ computer science/linux/process/map2.c              |   27 -
+ computer science/linux/process/mesg.c              |   94 -
+ computer science/linux/process/pipe.cc             |   30 -
+ computer science/linux/process/signal_ex.cc        |   31 -
+ computer science/linux/pthread/condvar.c           |  117 -
+ computer science/linux/pthread/dotprod_mutex.c     |  153 --
+ .../linux/pthread/pthread_create_exit.c            |   54 -
+ computer science/linux/thread.c                    |   32 -
+ .../parallel computing/MPI_basc_comm.c             |   27 -
+ computer science/parallel computing/MPIhello.c     |   18 -
+ computer science/shell/sh1.sh                      |    3 -
+ computer science/shell/sh2.sh                      |  108 -
+ library/boost/asio_basic.md                        |   91 -
+ library/boost/asio_endpoint.md                     |   36 -
+ ...237\272\346\234\254\344\275\277\347\224\250.md" |  180 --
+ library/gtest/proj/add.cc                          |   11 -
+ library/gtest/proj/makefile                        |    5 -
+ library/gtest/proj/testAdd.cc                      |   24 -
+ library/gtest/proj/testAdd_F.cc                    |   46 -
+ "library/gtest/\345\256\211\350\243\205gtest.md"   |  125 -
+ .../c-c++/Input_Output/getline_cin.cc              |   16 -
+ programing language/c-c++/Input_Output/stoi_etc.cc |   14 -
+ programing language/c-c++/InsideC++/data.cc        |   18 -
+ .../c-c++/Memory_Alignment/bit_filed.cc            |   18 -
+ .../c-c++/Memory_Alignment/size_of_struct.c        |  190 --
+ .../c-c++/Memory_Alignment/size_of_struct2.c       |  254 --
+ .../c-c++/Memory_Alignment/structure_packing.md    |  424 ----
+ programing language/c-c++/OOP/class.Sales_Data.cc  |  116 -
+ programing language/c-c++/OOP/class.Screen.cc      |   73 -
+ programing language/c-c++/OOP/class.aggregate.cc   |   27 -
+ programing language/c-c++/OOP/ex1.cc               |   70 -
+ programing language/c-c++/OOP/ex2.cc               |   36 -
+ programing language/c-c++/OOP/ex3.cc               |   34 -
+ programing language/c-c++/OOP/oop.cc               |  107 -
+ .../c-c++/OOP/private_derived_derived.cc           |   91 -
+ programing language/c-c++/STL/STLmap.cc            |   43 -
+ programing language/c-c++/STL/use-sort.cc          |   33 -
+ programing language/c-c++/Valgrind/delete_test.cc  |   11 -
+ programing language/c-c++/Valgrind/test.cc         |   12 -
+ programing language/c-c++/Valgrind/use.md          |    1 -
+ programing language/c-c++/about_pointer.cc         |   77 -
+ programing language/c-c++/array_pointer/Readme.md  |   11 -
+ programing language/c-c++/array_pointer/main.c     |   14 -
+ programing language/c-c++/basic/char_array.c       |   22 -
+ programing language/c-c++/basic/construct_call.cc  |   61 -
+ programing language/c-c++/big-little-endian.md     |   55 -
+ programing language/c-c++/big-little-endian.md~    |    0
+ programing language/c-c++/class_string.cc          |  106 -
+ programing language/c-c++/class_string_improve.cc  |   94 -
+ programing language/c-c++/const_function.cc        |   21 -
+ programing language/c-c++/construct.md             |   32 -
+ programing language/c-c++/cpp_scope.cc             |   93 -
+ programing language/c-c++/delete_test.cc           |   11 -
+ programing language/c-c++/effective_item27.cc      |   34 -
+ programing language/c-c++/effective_item28.cc      |   23 -
+ .../c-c++/function_pointor/example.cc              |   25 -
+ programing language/c-c++/operator.cc              |   13 -
+ programing language/c-c++/use_array.cc             |   13 -
+ programing language/c-c++/use_map.cc               |   27 -
+ programing language/c-c++/use_string.cc            |   25 -
+ programing language/c-c++/virtual_in_f.cc          |   63 -
+ ...234\272\345\255\227\350\212\202\345\272\217.md" |   55 -
+ ...236\204\351\200\240\345\207\275\346\225\260.md" |   32 -
+ ...ython\345\207\275\346\225\260-checkpoint.ipynb" |  646 -----
+ .../code/Python\345\207\275\346\225\260.ipynb"     |  649 -----
+ .../code/learning_python/person/.idea/misc.xml     |   14 -
+ .../code/learning_python/person/.idea/modules.xml  |    8 -
+ .../code/learning_python/person/.idea/person.iml   |   12 -
+ .../learning_python/person/.idea/workspace.xml     |  424 ----
+ .../person/__pycache__/person.cpython-35.pyc       |  Bin 1729 -> 0 bytes
+ .../python/code/learning_python/person/makedb.py   |   10 -
+ .../python/code/learning_python/person/person.py   |   36 -
+ .../code/learning_python/person/persondb.bak       |    3 -
+ .../code/learning_python/person/persondb.dat       |  Bin 1115 -> 0 bytes
+ .../code/learning_python/person/persondb.dir       |    3 -
+ .../.ipynb_checkpoints/basic_plot-checkpoint.ipynb |   87 -
+ .../.ipynb_checkpoints/numpy-checkpoint.ipynb      |  712 ------
+ .../python/code/matplotlib/basic_plot.ipynb        |   87 -
+ .../python/code/matplotlib/plot_sincos.py          |   34 -
+ .../python/code/matplotlib/populations.txt         |   22 -
+ programing language/python/code/numpy.ipynb        |  706 ------
+ ...45\350\207\252scipy-lectures\357\274\211.ipynb" |   68 -
+ .../python/code/open jupyter notebook.bat          |    1 -
+ .../python/code/project/2048/.idea/2048.iml        |    8 -
+ .../python/code/project/2048/.idea/misc.xml        |   14 -
+ .../python/code/project/2048/.idea/modules.xml     |    8 -
+ .../python/code/project/2048/.idea/workspace.xml   |   42 -
+ .../python/code/project/2048/game.py               |  208 --
+ .../code/project/ascii_pic/.idea/ascii_pic.iml     |   13 -
+ .../python/code/project/ascii_pic/.idea/misc.xml   |   14 -
+ .../code/project/ascii_pic/.idea/modules.xml       |   10 -
+ .../code/project/ascii_pic/.idea/workspace.xml     |  496 ----
+ .../python/code/project/ascii_pic/1.jpg            |  Bin 196753 -> 0 bytes
+ .../python/code/project/ascii_pic/ascii.py         |   52 -
+ .../python/code/project/ascii_pic/ascii_dora.png   |  Bin 25283 -> 0 bytes
+ .../python/code/project/tickets/.idea/misc.xml     |   14 -
+ .../python/code/project/tickets/.idea/modules.xml  |    9 -
+ .../python/code/project/tickets/.idea/tickets.iml  |    9 -
+ .../code/project/tickets/.idea/workspace.xml       |  543 -----
+ .../tickets/__pycache__/stations.cpython-35.pyc    |  Bin 58497 -> 0 bytes
+ .../python/code/project/tickets/parse_station.py   |   11 -
+ .../python/code/project/tickets/stations.py        | 2529 --------------------
+ .../python/code/project/tickets/tickets.py         |  111 -
+ ...\220\345\222\214\350\277\255\344\273\243.ipynb" |  208 --
+ .../python/code/\347\261\273.ipynb"                |  134 --
+ ...224\256\345\200\274\350\275\254\346\215\242.py" |   19 -
+ programing language/python/gui/.idea/gui.iml       |   12 -
+ .../.idea/inspectionProfiles/profiles_settings.xml |    7 -
+ programing language/python/gui/.idea/misc.xml      |    4 -
+ programing language/python/gui/.idea/modules.xml   |    8 -
+ programing language/python/gui/.idea/workspace.xml |  396 ---
+ programing language/python/gui/first.py            |   87 -
+ programing language/python/gui/wxhelloWorld.py     |   99 -
+ programing language/python/heap.py                 |   10 -
+ programing language/python/problem1.py             |    9 -
+ programing language/python/problem2.py             |   24 -
+ .../file.txt"                                      |  110 -
+ .../task.py"                                       |   19 -
+ tools/perf/perf.data                               |  Bin 77000 -> 0 bytes
+ tools/perf/test.c                                  |   27 -
+ 126 files changed, 12883 deletions(-)
+
+commit c1d3bd53858ce33fba3cda4d00b2b20177c7db27
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Jul 14 11:33:24 2019 +0800
+
+    整理文件夹
+
+ .vscode/ipch/3c3fe841ac40ee6b/mmap_address.bin     |  Bin 0 -> 8 bytes
+ .../AlgorithmInHand/Stack_Queue/hanoi.cc"          |    0
+ .../AlgorithmInHand/cstring/cstring.md"            |    0
+ .../AlgorithmInHand/cstring/strcpy.cc"             |    0
+ .../AlgorithmInHand/cstring/strlen.cc"             |    0
+ .../AlgorithmInHand/cstring/strstr.cc"             |    0
+ .../AlgorithmInHand/string_lib/kmp.md"             |    0
+ .../AlgorithmInHand/string_lib/strcpy.cc"          |    0
+ .../AlgorithmInHand/string_lib/strlen.cc"          |    0
+ .../AlgorithmInHand/string_lib/strstr.cc"          |    0
+ .../AlgorithmInHand/tree/disjoint_set.cc"          |    0
+ .../AlgorithmInHand/tree/disjoint_set_1.cc"        |    0
+ .../AlgorithmInHand/tree/heap.cc"                  |    0
+ .../AlgorithmInHand/tree/tree_traversal.cc"        |    0
+ .../inspectionProfiles/profiles_settings.xml"      |    7 +
+ .../leetcode/.idea/leetcode.iml"                   |   12 +
+ .../leetcode/.idea/misc.xml"                       |    4 +
+ .../leetcode/.idea/modules.xml"                    |    8 +
+ .../leetcode/.idea/vcs.xml"                        |    6 +
+ .../leetcode/.idea/workspace.xml"                  | 1066 ++++++++++++++++++++
+ .../.ipynb_checkpoints/LeetCode-checkpoint.ipynb"  |    0
+ .../\345\210\267\351\242\230/leetcode/1-twosum.md" |    0
+ .../leetcode/C++/1-twosum.cc"                      |    0
+ .../leetcode/C++/2-add_two_num.cc"                 |    0
+ .../leetcode/LeetCode.ipynb"                       |   88 ++
+ .../leetcode/python/1-twoSum.py"                   |    0
+ .../leetcode/python/14-longestCommonPrefix.py"     |    0
+ .../leetcode/python/15-3sum.py"                    |    0
+ .../leetcode/python/2-addTwoNum.py"                |    0
+ .../leetcode/python/3-lengthOfLongestSubstring.py" |    0
+ .../leetcode/python/4-findMedianSortedArrays.py"   |    0
+ .../leetcode/python/5-longestPalindrome.py"        |    0
+ .../leetcode/python/6-ZigZag.py"                   |    0
+ .../leetcode/python/7-ReverseInteger.py"           |    0
+ .../leetcode/python/8-PalindromeNumber.py"         |    0
+ .../leetcode/python/MaxSubArray.py"                |    0
+ .../\345\211\221\346\214\207offer/combination.cc"  |    0
+ .../\345\211\221\346\214\207offer/my_include.h"    |    0
+ .../\345\211\221\346\214\207offer/permutation.cc"  |    0
+ .../permutation_seq.cc"                            |    0
+ .../\345\211\221\346\214\207offer/problem10.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem11.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem12.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem13.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem14.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem15.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem16.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem17.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem18.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem19.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem20.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem21.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem22.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem23.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem24.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem25.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem26.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem27.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem28.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem29.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem3.cc"     |    0
+ .../\345\211\221\346\214\207offer/problem30.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem31.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem32.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem33.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem34.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem35.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem36.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem37.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem38.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem39-1.cc"  |    0
+ .../\345\211\221\346\214\207offer/problem39.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem4.cc"     |    0
+ .../\345\211\221\346\214\207offer/problem40.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem41-1.cc"  |    0
+ .../\345\211\221\346\214\207offer/problem41.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem42-1.cc"  |    0
+ .../\345\211\221\346\214\207offer/problem42.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem44.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem45.cc"    |    0
+ .../\345\211\221\346\214\207offer/problem5.cc"     |    0
+ .../\345\211\221\346\214\207offer/problem6.cc"     |    0
+ .../\345\211\221\346\214\207offer/problem7.cc"     |    0
+ .../\345\211\221\346\214\207offer/problem8.cc"     |    0
+ .../\345\211\221\346\214\207offer/problem9.cc"     |    0
+ .../singleNumber2.cc"                              |    0
+ .../\345\211\221\346\214\207offer/singleton.cc"    |    0
+ .../\345\211\221\346\214\207offer/str.c"           |    0
+ .../\345\211\221\346\214\207offer/youdao1.cc"      |    0
+ .../\345\211\221\346\214\207offer/youdao2.cc"      |    0
+ .../\345\211\221\346\214\207offer/youdao3.cc"      |    0
+ book/AlgorithmInHand/string_lib/kmp.md~            |    0
+ .../computer architecture/Cache1.c                 |    0
+ .../linux/condition.c                              |    0
+ .../mutex.c" => computer science/linux/mutex.c     |    0
+ .../linux/process/C_start_exit.cc                  |    0
+ .../linux/process/fork_ex.c                        |    0
+ .../linux/process/map1.c                           |    0
+ .../linux/process/map2.c                           |    0
+ .../linux/process/mesg.c                           |    0
+ .../linux/process/pipe.cc                          |    0
+ .../linux/process/signal_ex.cc                     |    0
+ .../linux/pthread/condvar.c                        |    0
+ .../linux/pthread/dotprod_mutex.c                  |    0
+ .../linux/pthread/pthread_create_exit.c            |    0
+ .../thread.c" => computer science/linux/thread.c   |    0
+ .../parallel computing/MPI_basc_comm.c             |    0
+ .../parallel computing/MPIhello.c                  |    0
+ .../shell/sh1.sh" => computer science/shell/sh1.sh |    0
+ .../shell/sh2.sh" => computer science/shell/sh2.sh |    0
+ markdown_example.md                                |  125 ---
+ other/11.cc                                        |   36 -
+ other/bit.cc                                       |   42 -
+ other/cam/cam.cc                                   |  195 ----
+ other/code/11.cc                                   |    6 -
+ other/code/111.java                                |    7 -
+ other/code/22.java                                 |   95 --
+ other/code/333                                     |   50 -
+ other/code/333.java                                |   50 -
+ other/code/Main.class                              |  Bin 1083 -> 0 bytes
+ other/code/Main.java                               |   50 -
+ other/code/erwei.cc                                |   58 --
+ other/code/heap.cc                                 |  105 --
+ other/code/ss.cc                                   |   39 -
+ other/const.cc                                     |   24 -
+ other/getlinetest.cc                               |   16 -
+ other/num01.cc                                     |   61 --
+ other/pointertest.c                                |   23 -
+ other/qqq.cc                                       |   27 -
+ other/sort11.cc                                    |   47 -
+ other/string+.cc                                   |   17 -
+ other/time.c                                       |   87 --
+ ...250\200\346\250\241\345\235\227\345\214\226.md" |    4 -
+ .../{C_C++ => c-c++}/Input_Output/getline_cin.cc   |    0
+ .../{C_C++ => c-c++}/Input_Output/stoi_etc.cc      |    0
+ .../{C_C++ => c-c++}/InsideC++/data.cc             |    0
+ .../{C_C++ => c-c++}/Memory_Alignment/bit_filed.cc |    0
+ .../Memory_Alignment/size_of_struct.c              |    0
+ .../Memory_Alignment/size_of_struct2.c             |    0
+ .../Memory_Alignment/structure_packing.md          |    0
+ .../{C_C++ => c-c++}/OOP/class.Sales_Data.cc       |    0
+ .../{C_C++ => c-c++}/OOP/class.Screen.cc           |    0
+ .../{C_C++ => c-c++}/OOP/class.aggregate.cc        |    0
+ programing language/{C_C++ => c-c++}/OOP/ex1.cc    |    0
+ programing language/{C_C++ => c-c++}/OOP/ex2.cc    |    0
+ programing language/{C_C++ => c-c++}/OOP/ex3.cc    |    0
+ programing language/{C_C++ => c-c++}/OOP/oop.cc    |    0
+ .../OOP/private_derived_derived.cc                 |    0
+ programing language/{C_C++ => c-c++}/STL/STLmap.cc |    0
+ .../{C_C++ => c-c++}/STL/use-sort.cc               |    0
+ .../{C_C++ => c-c++}/Valgrind/delete_test.cc       |    0
+ .../{C_C++ => c-c++}/Valgrind/test.cc              |    0
+ .../{C_C++ => c-c++}/Valgrind/use.md               |    0
+ .../{C_C++ => c-c++}/about_pointer.cc              |    0
+ .../{C_C++ => c-c++}/array_pointer/Readme.md       |    0
+ .../{C_C++ => c-c++}/array_pointer/main.c          |    0
+ .../{C_C++ => c-c++}/basic/char_array.c            |    0
+ .../{C_C++ => c-c++}/basic/construct_call.cc       |    0
+ .../{C_C++ => c-c++}/big-little-endian.md          |    0
+ .../{C_C++ => c-c++}/big-little-endian.md~         |    0
+ .../{C_C++ => c-c++}/class_string.cc               |    0
+ .../{C_C++ => c-c++}/class_string_improve.cc       |    0
+ .../{C_C++ => c-c++}/const_function.cc             |    0
+ programing language/{C_C++ => c-c++}/construct.md  |    0
+ programing language/{C_C++ => c-c++}/cpp_scope.cc  |    0
+ .../{C_C++ => c-c++}/delete_test.cc                |    0
+ .../{C_C++ => c-c++}/effective_item27.cc           |    0
+ .../{C_C++ => c-c++}/effective_item28.cc           |    0
+ .../{C_C++ => c-c++}/function_pointor/example.cc   |    0
+ programing language/{C_C++ => c-c++}/operator.cc   |    0
+ programing language/{C_C++ => c-c++}/use_array.cc  |    0
+ programing language/{C_C++ => c-c++}/use_map.cc    |    0
+ programing language/{C_C++ => c-c++}/use_string.cc |    0
+ .../{C_C++ => c-c++}/virtual_in_f.cc               |    0
+ ...234\272\345\255\227\350\212\202\345\272\217.md" |    0
+ ...236\204\351\200\240\345\207\275\346\225\260.md" |    0
+ programing language/perf/perf.data.old             |  Bin 74432 -> 0 bytes
+ {programing language => tools}/perf/perf.data      |  Bin
+ {programing language => tools}/perf/test.c         |    0
+ 179 files changed, 1191 insertions(+), 1164 deletions(-)
+
+commit d282a21cc0602446b49d0d2fe0fd37acc55db7b5
+Author: YangHuang <huangyang@outlook.com>
+Date:   Wed Jul 25 23:08:38 2018 +0800
+
+    0725
+
+ programing language/C_C++/InsideC++/data.cc    | 18 +++++
+ programing language/python/gui/wxhelloWorld.py | 99 ++++++++++++++++++++++++++
+ 2 files changed, 117 insertions(+)
+
+commit d9d3c798c22fb13062e56b62abbf458ae7c0f623
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Jun 9 00:10:31 2018 +0800
+
+    add class example
+
+ programing language/C_C++/OOP/class.Sales_Data.cc |  8 ++++++-
+ programing language/C_C++/OOP/class.Screen.cc     | 16 +++++++++++++-
+ programing language/C_C++/OOP/class.aggregate.cc  | 27 +++++++++++++++++++++++
+ 3 files changed, 49 insertions(+), 2 deletions(-)
+
+commit e4f4603b8283ea2521080b342ed9d3ca6d25c5a7
+Author: YangHuang <huangyang@outlook.com>
+Date:   Thu Jun 7 00:34:00 2018 +0800
+
+    0607
+
+ programing language/C_C++/OOP/class.Screen.cc | 47 ++++++++++++++++++++++++---
+ programing language/C_C++/OOP/ex1.cc          |  4 +++
+ 2 files changed, 47 insertions(+), 4 deletions(-)
+
+commit 4a3d17651870b1038e0e63f3eca71e9104ded62f
+Author: YangHuang <huangyang@outlook.com>
+Date:   Fri Jun 1 00:05:17 2018 +0800
+
+    增加Sales_Data类及学习笔记
+
+ programing language/C_C++/OOP/class.Sales_Data.cc | 110 ++++++++++++++++++++++
+ programing language/C_C++/OOP/class.Screen.cc     |  20 ++++
+ 2 files changed, 130 insertions(+)
+
+commit dc013f6c9601fdcc10322988b00ff8ccec9a47b4
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun May 20 19:43:36 2018 +0800
+
+    shortpath
+
+ algorithm/graph/shortpath.py | 39 +++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 39 insertions(+)
+
+commit 415ce069337d3a184145537d8e3718e582e1844f
+Author: YangHuang <huangyang@outlook.com>
+Date:   Thu May 10 23:49:14 2018 +0800
+
+    Create C语言模块化.md
+
+ .../C\350\257\255\350\250\200\346\250\241\345\235\227\345\214\226.md" | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit 544e6b8dc4b42b46f418f1eb5efadfa08ecf104e
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun May 6 17:22:04 2018 +0800
+
+    leetcode14-15
+
+ leetcode/python/14-longestCommonPrefix.py          | 39 ++++++++++++++++
+ leetcode/python/15-3sum.py                         | 54 ++++++++++++++++++++++
+ ...224\256\345\200\274\350\275\254\346\215\242.py" | 11 +++--
+ 3 files changed, 99 insertions(+), 5 deletions(-)
+
+commit 26fc62f9f6570243d2ca0d711b8eb0133eab75b4
+Merge: d2018f0 1f218fc
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun Apr 29 10:53:55 2018 +0800
+
+    Merge branch 'master' of https://github.com/sunday1103/Notebook
+
+commit d2018f055a1ba8f4ebc06f9e5db7bdaa7f415c8d
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun Apr 29 10:53:26 2018 +0800
+
+    gtest
+
+ ...237\272\346\234\254\344\275\277\347\224\250.md" | 52 ++++++++++++++++++++++
+ 1 file changed, 52 insertions(+)
+
+commit 1f218fc7fcfb354c3cd87922edb236f65a59709c
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Apr 22 18:26:36 2018 +0800
+
+    Create dict键值转换.py
+
+ ...351\224\256\345\200\274\350\275\254\346\215\242.py" | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+
+commit f4a3fa9770162caf4341b8c1971c571a5a1caf43
+Author: huangyang <huangyang@outlook.com>
+Date:   Tue Feb 13 18:15:33 2018 +0800
+
+    gtest
+
+ ...237\272\346\234\254\344\275\277\347\224\250.md" | 128 ++++
+ library/gtest/proj/makefile                        |   5 +
+ library/gtest/proj/testAdd.cc                      |  10 +
+ library/gtest/proj/testAdd_F.cc                    |  46 ++
+ .../gtest/\345\256\211\350\243\205gtest.md"        |   0
+ .../code/.ipynb_checkpoints/numpy-checkpoint.ipynb | 679 ---------------------
+ ...252scipy-lectures\357\274\211-checkpoint.ipynb" |   6 -
+ 7 files changed, 189 insertions(+), 685 deletions(-)
+
+commit 5ad427079a021e4ef0050a97a85d76e330993293
+Author: huangyang <huangyang@outlook.com>
+Date:   Tue Feb 13 10:38:05 2018 +0800
+
+    更新gtest安装说明
+
+ library/gtest/proj/add.cc                                  | 11 +++++++++++
+ library/gtest/proj/testAdd.cc                              | 14 ++++++++++++++
+ ...est\357\274\210\345\256\211\350\243\205\357\274\211.md" | 10 +++++++++-
+ 3 files changed, 34 insertions(+), 1 deletion(-)
+
+commit 35d5fe759435e9df543539e7d8a143f256f71535
+Merge: b3cb41e d9268d8
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun Feb 11 22:12:21 2018 +0800
+
+    Merge branch 'master' of https://github.com/sunday1103/Notebook
+
+commit b3cb41ef9405fb437f53d980bd47b4b3152acd7b
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun Feb 11 22:12:06 2018 +0800
+
+    fsm
+
+ algorithm/FSM/fsm.cc         | 151 +++++++++++++++++++++++++++++++++++++++++++
+ algorithm/graph/shortpath.py |   0
+ 2 files changed, 151 insertions(+)
+
+commit d9268d842cfe379ca1231d91074eee5411ce8744
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Jan 27 22:19:37 2018 +0800
+
+    Gtest
+
+ ...274\210\345\256\211\350\243\205\357\274\211.md" | 117 +++++++++++++++++++++
+ 1 file changed, 117 insertions(+)
+
+commit 5a5663501a38d86b4e3dc2f58e3c7c71d43d729e
+Author: YangHuang <huangyang@outlook.com>
+Date:   Fri Jan 26 22:23:23 2018 +0800
+
+    去除不必要文件
+
+ SUMMARY.md   |  4 ----
+ _config.yml  |  1 -
+ notebook.zim | 12 ------------
+ 3 files changed, 17 deletions(-)
+
+commit fcb57553dc754142f67be809576f53d1b959e994
+Merge: 1d03e46 a9d3ce6
+Author: YangHuang <huangyang@outlook.com>
+Date:   Fri Jan 26 22:20:16 2018 +0800
+
+    Merge branch 'master' of https://github.com/sunday1103/Notebook
+
+commit 1d03e46739e33a986d9816c308f3bb2293d6a0ef
+Author: YangHuang <huangyang@outlook.com>
+Date:   Fri Jan 26 22:19:14 2018 +0800
+
+    去除Markdown乱码
+
+ ...310\266\357\277\275\357\277\275\357\277\275.md" |   6 -
+ .../strcpy.cc"                                     |  30 ---
+ .../strlen.cc"                                     |  41 ----
+ .../strstr.cc"                                     |  74 -------
+ ...326\267\357\277\275\357\277\275\357\277\275.md" |  23 ---
+ ...357\277\275\357\277\275\335\275\341\271\271.md" |   0
+ ...234\272\345\255\227\350\212\202\345\272\217.md" |   0
+ .../python/code/project/ascii_pic/output.txt       |  50 -----
+ .../Computer_Architecture/cache1"                  | Bin 6612 -> 0 bytes
+ .../Computer_Architecture/cache2"                  | Bin 6612 -> 0 bytes
+ .../Computer_Architecture/cache3"                  | Bin 6596 -> 0 bytes
+ .../Computer_Architecture/cache4"                  | Bin 6596 -> 0 bytes
+ .../Computer_Architecture/cachegrind.out.100844"   | 221 ---------------------
+ .../Computer_Architecture/cachegrind.out.101092"   | 221 ---------------------
+ .../Computer_Architecture/cachegrind.out.103429"   | 221 ---------------------
+ .../Computer_Architecture/cachegrind.out.103459"   | 221 ---------------------
+ 16 files changed, 1108 deletions(-)
+
+commit a9d3ce63525ba03e9e4c9b0ded0ca9dfcb3aff9b
+Author: YangHuang <huangyang@outlook.com>
+Date:   Thu Jan 25 22:13:14 2018 +0800
+
+    Set theme jekyll-theme-leap-day
+
+ _config.yml | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 190f844f2f37234a0a6203bcbc1d77aedf8c52ed
+Author: YangHuang <huangyang@outlook.com>
+Date:   Thu Jan 25 00:18:10 2018 +0800
+
+    GUI排版
+
+ programing language/python/gui/.idea/workspace.xml | 24 ++++-----
+ programing language/python/gui/first.py            | 61 +++++++++++++++++-----
+ 2 files changed, 60 insertions(+), 25 deletions(-)
+
+commit be3063e622fbe725da8c955c9c39273225c0c5e0
+Author: YangHuang <huangyang@outlook.com>
+Date:   Wed Jan 24 22:39:59 2018 +0800
+
+    GUI
+
+ algorithm/graph/shortPath.py                       |  39 ++
+ notebook.zim                                       |  12 +
+ programing language/python/gui/.idea/gui.iml       |  12 +
+ .../.idea/inspectionProfiles/profiles_settings.xml |   7 +
+ programing language/python/gui/.idea/misc.xml      |   4 +
+ programing language/python/gui/.idea/modules.xml   |   8 +
+ programing language/python/gui/.idea/workspace.xml | 396 ++++++++++++
+ programing language/python/gui/first.py            |  52 ++
+ programing language/python/heap.py                 |  10 +
+ .../code/.ipynb_checkpoints/numpy-checkpoint.ipynb | 679 +++++++++++++++++++++
+ ...252scipy-lectures\357\274\211-checkpoint.ipynb" |   6 +
+ 11 files changed, 1225 insertions(+)
+
+commit 8efd7e48287058921b7333f010d6566f9b0b2059
+Author: huangyang <huangyang@outlook.com>
+Date:   Sat Jan 20 12:28:30 2018 +0800
+
+    更改目录结构
+
+ {DP => algorithm/DP}/Dynamic Programming.ipynb              |   0
+ {DP => algorithm/DP}/LeetCode/findNumberOfLIS.py            |   0
+ {DP => algorithm/DP}/coin.cpp                               |   0
+ {DP => algorithm/DP}/exchange.cc                            |   0
+ {DP => algorithm/DP}/lengthOfLTS.cc                         |   0
+ {DP => algorithm/DP}/rob.cpp                                |   0
+ {DP => algorithm/DP}/rob2.cpp                               |   0
+ {Data Structure => algorithm/Data Structure}/LRU.cc         |   0
+ {Data Structure => algorithm/Data Structure}/myList.cc      |   0
+ .../Data Structure}/priority_queue.md                       |   0
+ .../Data Structure}/priority_queue.md~                      |   0
+ {Data Structure => algorithm/Data Structure}/queue.cc       |   0
+ .../Data Structure}/test_my_queue.txt                       |   0
+ ...\277\275\310\266\357\277\275\357\277\275\357\277\275.md" |   0
+ {bigInt => algorithm/bigInt}/big.cc                         |   0
+ {bigInt => algorithm/bigInt}/bigIntclass.cc                 |   0
+ {bigInt => algorithm/bigInt}/bigIntclass.cc~                |   0
+ {bitwise => algorithm/bitwise}/find_odd_number.md           |   0
+ {bitwise => algorithm/bitwise}/find_odd_number3.cc          |   0
+ {bitwise => algorithm/bitwise}/odd_times_number.cc          |   0
+ {find => algorithm/find}/BinarySearch.cc                    |   0
+ {find => algorithm/find}/FirstRepeat.cc                     |   0
+ {find => algorithm/find}/find.cc                            |   0
+ {find => algorithm/find}/find.md                            |   0
+ {find => algorithm/find}/hash_poj_2503.cc                   |   0
+ {graph => algorithm/graph}/Digraph.cc                       |   0
+ {graph => algorithm/graph}/bfs.cc                           |   0
+ {graph => algorithm/graph}/graph.cc                         |   0
+ {hash => algorithm/hash}/hash_char.cc                       |   0
+ {sort => algorithm/sort}/application.cc                     |   0
+ {sort => algorithm/sort}/input.txt                          |   0
+ {sort => algorithm/sort}/makefile                           |   0
+ {sort => algorithm/sort}/rand_num.cc                        |   0
+ {sort => algorithm/sort}/sort.cc                            |   0
+ {sort => algorithm/sort}/sort.md                            |   0
+ {sort => algorithm/sort}/sort_in_hand.cc                    |   0
+ {string => algorithm/string}/string_int.cc                  |   0
+ {tree => algorithm/tree}/BSTree.h                           |   0
+ {tree => algorithm/tree}/BSTreeTest.cc                      |   0
+ {tree => algorithm/tree}/myTree.h                           |   0
+ .../\345\210\267\351\242\230/huawei/1.cc"                   |   0
+ .../\345\210\267\351\242\230/huawei/2.cc"                   |   0
+ .../\345\210\267\351\242\230/huawei/3.cc"                   |   0
+ .../\345\210\267\351\242\230/huawei/4.cc"                   |   0
+ .../\345\210\267\351\242\230/huawei/5.cc"                   |   0
+ .../AlgorithmInHand}/Stack_Queue/hanoi.cc                   |   0
+ .../AlgorithmInHand}/cstring/cstring.md                     |   0
+ {AlgorithmInHand => book/AlgorithmInHand}/cstring/strcpy.cc |   0
+ {AlgorithmInHand => book/AlgorithmInHand}/cstring/strlen.cc |   0
+ {AlgorithmInHand => book/AlgorithmInHand}/cstring/strstr.cc |   0
+ {AlgorithmInHand => book/AlgorithmInHand}/string_lib/kmp.md |   0
+ .../AlgorithmInHand}/string_lib/kmp.md~                     |   0
+ .../AlgorithmInHand}/string_lib/strcpy.cc                   |   0
+ .../AlgorithmInHand}/string_lib/strlen.cc                   |   0
+ .../AlgorithmInHand}/string_lib/strstr.cc                   |   0
+ .../AlgorithmInHand}/tree/disjoint_set.cc                   |   0
+ .../AlgorithmInHand}/tree/disjoint_set_1.cc                 |   0
+ {AlgorithmInHand => book/AlgorithmInHand}/tree/heap.cc      |   0
+ .../AlgorithmInHand}/tree/tree_traversal.cc                 |   0
+ .../strcpy.cc"                                              |   0
+ .../strlen.cc"                                              |   0
+ .../strstr.cc"                                              |   0
+ ...\277\275\326\267\357\277\275\357\277\275\357\277\275.md" |   0
+ .../\345\211\221\346\214\207offer/combination.cc"           |   0
+ .../\345\211\221\346\214\207offer/my_include.h"             |   0
+ .../\345\211\221\346\214\207offer/permutation.cc"           |   0
+ .../\345\211\221\346\214\207offer/permutation_seq.cc"       |   0
+ .../\345\211\221\346\214\207offer/problem10.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem11.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem12.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem13.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem14.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem15.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem16.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem17.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem18.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem19.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem20.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem21.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem22.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem23.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem24.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem25.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem26.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem27.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem28.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem29.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem3.cc"              |   0
+ .../\345\211\221\346\214\207offer/problem30.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem31.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem32.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem33.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem34.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem35.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem36.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem37.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem38.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem39-1.cc"           |   0
+ .../\345\211\221\346\214\207offer/problem39.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem4.cc"              |   0
+ .../\345\211\221\346\214\207offer/problem40.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem41-1.cc"           |   0
+ .../\345\211\221\346\214\207offer/problem41.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem42-1.cc"           |   0
+ .../\345\211\221\346\214\207offer/problem42.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem44.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem45.cc"             |   0
+ .../\345\211\221\346\214\207offer/problem5.cc"              |   0
+ .../\345\211\221\346\214\207offer/problem6.cc"              |   0
+ .../\345\211\221\346\214\207offer/problem7.cc"              |   0
+ .../\345\211\221\346\214\207offer/problem8.cc"              |   0
+ .../\345\211\221\346\214\207offer/problem9.cc"              |   0
+ .../\345\211\221\346\214\207offer/singleNumber2.cc"         |   0
+ .../\345\211\221\346\214\207offer/singleton.cc"             |   0
+ offer/str.c => "book/\345\211\221\346\214\207offer/str.c"   |   0
+ .../\345\211\221\346\214\207offer/youdao1.cc"               |   0
+ .../\345\211\221\346\214\207offer/youdao2.cc"               |   0
+ .../\345\211\221\346\214\207offer/youdao3.cc"               |   0
+ docs/README.md                                              |   4 ----
+ {boost => library/boost}/asio_basic.md                      |   0
+ {boost => library/boost}/asio_endpoint.md                   |   0
+ {test => other}/11.cc                                       |   0
+ {test => other}/bit.cc                                      |   0
+ {test => other}/cam/cam.cc                                  |   0
+ {test => other}/code/11.cc                                  |   0
+ {test => other}/code/111.java                               |   0
+ {test => other}/code/22.java                                |   0
+ {test => other}/code/333                                    |   0
+ {test => other}/code/333.java                               |   0
+ {test => other}/code/Main.class                             | Bin
+ {test => other}/code/Main.java                              |   0
+ {test => other}/code/erwei.cc                               |   0
+ {test => other}/code/heap.cc                                |   0
+ {test => other}/code/ss.cc                                  |   0
+ {test => other}/const.cc                                    |   0
+ {test => other}/getlinetest.cc                              |   0
+ {test => other}/num01.cc                                    |   0
+ {test => other}/pointertest.c                               |   0
+ {test => other}/qqq.cc                                      |   0
+ {test => other}/sort11.cc                                   |   0
+ {test => other}/string+.cc                                  |   0
+ {test => other}/time.c                                      |   0
+ .../C_C++}/Input_Output/getline_cin.cc                      |   0
+ .../C_C++}/Input_Output/stoi_etc.cc                         |   0
+ .../C_C++}/Memory_Alignment/bit_filed.cc                    |   0
+ .../C_C++}/Memory_Alignment/size_of_struct.c                |   0
+ .../C_C++}/Memory_Alignment/size_of_struct2.c               |   0
+ .../C_C++}/Memory_Alignment/structure_packing.md            |   0
+ {C_C++ => programing language/C_C++}/OOP/ex1.cc             |   0
+ {C_C++ => programing language/C_C++}/OOP/ex2.cc             |   0
+ {C_C++ => programing language/C_C++}/OOP/ex3.cc             |   0
+ {C_C++ => programing language/C_C++}/OOP/oop.cc             |   0
+ .../C_C++}/OOP/private_derived_derived.cc                   |   0
+ {C_C++ => programing language/C_C++}/STL/STLmap.cc          |   0
+ {C_C++ => programing language/C_C++}/STL/use-sort.cc        |   0
+ ...\277\275\357\277\275\357\277\275\335\275\341\271\271.md" |   0
+ .../C_C++/Valgrind}/delete_test.cc                          |   0
+ {Valgrind => programing language/C_C++/Valgrind}/test.cc    |   0
+ {Valgrind => programing language/C_C++/Valgrind}/use.md     |   0
+ {C_C++ => programing language/C_C++}/about_pointer.cc       |   0
+ .../C_C++}/array_pointer/Readme.md                          |   0
+ {C_C++ => programing language/C_C++}/array_pointer/main.c   |   0
+ {C_C++ => programing language/C_C++}/basic/char_array.c     |   0
+ .../C_C++}/basic/construct_call.cc                          |   0
+ {C_C++ => programing language/C_C++}/big-little-endian.md   |   0
+ {C_C++ => programing language/C_C++}/big-little-endian.md~  |   0
+ {C_C++ => programing language/C_C++}/class_string.cc        |   0
+ .../C_C++}/class_string_improve.cc                          |   0
+ {C_C++ => programing language/C_C++}/const_function.cc      |   0
+ {C_C++ => programing language/C_C++}/construct.md           |   0
+ {C_C++ => programing language/C_C++}/cpp_scope.cc           |   0
+ {C_C++ => programing language/C_C++}/delete_test.cc         |   0
+ {C_C++ => programing language/C_C++}/effective_item27.cc    |   0
+ {C_C++ => programing language/C_C++}/effective_item28.cc    |   0
+ .../C_C++}/function_pointor/example.cc                      |   0
+ {C_C++ => programing language/C_C++}/operator.cc            |   0
+ {C_C++ => programing language/C_C++}/use_array.cc           |   0
+ {C_C++ => programing language/C_C++}/use_map.cc             |   0
+ {C_C++ => programing language/C_C++}/use_string.cc          |   0
+ {C_C++ => programing language/C_C++}/virtual_in_f.cc        |   0
+ ...\277\275\332\264\346\262\274\357\277\275\357\277\275.md" |   0
+ .../\346\236\204\351\200\240\345\207\275\346\225\260.md"    |   0
+ {perf => programing language/perf}/perf.data                | Bin
+ {perf => programing language/perf}/perf.data.old            | Bin
+ {perf => programing language/perf}/test.c                   |   0
+ .../Python\345\207\275\346\225\260-checkpoint.ipynb"        |   0
+ .../python/code/Python\345\207\275\346\225\260.ipynb"       |   0
+ .../python}/code/learning_python/person/.idea/misc.xml      |   0
+ .../python}/code/learning_python/person/.idea/modules.xml   |   0
+ .../python}/code/learning_python/person/.idea/person.iml    |   0
+ .../python}/code/learning_python/person/.idea/workspace.xml |   0
+ .../person/__pycache__/person.cpython-35.pyc                | Bin
+ .../python}/code/learning_python/person/makedb.py           |   0
+ .../python}/code/learning_python/person/person.py           |   0
+ .../python}/code/learning_python/person/persondb.bak        |   0
+ .../python}/code/learning_python/person/persondb.dat        | Bin
+ .../python}/code/learning_python/person/persondb.dir        |   0
+ .../.ipynb_checkpoints/basic_plot-checkpoint.ipynb          |   0
+ .../matplotlib/.ipynb_checkpoints/numpy-checkpoint.ipynb    |   0
+ .../python}/code/matplotlib/basic_plot.ipynb                |   0
+ .../python}/code/matplotlib/plot_sincos.py                  |   0
+ .../python}/code/matplotlib/populations.txt                 |   0
+ {python => programing language/python}/code/numpy.ipynb     |   0
+ ...346\235\245\350\207\252scipy-lectures\357\274\211.ipynb" |   0
+ .../python}/code/open jupyter notebook.bat                  |   0
+ .../python}/code/project/2048/.idea/2048.iml                |   0
+ .../python}/code/project/2048/.idea/misc.xml                |   0
+ .../python}/code/project/2048/.idea/modules.xml             |   0
+ .../python}/code/project/2048/.idea/workspace.xml           |   0
+ .../python}/code/project/2048/game.py                       |   0
+ .../python}/code/project/ascii_pic/.idea/ascii_pic.iml      |   0
+ .../python}/code/project/ascii_pic/.idea/misc.xml           |   0
+ .../python}/code/project/ascii_pic/.idea/modules.xml        |   0
+ .../python}/code/project/ascii_pic/.idea/workspace.xml      |   0
+ .../python}/code/project/ascii_pic/1.jpg                    | Bin
+ .../python}/code/project/ascii_pic/ascii.py                 |   0
+ .../python}/code/project/ascii_pic/ascii_dora.png           | Bin
+ .../python}/code/project/ascii_pic/output.txt               |   0
+ .../python}/code/project/tickets/.idea/misc.xml             |   0
+ .../python}/code/project/tickets/.idea/modules.xml          |   0
+ .../python}/code/project/tickets/.idea/tickets.iml          |   0
+ .../python}/code/project/tickets/.idea/workspace.xml        |   0
+ .../project/tickets/__pycache__/stations.cpython-35.pyc     | Bin
+ .../python}/code/project/tickets/parse_station.py           |   0
+ .../python}/code/project/tickets/stations.py                |   0
+ .../python}/code/project/tickets/tickets.py                 |   0
+ ...3\346\236\220\345\222\214\350\277\255\344\273\243.ipynb" |   0
+ .../python/code/\347\261\273.ipynb"                         |   0
+ {python => programing language/python}/problem1.py          |   0
+ {python => programing language/python}/problem2.py          |   0
+ .../file.txt"                                               |   0
+ .../task.py"                                                |   0
+ .../Computer_Architecture/Cache1.c"                         |   0
+ .../Computer_Architecture/cache1"                           | Bin
+ .../Computer_Architecture/cache2"                           | Bin
+ .../Computer_Architecture/cache3"                           | Bin
+ .../Computer_Architecture/cache4"                           | Bin
+ .../Computer_Architecture/cachegrind.out.100844"            |   0
+ .../Computer_Architecture/cachegrind.out.101092"            |   0
+ .../Computer_Architecture/cachegrind.out.103429"            |   0
+ .../Computer_Architecture/cachegrind.out.103459"            |   0
+ .../Parallel/MPI_basc_comm.c"                               |   0
+ .../Parallel/MPIhello.c"                                    |   0
+ .../Unix/condition.c"                                       |   0
+ .../Unix/mutex.c"                                           |   0
+ .../Unix/process/C_start_exit.cc"                           |   0
+ .../Unix/process/fork_ex.c"                                 |   0
+ .../Unix/process/map1.c"                                    |   0
+ .../Unix/process/map2.c"                                    |   0
+ .../Unix/process/mesg.c"                                    |   0
+ .../Unix/process/pipe.cc"                                   |   0
+ .../Unix/process/signal_ex.cc"                              |   0
+ .../Unix/pthread/condvar.c"                                 |   0
+ .../Unix/pthread/dotprod_mutex.c"                           |   0
+ .../Unix/pthread/pthread_create_exit.c"                     |   0
+ .../Unix/thread.c"                                          |   0
+ .../shell/sh1.sh"                                           |   0
+ .../shell/sh2.sh"                                           |   0
+ 258 files changed, 4 deletions(-)
+
+commit e8266511689933e021c884aa0e52191393d88b6d
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Dec 30 20:16:29 2017 +0800
+
+    Create 8-PalindromeNumber.py
+
+ leetcode/python/8-PalindromeNumber.py | 54 +++++++++++++++++++++++++++++++++++
+ 1 file changed, 54 insertions(+)
+
+commit 8b26973671f9719a5d8623d3092a3352f3767bc0
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat Dec 30 00:25:33 2017 +0800
+
+    4-findMedianSortedArrays
+
+ leetcode/python/7-ReverseInteger.py | 34 ++++++++++++++++++++++++++++++++++
+ 1 file changed, 34 insertions(+)
+
+commit 1968015f7c939229236d214477c87662700aff13
+Author: YangHuang <huangyang@outlook.com>
+Date:   Fri Dec 29 00:07:47 2017 +0800
+
+    4-findMedianSortedArrays
+
+ leetcode/python/6-ZigZag.py | 74 +++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 74 insertions(+)
+
+commit c482a27ae0ae145822c6ecd367aa630dc1f3aaf2
+Author: YangHuang <huangyang@outlook.com>
+Date:   Wed Nov 8 23:41:35 2017 +0800
+
+    4-findMedianSortedArrays
+
+ leetcode/python/5-longestPalindrome.py | 58 ++++++++++++++++++++++++++++++++++
+ 1 file changed, 58 insertions(+)
+
+commit 3d57e2dc0a72c604df4c23d48693a40a22150523
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Nov 5 23:58:00 2017 +0800
+
+    add numpy.ipynb
+    
+    Signed-off-by: YangHuang <huangyang@outlook.com>
+
+ "python/code/Python\345\207\275\346\225\260.ipynb" |   3 +
+ python/code/{matplotlib => }/numpy.ipynb           | 100 ++++++++++-----------
+ ...45\350\207\252scipy-lectures\357\274\211.ipynb" |  68 ++++++++++++++
+ 3 files changed, 118 insertions(+), 53 deletions(-)
+
+commit e6f51e64f0b695012765aef808a8dd3143789b6d
+Author: YangHuang <huangyang@outlook.com>
+Date:   Wed Nov 1 23:37:40 2017 +0800
+
+    增加Python notebook
+    
+    Signed-off-by: YangHuang <huangyang@outlook.com>
+
+ ...ython\345\207\275\346\225\260-checkpoint.ipynb" |  646 +++++
+ "python/code/Python\345\207\275\346\225\260.ipynb" |  646 +++++
+ python/code/learning_python/person/.idea/misc.xml  |   14 +
+ .../code/learning_python/person/.idea/modules.xml  |    8 +
+ .../code/learning_python/person/.idea/person.iml   |   12 +
+ .../learning_python/person/.idea/workspace.xml     |  424 ++++
+ .../person/__pycache__/person.cpython-35.pyc       |  Bin 0 -> 1729 bytes
+ python/code/learning_python/person/makedb.py       |   10 +
+ python/code/learning_python/person/person.py       |   36 +
+ python/code/learning_python/person/persondb.bak    |    3 +
+ python/code/learning_python/person/persondb.dat    |  Bin 0 -> 1115 bytes
+ python/code/learning_python/person/persondb.dir    |    3 +
+ .../.ipynb_checkpoints/basic_plot-checkpoint.ipynb |   87 +
+ .../.ipynb_checkpoints/numpy-checkpoint.ipynb      |  712 ++++++
+ python/code/matplotlib/basic_plot.ipynb            |   87 +
+ python/code/matplotlib/numpy.ipynb                 |  712 ++++++
+ python/code/matplotlib/plot_sincos.py              |   34 +
+ python/code/matplotlib/populations.txt             |   22 +
+ python/code/open jupyter notebook.bat              |    1 +
+ python/code/project/2048/.idea/2048.iml            |    8 +
+ python/code/project/2048/.idea/misc.xml            |   14 +
+ python/code/project/2048/.idea/modules.xml         |    8 +
+ python/code/project/2048/.idea/workspace.xml       |   42 +
+ python/code/project/2048/game.py                   |  208 ++
+ python/code/project/ascii_pic/.idea/ascii_pic.iml  |   13 +
+ python/code/project/ascii_pic/.idea/misc.xml       |   14 +
+ python/code/project/ascii_pic/.idea/modules.xml    |   10 +
+ python/code/project/ascii_pic/.idea/workspace.xml  |  496 ++++
+ python/code/project/ascii_pic/1.jpg                |  Bin 0 -> 196753 bytes
+ python/code/project/ascii_pic/ascii.py             |   52 +
+ python/code/project/ascii_pic/ascii_dora.png       |  Bin 0 -> 25283 bytes
+ python/code/project/ascii_pic/output.txt           |   50 +
+ python/code/project/tickets/.idea/misc.xml         |   14 +
+ python/code/project/tickets/.idea/modules.xml      |    9 +
+ python/code/project/tickets/.idea/tickets.iml      |    9 +
+ python/code/project/tickets/.idea/workspace.xml    |  543 +++++
+ .../tickets/__pycache__/stations.cpython-35.pyc    |  Bin 0 -> 58497 bytes
+ python/code/project/tickets/parse_station.py       |   11 +
+ python/code/project/tickets/stations.py            | 2529 ++++++++++++++++++++
+ python/code/project/tickets/tickets.py             |  111 +
+ ...\220\345\222\214\350\277\255\344\273\243.ipynb" |  208 ++
+ "python/code/\347\261\273.ipynb"                   |  134 ++
+ 42 files changed, 7940 insertions(+)
+
+commit 89f0322f2a513c4343a0e58290ab1facd125516b
+Author: YangHuang <huangyang@outlook.com>
+Date:   Fri Oct 27 22:25:58 2017 +0800
+
+    4-findMedianSortedArrays
+
+ leetcode/python/4-findMedianSortedArrays.py | 73 +++++++++++++++++++++++++++++
+ 1 file changed, 73 insertions(+)
+
+commit 46426e21eb47dcdcd9de7656f2fce7aa52ac0410
+Author: HuangYang <huangyang@outlook.com>
+Date:   Fri Oct 20 00:12:05 2017 +0800
+
+    LeetCode Add
+
+ leetcode/{ => C++}/1-twosum.cc                |  0
+ leetcode/{ => C++}/2-add_two_num.cc           |  0
+ leetcode/LeetCode.ipynb                       |  2 +-
+ leetcode/python/1-twoSum.py                   | 78 +++++++++++++++++++++++++++
+ leetcode/python/2-addTwoNum.py                | 47 ++++++++++++++++
+ leetcode/python/3-lengthOfLongestSubstring.py | 49 +++++++++++++++++
+ leetcode/{ => python}/MaxSubArray.py          |  0
+ 7 files changed, 175 insertions(+), 1 deletion(-)
+
+commit ac587f5ad02fb209c4b4bb44da2710cb5d947cd0
+Author: huangyang <huangyang@outlook.com>
+Date:   Tue Oct 3 17:51:24 2017 +0800
+
+    leetcode python notebook
+
+ leetcode/LeetCode.ipynb | 88 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 88 insertions(+)
+
+commit 01980401ae7e107422eb88fc1a493b2666f133c2
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Oct 1 13:06:20 2017 +0800
+
+    最大子数组
+
+ .gitignore              |  3 ++-
+ leetcode/MaxSubArray.py | 28 ++++++++++++++++++++++++++++
+ 2 files changed, 30 insertions(+), 1 deletion(-)
+
+commit 298c6d00d6a1b6e6462f35f90657c4176bc92321
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Sep 24 23:46:16 2017 +0800
+
+    DP基础1
+
+ DP/Dynamic Programming.ipynb   | 212 +++++++++++++++++++++++++++++++++++++++++
+ DP/LeetCode/findNumberOfLIS.py |  74 ++++++++++++++
+ 2 files changed, 286 insertions(+)
+
+commit cbdfdecac3acd92d0c1d05069d5c53d062b14589
+Author: YangHuang <huangyang@outlook.com>
+Date:   Thu Sep 14 00:02:46 2017 +0800
+
+    Python统计特定字符串个数
+
+ .gitignore                                         |   5 -
+ .../file.txt"                                      | 110 +++++++++++++++++++++
+ .../task.py"                                       |  19 ++++
+ 3 files changed, 129 insertions(+), 5 deletions(-)
+
+commit fad1524e149fb60f8b069dcbf84c2b8cb39944ed
+Author:  <huangyang@HY-PC.localdomain>
+Date:   Sat Jun 17 10:36:54 2017 +0800
+
+    update from my pc
+
+ Data Structure/queue.cc          | 984 +++++++++++++++++++--------------------
+ Data Structure/test_my_queue.txt |  98 ++--
+ python/problem1.py               |   9 +
+ python/problem2.py               |  24 +
+ 4 files changed, 574 insertions(+), 541 deletions(-)
+
+commit 3315de5f04bdb3ae552a6a64ba5070218f6a557e
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Jun 11 12:56:27 2017 +0800
+
+    my queue
+
+ Data Structure/queue.cc | 463 ++++++++++++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 444 insertions(+), 19 deletions(-)
+
+commit 4efe2badd1424224a2cac2ee7f3626761e88beb7
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Jun 11 12:55:26 2017 +0800
+
+    cyc queue
+
+ Data Structure/queue.cc          | 67 ++++++++++++++++++++++++++++++++++++++++
+ Data Structure/test_my_queue.txt | 50 ++++++++++++++++++++++++++++++
+ 2 files changed, 117 insertions(+)
+
+commit 84004ffc566be37fb3e9c00fda15f932ff37009d
+Author: YangHuang <huangyang@outlook.com>
+Date:   Wed Dec 21 00:19:32 2016 +0800
+
+    Update README.md
+
+ docs/README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 293d420026d7684048308754582523452a1bb794
+Author: YangHuang <huangyang@outlook.com>
+Date:   Wed Dec 21 00:19:09 2016 +0800
+
+    Create 构造函数.md
+
+ ...236\204\351\200\240\345\207\275\346\225\260.md" | 32 ++++++++++++++++++++++
+ 1 file changed, 32 insertions(+)
+
+commit f41ae1a1c2378ba639abbb6b0f2cc6c63bdd82c4
+Author: YangHuang <huangyang@outlook.com>
+Date:   Wed Dec 21 00:17:50 2016 +0800
+
+    Rename doc/README.md to docs/README.md
+
+ {doc => docs}/README.md | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit f68ba2a94fb27dac2ec1e653e6a664cb216cb17e
+Author: YangHuang <huangyang@outlook.com>
+Date:   Wed Dec 21 00:16:54 2016 +0800
+
+    Create README.md
+
+ doc/README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit c6bee0f83d87337cd1b40f4af2a534704ca8220a
+Author: huangyang <huangyang@outlook.com>
+Date:   Fri Nov 25 23:41:16 2016 +0800
+
+    add an example of the difference bettween pointer and array.
+
+ {C++ => C_C++}/Input_Output/getline_cin.cc                 |  0
+ {C++ => C_C++}/Input_Output/stoi_etc.cc                    |  0
+ {C++ => C_C++}/Memory_Alignment/bit_filed.cc               |  0
+ {C++ => C_C++}/Memory_Alignment/size_of_struct.c           |  0
+ {C++ => C_C++}/Memory_Alignment/size_of_struct2.c          |  0
+ {C++ => C_C++}/Memory_Alignment/structure_packing.md       |  0
+ {C++ => C_C++}/OOP/ex1.cc                                  |  0
+ {C++ => C_C++}/OOP/ex2.cc                                  |  0
+ {C++ => C_C++}/OOP/ex3.cc                                  |  0
+ {C++ => C_C++}/OOP/oop.cc                                  |  0
+ {C++ => C_C++}/OOP/private_derived_derived.cc              |  0
+ {C++ => C_C++}/STL/STLmap.cc                               |  0
+ {C++ => C_C++}/STL/use-sort.cc                             |  0
+ ...277\275\357\277\275\357\277\275\335\275\341\271\271.md" |  0
+ {C++ => C_C++}/about_pointer.cc                            |  0
+ C_C++/array_pointer/Readme.md                              | 11 +++++++++++
+ C_C++/array_pointer/main.c                                 | 14 ++++++++++++++
+ {C++ => C_C++}/basic/char_array.c                          |  0
+ {C++ => C_C++}/basic/construct_call.cc                     |  0
+ {C++ => C_C++}/big-little-endian.md                        |  0
+ {C++ => C_C++}/big-little-endian.md~                       |  0
+ {C++ => C_C++}/class_string.cc                             |  0
+ {C++ => C_C++}/class_string_improve.cc                     |  0
+ {C++ => C_C++}/const_function.cc                           |  0
+ {C++ => C_C++}/construct.md                                |  0
+ {C++ => C_C++}/cpp_scope.cc                                |  0
+ {C++ => C_C++}/delete_test.cc                              |  0
+ {C++ => C_C++}/effective_item27.cc                         |  0
+ {C++ => C_C++}/effective_item28.cc                         |  0
+ {C++ => C_C++}/function_pointor/example.cc                 |  0
+ {C++ => C_C++}/operator.cc                                 |  0
+ {C++ => C_C++}/use_array.cc                                |  0
+ {C++ => C_C++}/use_map.cc                                  |  0
+ {C++ => C_C++}/use_string.cc                               |  0
+ {C++ => C_C++}/virtual_in_f.cc                             |  0
+ ...277\275\332\264\346\262\274\357\277\275\357\277\275.md" |  0
+ 36 files changed, 25 insertions(+)
+
+commit 0c59cc6f76a5075388cd791fbe90c387cb37ce4d
+Author: YangHuang <huangyang@outlook.com>
+Date:   Thu Nov 17 13:58:06 2016 +0800
+
+    Add Boost
+
+ boost/asio_basic.md    | 91 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ boost/asio_endpoint.md | 36 ++++++++++++++++++++
+ 2 files changed, 127 insertions(+)
+
+commit a2356a6ec6ca6722d914e9fc4c682132beb3e5d3
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun Sep 25 20:35:36 2016 +0800
+
+    9-25
+
+ AlgorithmInHand/cstring/cstring.md |  23 ++++
+ AlgorithmInHand/cstring/strcpy.cc  |  30 +++++
+ AlgorithmInHand/cstring/strlen.cc  |  41 +++++++
+ AlgorithmInHand/cstring/strstr.cc  |  74 ++++++++++++
+ C++/Input_Output/stoi_etc.cc       |  14 +++
+ C++/OOP/ex1.cc                     |  66 +++++++++++
+ C++/OOP/ex2.cc                     |  36 ++++++
+ C++/OOP/ex3.cc                     |  34 ++++++
+ C++/OOP/oop.cc                     | 107 ++++++++++++++++++
+ C++/OOP/private_derived_derived.cc |  91 +++++++++++++++
+ C++/basic/char_array.c             |  22 ++++
+ C++/basic/construct_call.cc        |  61 ++++++++++
+ Data Structure/myList.cc           |  96 ++++++++++++++++
+ Unix/{ => process}/C_start_exit.cc |   0
+ Unix/{ => process}/fork_ex.c       |   0
+ Unix/process/map1.c                |  38 +++++++
+ Unix/process/map2.c                |  27 +++++
+ Unix/process/mesg.c                |  94 +++++++++++++++
+ Unix/{ => process}/pipe.cc         |   0
+ Unix/{ => process}/signal_ex.cc    |   8 ++
+ Unix/pthread/condvar.c             | 117 +++++++++++++++++++
+ Unix/pthread/dotprod_mutex.c       | 153 +++++++++++++++++++++++++
+ Unix/pthread/pthread_create_exit.c |  54 +++++++++
+ Valgrind/test.cc                   |   4 +-
+ find/BinarySearch.cc               | 219 +++++++++++++++++++++++++----------
+ graph/Digraph.cc                   | 226 +++++++++++++++++++++++++++++++++++++
+ graph/bfs.cc                       | 127 +++++++++++++++++++++
+ graph/graph.cc                     | 176 +++++++++++++++++++++++++++--
+ hash/hash_char.cc                  |  18 +++
+ huawei/1.cc                        |  29 +++++
+ huawei/2.cc                        |  42 +++++++
+ huawei/3.cc                        |  29 +++++
+ huawei/4.cc                        |  46 ++++++++
+ huawei/5.cc                        |  37 ++++++
+ offer/my_include.h                 |   9 ++
+ offer/problem38.cc                 |  77 +++++++++++++
+ offer/problem39-1.cc               |  34 ++++++
+ offer/problem39.cc                 |  32 ++++++
+ offer/problem40.cc                 |  29 +++++
+ offer/problem41-1.cc               |  68 +++++++++++
+ offer/problem41.cc                 |  90 +++++++++++++++
+ offer/problem42-1.cc               |  23 ++++
+ offer/problem42.cc                 |  47 ++++++++
+ offer/problem44.cc                 | 170 ++++++++++++++++++++++++++++
+ offer/problem45.cc                 |  48 ++++++++
+ offer/singleNumber2.cc             |  82 ++++++++++++++
+ sort/sort_in_hand.cc               | 173 ++++++++++++++++++++++++++++
+ test/11.cc                         |  36 ++++++
+ test/cam/cam.cc                    | 195 ++++++++++++++++++++++++++++++++
+ test/code/11.cc                    |   6 +
+ test/code/111.java                 |   7 ++
+ test/code/22.java                  |  95 ++++++++++++++++
+ test/code/333                      |  50 ++++++++
+ test/code/333.java                 |  50 ++++++++
+ test/code/Main.class               | Bin 0 -> 1083 bytes
+ test/code/Main.java                |  50 ++++++++
+ test/code/erwei.cc                 |  58 ++++++++++
+ test/code/heap.cc                  | 105 +++++++++++++++++
+ test/code/ss.cc                    |  39 +++++++
+ test/num01.cc                      |  61 ++++++++++
+ test/pointertest.c                 |  23 ++++
+ test/qqq.cc                        |  27 +++++
+ test/sort11.cc                     |  47 ++++++++
+ test/string+.cc                    |  17 +++
+ test/time.c                        |  87 ++++++++++++++
+ 65 files changed, 3903 insertions(+), 71 deletions(-)
+
+commit 9c8f64bb20c03ddc69829e1d8813a832abb16728
+Merge: 7f823bb 9134935
+Author: huangyang <huangyang@outlook.com>
+Date:   Thu Aug 18 11:06:48 2016 +0800
+
+    8-18
+
+commit 7f823bbffef4fd4d7fbda50f60ec29bfbffcee9d
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun Aug 7 17:06:08 2016 +0800
+
+    8-7
+
+ .gitignore                                         |   4 +
+ .../string_lib/kmp.md                              |   0
+ .../string_lib/kmp.md~                             |   0
+ .../string_lib/strcpy.cc                           |   0
+ .../string_lib/strlen.cc                           |   0
+ .../string_lib/strstr.cc                           |   0
+ C++/STL/use-sort.cc                                |  33 +++
+ .../big-little-endian.md                           |   0
+ C++/big-little-endian.md~                          |   0
+ C++/class_string.cc                                | 106 ++++++++++
+ C++/class_string_improve.cc                        |  94 +++++++++
+ C++/const_function.cc                              |  21 ++
+ C++/virtual_in_f.cc                                |  63 ++++++
+ Computer_Architecture/Cache1.c                     |  26 +++
+ Computer_Architecture/cache1                       | Bin 0 -> 6612 bytes
+ Computer_Architecture/cache2                       | Bin 0 -> 6612 bytes
+ Computer_Architecture/cache3                       | Bin 0 -> 6596 bytes
+ Computer_Architecture/cache4                       | Bin 0 -> 6596 bytes
+ Computer_Architecture/cachegrind.out.100844        | 221 +++++++++++++++++++++
+ Computer_Architecture/cachegrind.out.101092        | 221 +++++++++++++++++++++
+ Computer_Architecture/cachegrind.out.103429        | 221 +++++++++++++++++++++
+ Computer_Architecture/cachegrind.out.103459        | 221 +++++++++++++++++++++
+ .../priority_queue.md                              |   0
+ Data Structure/priority_queue.md~                  |   0
+ Parallel/MPI_basc_comm.c                           |  27 +++
+ Parallel/MPIhello.c                                |  18 ++
+ VS/.vs/VS/v14/.suo                                 | Bin 29696 -> 0 bytes
+ VS/Debug/VS.ilk                                    | Bin 513412 -> 0 bytes
+ VS/Debug/VS.pdb                                    | Bin 1208320 -> 0 bytes
+ VS/VS.sdf                                          | Bin 12648448 -> 0 bytes
+ VS/VS.sln                                          |  28 ---
+ VS/VS/Debug/VS.Build.CppClean.log                  |  12 --
+ VS/VS/Debug/VS.log                                 |   3 -
+ VS/VS/Debug/VS.tlog/CL.command.1.tlog              | Bin 668 -> 0 bytes
+ VS/VS/Debug/VS.tlog/CL.read.1.tlog                 | Bin 16306 -> 0 bytes
+ VS/VS/Debug/VS.tlog/CL.write.1.tlog                | Bin 400 -> 0 bytes
+ VS/VS/Debug/VS.tlog/VS.lastbuildstate              |   2 -
+ VS/VS/Debug/VS.tlog/link.command.1.tlog            | Bin 1042 -> 0 bytes
+ VS/VS/Debug/VS.tlog/link.read.1.tlog               | Bin 2834 -> 0 bytes
+ VS/VS/Debug/VS.tlog/link.write.1.tlog              | Bin 330 -> 0 bytes
+ VS/VS/Debug/vc140.idb                              | Bin 338944 -> 0 bytes
+ VS/VS/Debug/vc140.pdb                              | Bin 405504 -> 0 bytes
+ VS/VS/VS.vcxproj                                   | 157 ---------------
+ VS/VS/VS.vcxproj.filters                           |  33 ---
+ VS/VS/stdafx.h                                     |  15 --
+ VS/VS/targetver.h                                  |   8 -
+ bigInt/big.cc                                      | 102 ++++++++++
+ bigInt/bigIntclass.cc                              | 127 ++++++++++++
+ bigInt/bigIntclass.cc~                             | 125 ++++++++++++
+ find/BinarySearch.cc                               | 108 ++++++++++
+ offer/problem3.cc                                  |  29 +++
+ offer/problem4.cc                                  |  28 +++
+ offer/problem5.cc                                  |  30 +++
+ offer/problem6.cc                                  |  91 +++++++++
+ offer/problem7.cc                                  |  33 +++
+ offer/problem8.cc                                  |  22 ++
+ offer/problem9.cc                                  |  27 +++
+ offer/singleton.cc                                 | 167 ++++++++++++++++
+ offer/str.c                                        |  19 ++
+ perf/perf.data                                     | Bin 0 -> 77000 bytes
+ perf/perf.data.old                                 | Bin 0 -> 74432 bytes
+ perf/test.c                                        |  27 +++
+ shell/sh1.sh                                       |   3 +
+ shell/sh2.sh                                       | 108 ++++++++++
+ string/string_int.cc                               |  57 ++++++
+ test/bit.cc                                        |  42 ++++
+ 66 files changed, 2421 insertions(+), 258 deletions(-)
+
+commit 91349356403eb4487ab1ffd4e757b87dd06e74b3
+Author: huangyang <huangyang@outlook.com>
+Date:   Wed Aug 3 16:05:28 2016 +0800
+
+    8-3
+
+ .../strcpy.cc"                                     |  30 +++
+ .../strlen.cc"                                     |  41 ++++
+ .../strstr.cc"                                     |  74 +++++++
+ ...326\267\357\277\275\357\277\275\357\277\275.md" |  23 +++
+ C++/STL/use-sort.cc                                |  33 +++
+ ...357\277\275\357\277\275\335\275\341\271\271.md" |   0
+ ...332\264\346\262\274\357\277\275\357\277\275.md" |  55 +++++
+ Computer_Architecture/Cache1.c                     |  26 +++
+ Computer_Architecture/cache1                       | Bin 0 -> 6612 bytes
+ Computer_Architecture/cache2                       | Bin 0 -> 6612 bytes
+ Computer_Architecture/cache3                       | Bin 0 -> 6596 bytes
+ Computer_Architecture/cache4                       | Bin 0 -> 6596 bytes
+ Computer_Architecture/cachegrind.out.100844        | 221 +++++++++++++++++++++
+ Computer_Architecture/cachegrind.out.101092        | 221 +++++++++++++++++++++
+ Computer_Architecture/cachegrind.out.103429        | 221 +++++++++++++++++++++
+ Computer_Architecture/cachegrind.out.103459        | 221 +++++++++++++++++++++
+ ...310\266\357\277\275\357\277\275\357\277\275.md" |   6 +
+ Parallel/MPI_basc_comm.c                           |  27 +++
+ Parallel/MPIhello.c                                |  18 ++
+ bigInt/big.cc                                      | 102 ++++++++++
+ bigInt/bigIntclass.cc                              | 125 ++++++++++++
+ string/string_int.cc                               |  57 ++++++
+ 22 files changed, 1501 insertions(+)
+
+commit eec9097e9a43ee92d63b76bc3ae850acbd5085d2
+Author: huangyang <huangyang@outlook.com>
+Date:   Wed Jul 27 19:20:20 2016 +0800
+
+    virtual
+
+ C++/cpp_scope.cc | 93 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 93 insertions(+)
+
+commit e0c9a27f9a7b702f5e21efa0bc96ca1c4d5a6e71
+Author: huangyang <huangyang@outlook.com>
+Date:   Tue Jul 26 19:05:10 2016 +0800
+
+    thread
+
+ Unix/condition.c | 236 +++++++++++++++++++++---------------------
+ Unix/mutex.c     | 306 +++++++++++++++++++++++++++----------------------------
+ 2 files changed, 271 insertions(+), 271 deletions(-)
+
+commit 50f05dcc4f0a1d65ced42a19fea81763fd000769
+Author: HuangYang <huangyang@outlook.com>
+Date:   Tue Jul 26 17:33:37 2016 +0800
+
+    thread
+
+ Unix/condition.c | 118 ++++++++++++++++++++++++++++++++++++++++++
+ Unix/fork_ex.c   |  23 +++++++++
+ Unix/mutex.c     | 153 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Unix/thread.c    |   1 +
+ 4 files changed, 295 insertions(+)
+
+commit 9ce9a5e823a0c22bb89f43925ac9e4538c3a2ae9
+Merge: c2168e6 9e32a2b
+Author: HuangYang <huangyang@outlook.com>
+Date:   Tue Jul 26 10:16:30 2016 +0800
+
+    Merge branch 'master' of https://github.com/sunday1103/Notebook
+
+commit 9e32a2bfc26350fcc90e4e0a9b60889e945e105b
+Author: huangyang <huangyang@outlook.com>
+Date:   Tue Jul 26 10:03:38 2016 +0800
+
+    Unix
+
+ C++/operator.cc      | 13 +++++++++++++
+ Unix/C_start_exit.cc | 32 ++++++++++++++++++++++++++++++++
+ Unix/pipe.cc         | 30 ++++++++++++++++++++++++++++++
+ Unix/signal_ex.cc    | 23 +++++++++++++++++++++++
+ Unix/thread.c        | 31 +++++++++++++++++++++++++++++++
+ 5 files changed, 129 insertions(+)
+
+commit 768b9911cf171ada929e1f313c06acdb6f7cea93
+Author: huangyang <huangyang@outlook.com>
+Date:   Wed Jul 20 22:26:50 2016 +0800
+
+    disjoint set
+
+ AlgorithmInHand/tree/disjoint_set.cc   | 114 ++++++++++++++++++++++++
+ AlgorithmInHand/tree/disjoint_set_1.cc | 153 +++++++++++++++++++++++++++++++++
+ AlgorithmInHand/tree/heap.cc           |  39 +++++++++
+ 3 files changed, 306 insertions(+)
+
+commit 1180537cbd89b289e2a1b4c2165c27429ff3d72f
+Author: huangyang <huangyang@outlook.com>
+Date:   Fri Jul 15 15:46:24 2016 +0800
+
+    7-14
+
+ AlgorithmInHand/tree/heap.cc           |  0
+ AlgorithmInHand/tree/tree_traversal.cc | 15 +++++++++------
+ 2 files changed, 9 insertions(+), 6 deletions(-)
+
+commit e63c63d62bea9ebfa81707d92cdce2c185332060
+Author: Huang Yang <huangyang@outlook.com>
+Date:   Thu Jul 14 22:10:00 2016 +0800
+
+    非递归版本的二叉树遍历
+
+ AlgorithmInHand/tree/tree_traversal.cc | 213 +++++++++++++++++++--------------
+ 1 file changed, 123 insertions(+), 90 deletions(-)
+
+commit d85c09e6d5448b76218af7eb6e2f38e0f1cab0da
+Author: Huang Yang <huangyang@outlook.com>
+Date:   Thu Jul 14 19:08:29 2016 +0800
+
+    new
+
+ .clang-format                           |  14 +-
+ .gitattributes                          |  63 ++++
+ .gitignore                              |  92 ++---
+ AlgorithmInHand/tree/tree_traversal.cc  | 121 ++++++-
+ C++/use_map.cc                          |  52 +--
+ DP/coin.cpp                             | 112 +++---
+ DP/rob.cpp                              | 216 ++++++------
+ DP/rob2.cpp                             |  90 ++---
+ README.md                               |   6 +-
+ VS/.vs/VS/v14/.suo                      | Bin 0 -> 29696 bytes
+ VS/Debug/VS.ilk                         | Bin 0 -> 513412 bytes
+ VS/Debug/VS.pdb                         | Bin 0 -> 1208320 bytes
+ VS/VS.sdf                               | Bin 0 -> 12648448 bytes
+ VS/VS.sln                               |  28 ++
+ VS/VS/Debug/VS.Build.CppClean.log       |  12 +
+ VS/VS/Debug/VS.log                      |   3 +
+ VS/VS/Debug/VS.tlog/CL.command.1.tlog   | Bin 0 -> 668 bytes
+ VS/VS/Debug/VS.tlog/CL.read.1.tlog      | Bin 0 -> 16306 bytes
+ VS/VS/Debug/VS.tlog/CL.write.1.tlog     | Bin 0 -> 400 bytes
+ VS/VS/Debug/VS.tlog/VS.lastbuildstate   |   2 +
+ VS/VS/Debug/VS.tlog/link.command.1.tlog | Bin 0 -> 1042 bytes
+ VS/VS/Debug/VS.tlog/link.read.1.tlog    | Bin 0 -> 2834 bytes
+ VS/VS/Debug/VS.tlog/link.write.1.tlog   | Bin 0 -> 330 bytes
+ VS/VS/Debug/vc140.idb                   | Bin 0 -> 338944 bytes
+ VS/VS/Debug/vc140.pdb                   | Bin 0 -> 405504 bytes
+ VS/VS/VS.vcxproj                        | 157 +++++++++
+ VS/VS/VS.vcxproj.filters                |  33 ++
+ VS/VS/stdafx.h                          |  15 +
+ VS/VS/targetver.h                       |   8 +
+ find/find.cc                            | 136 ++++----
+ graph/graph.cc                          |  30 +-
+ leetcode/1-twosum.cc                    | 100 +++---
+ leetcode/1-twosum.md                    | 120 +++----
+ leetcode/2-add_two_num.cc               | 150 ++++----
+ markdown_example.md                     | 248 +++++++-------
+ sort/sort.cc                            | 584 ++++++++++++++++----------------
+ 36 files changed, 1402 insertions(+), 990 deletions(-)
+
+commit c2168e6ac324c0f4b1c99d7c91cabcf80f80c022
+Merge: bcf8e2d 64ec40a
+Author: HuangYang <huangyang@outlook.com>
+Date:   Wed Jul 13 20:51:27 2016 +0800
+
+    Merge branch 'master' of https://github.com/sunday1103/Notebook
+
+commit 64ec40a9940221e2d553a0751f7dd7d6c4f9d572
+Author: huangyang <huangyang@outlook.com>
+Date:   Wed Jul 13 20:47:34 2016 +0800
+
+    BST
+
+ AlgorithmInHand/Stack_Queue/hanoi.cc               |  29 ++++
+ AlgorithmInHand/tree/tree_traversal.cc             | 176 +++++++++++++++++++++
+ .../strcpy.cc"                                     |   0
+ .../strlen.cc"                                     |   0
+ .../strstr.cc"                                     |   0
+ .../\345\255\227\347\254\246\344\270\262.md"       |   0
+ 6 files changed, 205 insertions(+)
+
+commit 2b9c66daee457ac926ff7f1e689a0ce2ae5f0121
+Author: huangyang <huangyang@outlook.com>
+Date:   Tue Jul 12 10:55:00 2016 +0800
+
+    KMP over
+
+ AlgorithmInHand/strstr.cc                           | 21 +++++++++++++--------
+ .../\345\255\227\347\254\246\344\270\262.md"        |  9 +++++++++
+ 2 files changed, 22 insertions(+), 8 deletions(-)
+
+commit bcf8e2dc90e84ac7b812411d1bbb00faa2bed1d7
+Author: HuangYang <huangyang@outlook.com>
+Date:   Tue Jul 12 10:41:22 2016 +0800
+
+    KMP
+
+ AlgorithmInHand/strstr.cc | 21 +++++++++++++--------
+ 1 file changed, 13 insertions(+), 8 deletions(-)
+
+commit bac0ff6f611ed1fe8de79f52e569ac479a28ae77
+Author: huangyang <huangyang@outlook.com>
+Date:   Tue Jul 12 10:19:52 2016 +0800
+
+    KMP
+
+ AlgorithmInHand/strstr.cc | 37 +++++++++++++++++++++++++++++++++++++
+ 1 file changed, 37 insertions(+)
+
+commit 6ff3ea7ab8a4a1daea054260da4a08a06cf7259d
+Author: huangyang <huangyang@outlook.com>
+Date:   Thu Jul 7 22:25:03 2016 +0800
+
+    7-7 night string
+
+ AlgorithmInHand/strcpy.cc                          | 30 ++++++++++++++++
+ AlgorithmInHand/strlen.cc                          | 41 ++++++++++++++++++++++
+ AlgorithmInHand/strstr.cc                          | 32 +++++++++++++++++
+ .../\345\255\227\347\254\246\344\270\262.md"       | 14 ++++++++
+ 4 files changed, 117 insertions(+)
+
+commit 4c09a126be64935f657c8b05bac6b1248a3ea38c
+Author: huangyang <huangyang@outlook.com>
+Date:   Thu Jul 7 09:58:44 2016 +0800
+
+    use xor to find odd number
+
+ bitwise/find_odd_number.md  | 39 ++++++++++++++++++++++
+ bitwise/find_odd_number3.cc | 79 +++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 118 insertions(+)
+
+commit 654b695f9f93fdbb640d09d996e87da235dd4c18
+Author: huangyang <huangyang@outlook.com>
+Date:   Wed Jul 6 22:02:03 2016 +0800
+
+    --
+
+ bitwise/odd_times_number.cc | 67 +++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 67 insertions(+)
+
+commit fdd66a607739a5c1c6e208e0d011fa1232e6dbbd
+Author: huangyang <huangyang@outlook.com>
+Date:   Thu Jun 30 21:05:58 2016 +0800
+
+    6-30
+
+ Data Structure/LRU.cc | 108 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 108 insertions(+)
+
+commit 6c35fb7504c19e9f2410a93727486fb284bcd74a
+Author: huangyang <huangyang@outlook.com>
+Date:   Mon Jun 20 22:24:56 2016 +0800
+
+    tree
+
+ tree/BSTree.h      | 478 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ tree/BSTreeTest.cc |  54 ++++++
+ tree/myTree.h      | 157 ++++++++++++++++++
+ 3 files changed, 689 insertions(+)
+
+commit 4a6f6e8d73a218e31dc530397c77715dde7b876a
+Author: huangyang <huangyang@outlook.com>
+Date:   Thu Jun 2 22:20:29 2016 +0800
+
+    sort application
+
+ sort/application.cc | 108 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 108 insertions(+)
+
+commit afe544400424df43079573065f84f76ea4962e2e
+Author: huangyang <huangyang@outlook.com>
+Date:   Thu Jun 2 20:38:44 2016 +0800
+
+    Update sort/sort.md
+
+ sort/sort.md | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 314f349c7f73e421a9856021a0e6fe394462ba61
+Author: huangyang <huangyang@outlook.com>
+Date:   Thu Jun 2 15:23:38 2016 +0800
+
+    Move file C++/STL/常用数据结构 to C++/STL/常用数据结构.md
+
+ ...70\270\347\224\250\346\225\260\346\215\256\347\273\223\346\236\204.md" | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 0afbc52856f88cc2473b67d471ea29df89bd8ebe
+Author: huangyang <huangyang@outlook.com>
+Date:   Thu Jun 2 15:23:32 2016 +0800
+
+    Delete C++/STL/README.md
+
+ C++/STL/README.md | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 19358b1a680c40a2b5d1c4592ab79a4d54fdf75d
+Author: huangyang <huangyang@outlook.com>
+Date:   Thu Jun 2 15:23:23 2016 +0800
+
+    Create C++/STL/常用数据结构
+
+ ...5\270\270\347\224\250\346\225\260\346\215\256\347\273\223\346\236\204" | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 914eb836f5a474df8e93c9b116db9df593379308
+Author: huangyang <huangyang@outlook.com>
+Date:   Thu Jun 2 15:23:09 2016 +0800
+
+    Create C++/STL/README.md
+
+ C++/STL/README.md | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit e8c8bee1df98e1a368e051788929ac6e9b57da41
+Author: huangyang <huangyang@outlook.com>
+Date:   Thu Jun 2 11:38:28 2016 +0800
+
+    Update Data Structure/优先队列.md
+
+ "Data Structure/\344\274\230\345\205\210\351\230\237\345\210\227.md" | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit 136432a8cc62447acda9255fcae4216f9b784ffe
+Author: huangyang <huangyang@outlook.com>
+Date:   Thu Jun 2 10:55:21 2016 +0800
+
+    Update Data Structure/优先队列.md
+
+ "Data Structure/\344\274\230\345\205\210\351\230\237\345\210\227.md" | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 79806b3cf63e44b6966f3919f8014063a54d51bd
+Author: huangyang <huangyang@outlook.com>
+Date:   Thu Jun 2 10:54:55 2016 +0800
+
+    Delete Data Structure/README.md
+
+ Data Structure/README.md | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 0e1d6859def2e6b65254e26b54dd4d9bad4d532a
+Author: huangyang <huangyang@outlook.com>
+Date:   Thu Jun 2 10:54:50 2016 +0800
+
+    Create Data Structure/优先队列.md
+
+ "Data Structure/\344\274\230\345\205\210\351\230\237\345\210\227.md" | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 5f8833d893ecc4fcddb5f9b51c34954471d953ce
+Author: huangyang <huangyang@outlook.com>
+Date:   Thu Jun 2 10:54:38 2016 +0800
+
+    Create Data Structure/README.md
+
+ Data Structure/README.md | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 6b4238dbda90fc261e8b51f1a99b57bda0b2597d
+Author: huangyang <huangyang@outlook.com>
+Date:   Thu Jun 2 10:54:16 2016 +0800
+
+    Delete Data Structure/README.md
+
+ Data Structure/README.md | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit f38a573eb4378ddd6ef60d3d663a26e0b09df137
+Author: huangyang <huangyang@outlook.com>
+Date:   Thu Jun 2 10:54:04 2016 +0800
+
+    Create Data Structure/README.md
+
+ Data Structure/README.md | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit e9262e684975de17b11e43828bffeebb20bd6fcf
+Author: huangyang <huangyang@outlook.com>
+Date:   Tue May 31 22:06:30 2016 +0800
+
+    Update sort/sort.md
+
+ sort/sort.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit 2139e811308cede69acbabb29900895d861978f7
+Author: huangyang <huangyang@outlook.com>
+Date:   Mon May 30 21:25:57 2016 +0800
+
+    Update sort/sort.md
+
+ sort/sort.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit 342e58df80f52cd88d2d7642c9533c27d6308a9e
+Author: huangyang <huangyang@outlook.com>
+Date:   Mon May 30 21:17:51 2016 +0800
+
+    Update sort/sort.md
+
+ sort/sort.md | 103 ++++-------------------------------------------------------
+ 1 file changed, 7 insertions(+), 96 deletions(-)
+
+commit 9072d9414e590db8416f1566d88377a1f974195a
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun May 29 10:29:25 2016 +0800
+
+    Create SUMMARY.md
+
+ SUMMARY.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit 2fa472e27435307cf9a0e1e1f271235de63af117
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun May 29 10:28:17 2016 +0800
+
+    Delete book.json
+
+ book.json | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 25c19da1ab72620ceae2f139aac823839eb06d68
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun May 29 10:28:03 2016 +0800
+
+    Create book.json
+
+ book.json | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit d5d2372a4078fb7c9fd4fd34539c2d096f9e2d6e
+Author: Huang Yang <huangyang@outlook.com>
+Date:   Sun May 29 10:12:42 2016 +0800
+
+    Update sort/sort.md
+
+ sort/sort.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit b62598d20b49e42fd70bfa83268f80fbcb880f22
+Merge: 641ac7f 341854a
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat May 28 22:57:25 2016 +0800
+
+    new
+
+commit 641ac7f83232b7e6c2f04ebe3d4f3382329c858c
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sat May 28 22:55:14 2016 +0800
+
+    .gitignore
+
+ .gitignore | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+commit 341854a1fb7becf9ca979d6ee9c8a4204d08554f
+Author: Huang Yang <huangyang@outlook.com>
+Date:   Sat May 28 22:31:29 2016 +0800
+
+    5-28 night
+
+ find/find.cc   |  37 ++-
+ find/find.md   |   2 +
+ sort/input.txt | 900 ---------------------------------------------------------
+ sort/sort.cc   |  57 ++++
+ sort/sort.md   |  15 +-
+ 5 files changed, 89 insertions(+), 922 deletions(-)
+
+commit cbc75cec2df6810ae4181abd85c58fbfebfe6b96
+Merge: c65b2b1 30a40cc
+Author: Huang Yang <huangyang@outlook.com>
+Date:   Sat May 28 19:27:35 2016 +0800
+
+    Merge branch 'master' of https://github.com/sunday1103/Notebook
+
+commit c65b2b1084c7cd9c36e2d590604e35e337090f54
+Author: Huang Yang <huangyang@outlook.com>
+Date:   Sat May 28 19:26:17 2016 +0800
+
+    new in ubuntu
+
+ .gitignore       |      4 +
+ Valgrind/test.cc |     12 +
+ sort/input.txt   | 100620 +---------------------------------------------------
+ sort/sort.cc     |     82 +-
+ 4 files changed, 904 insertions(+), 99814 deletions(-)
+
+commit 30a40cc7764c05ae2fc9f6a2d67798523026bed9
+Author: huangyang <huangyang@outlook.com>
+Date:   Sat May 28 19:19:28 2016 +0800
+
+    new
+
+ C++/effective_item27.cc | 34 ++++++++++++++++++++++++++++++++++
+ C++/effective_item28.cc | 23 +++++++++++++++++++++++
+ C++/use_string.cc       | 25 +++++++++++++++++++++++++
+ 3 files changed, 82 insertions(+)
+
+commit 4f7a9f9eff51c857021c8a64a517d019cf3ba439
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun May 22 21:10:39 2016 +0800
+
+    new
+
+ C++/about_pointer.cc                               | 77 ++++++++++++++++++++++
+ C++/use_array.cc                                   | 13 ++++
+ ...206\205\345\255\230\345\270\203\345\261\200.md" | 55 ++++++++++++++++
+ test/const.cc                                      | 24 +++++++
+ 4 files changed, 169 insertions(+)
+
+commit 0513d678bf76050fd3a8b6d3fd36fb33fe277955
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Apr 24 17:45:08 2016 +0800
+
+    select_sort
+
+ sort/input.txt | 563960 ++++++++----------------------------------------------
+ sort/sort.cc   |    104 +-
+ 2 files changed, 82058 insertions(+), 482006 deletions(-)
+
+commit e534e74e47674ec4d9557653e0dbfc6b7fbd8a64
+Author: YangHuang <huangyang@outlook.com>
+Date:   Tue Apr 19 22:26:51 2016 +0800
+
+    modify find
+
+ find/find.cc | 45 ++++++++++-----------------------------------
+ 1 file changed, 10 insertions(+), 35 deletions(-)
+
+commit f980939fb860f2b6295109d319dd62f242b98589
+Author: Huang Yang <huangyang@outlook.com>
+Date:   Mon Apr 18 09:22:01 2016 +0800
+
+    Insert sort
+
+ ...236\204\351\200\240\345\207\275\346\225\260.md" | 32 ----------------------
+ 1 file changed, 32 deletions(-)
+
+commit 6ef57903c6f23d213dde201d518fb2f925f9c255
+Author: Huang Yang <huangyang@outlook.com>
+Date:   Mon Apr 18 09:19:58 2016 +0800
+
+    Insert sort
+
+ .clang-format       |     14 +-
+ C++/construct.md    |     32 +
+ find/find.cc        |     94 +
+ markdown_example.md |    248 +-
+ sort/input.txt      | 500001 +++++++++++++++++++++++++++++++++++++++++++++++++
+ sort/makefile       |      4 +
+ sort/rand_num.cc    |     22 +
+ sort/sort.cc        |    109 +
+ sort/sort.md        |    125 +
+ 9 files changed, 500518 insertions(+), 131 deletions(-)
+
+commit 695cc4827eb06812fedcde9aa81c00d6332ae999
+Author: Huang Yang <huangyang@outlook.com>
+Date:   Tue Apr 12 18:49:07 2016 +0800
+
+    update
+
+ .gitignore                                         |  56 +++---
+ C++/use_map.cc                                     |  52 ++---
+ ...236\204\351\200\240\345\207\275\346\225\260.md" |  64 +++---
+ DP/coin.cpp                                        | 112 +++++------
+ DP/rob.cpp                                         | 216 ++++++++++-----------
+ DP/rob2.cpp                                        |  90 ++++-----
+ README.md                                          |   6 +-
+ graph/graph.cc                                     |  30 +--
+ leetcode/{twosum.cc => 1-twosum.cc}                | 100 +++++-----
+ leetcode/{twosum.md => 1-twosum.md}                | 119 ++++++------
+ leetcode/2-add_two_num.cc                          |  75 +++++++
+ markdown_example.md                                | 125 ++++++++++++
+ 12 files changed, 623 insertions(+), 422 deletions(-)
+
+commit 5ab2a1fb9d9df4a536a134197f775bacbbe0429d
+Author: huangyang <huangyang@outlook.com>
+Date:   Mon Apr 11 19:11:19 2016 +0800
+
+    1 - two sum
+
+ .clang-format      |  7 +++++++
+ graph/graph.cc     |  1 -
+ graph/qq.cc        | 27 -------------------------
+ leetcode/twosum.cc | 50 +++++++++++++++++++++++++++++++++++++++++++++
+ leetcode/twosum.md | 59 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 5 files changed, 116 insertions(+), 28 deletions(-)
+
+commit c40b0aae13c031be7cbc88b5ee7af3c29778b60f
+Merge: c967eaf c9bc58d
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun Apr 10 17:30:36 2016 +0800
+
+    Merge branch 'master' of https://github.com/sunday1103/Notebook
+
+commit c967eaf2dfbbd2ac2a8c8b2ec56a4e3129273e58
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun Apr 10 17:29:46 2016 +0800
+
+    add graph
+
+ C++/use_map.cc                                     | 27 ++++++++++++++++++
+ ...236\204\351\200\240\345\207\275\346\225\260.md" | 32 ++++++++++++++++++++++
+ graph/graph.cc                                     | 16 +++++++++++
+ 3 files changed, 75 insertions(+)
+
+commit c9bc58d0fe881acf1d87a9b3debf992a5e5e331b
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Apr 10 17:20:01 2016 +0800
+
+    Create README.md
+
+ README.md | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit afe81b7c80146901904240a459fed13383f9bfa3
+Author: huangyang <huangyang@outlook.com>
+Date:   Sun Apr 10 17:18:52 2016 +0800
+
+    add graph
+
+ DP/coin.cpp |  56 +++++++++++++++++++++++++++++++
+ DP/rob.cpp  | 108 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ DP/rob2.cpp |  46 ++++++++++++++++++++++++++
+ graph/qq.cc |  27 +++++++++++++++
+ 4 files changed, 237 insertions(+)
+
+commit e80429bf03cc24f3c36ddd7e91e01c290ef8e47b
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Apr 10 17:16:47 2016 +0800
+
+    Create .gitignore
+
+ .gitignore | 28 ++++++++++++++++++++++++++++
+ 1 file changed, 28 insertions(+)
+
+commit fecd4a544cd5838574bd03d224199f4b7905f0e3
+Author: YangHuang <huangyang@outlook.com>
+Date:   Sun Apr 10 17:11:21 2016 +0800
+
+    Delete .gitattributes
+    
+    初始化Notebook
+
+ .gitattributes | 17 -----------------
+ 1 file changed, 17 deletions(-)
+
+commit 5db9a8c0280504856a57aa4bc919311437e7f26c
+Author: YangHuang <huangyang@outlook.com>
+Date:   Tue Nov 10 11:38:56 2015 +0800
+
+    :circus_tent: Added .gitattributes
+
+ .gitattributes | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
